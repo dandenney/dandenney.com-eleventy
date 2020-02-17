@@ -5,6 +5,7 @@ summary: Mondays are so different at Envy
 date: "2012-07-21"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 [CSS Hat](http://csshat.com) is a photoshop plugin from the team that will hopefully bring us [CSS Pifffle.](http://csspiffle.com) I had been anxiously awaiting for it to be released because I wanted to see what the team was capable of. They are currently working on a new app for web creation, intended to replace Photoshop and Fireworks for us.

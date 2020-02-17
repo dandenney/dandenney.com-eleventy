@@ -6,6 +6,7 @@ date: "2012-08-15"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 > Alright  

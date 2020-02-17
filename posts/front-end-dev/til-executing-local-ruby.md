@@ -1,11 +1,12 @@
 ---
-path: '/posts/front-end-dev/til-executing-local-ruby'
+path: "/posts/front-end-dev/til-executing-local-ruby"
 title: TIL Executing Local Ruby
-summary: Sharing how I learned how to use Ruby to solve a problem 
-date: '2015-11-20'
+summary: Sharing how I learned how to use Ruby to solve a problem
+date: "2015-11-20"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 IA Writer says this is a 5:47 minute read and Hemingway App says I'm ugly and I can't write good. Read at your own peril.

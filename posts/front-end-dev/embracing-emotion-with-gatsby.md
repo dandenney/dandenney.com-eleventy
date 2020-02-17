@@ -6,6 +6,7 @@ date: "2019-04-17"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 While the title is about the CSS-in-JS package named [Emotion](https://emotion.sh/docs/introduction), I will say that I haven't been this excited about front-end development for quite a while. I'm all-in on the JAMstack, building in [Gatsby](https://www.gatsbyjs.org) daily at work and I just revamped my site with it as well. It's by far the fastest and most technically advanced version that I've ever made and I hardly did a thing besides format markdown. The beneits come from the people behind the project, so I get to keep learning the fundamentals of ES6, JSX, and React.

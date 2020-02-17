@@ -7,6 +7,7 @@ permalink: posts/front-end-dev/{{ title | slug }}/index.html
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 The most important thing that I can say right now is that this is an experiment. I am sharing as I learn, so please don't consider this a tutorial. I prefer to share as I bumble through things because it might help other people in the same spot and experts usually offer good tips for improving.

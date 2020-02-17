@@ -1,11 +1,12 @@
 ---
-path: '/posts/front-end-dev/sass-color-variable-pop-quiz'
+path: "/posts/front-end-dev/sass-color-variable-pop-quiz"
 title: Sass Color Variable Pop Quiz
 summary: Sharing results from asking when people set variables
-date: '2013-01-21'
+date: "2013-01-21"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 ## I had a question about color variables
@@ -58,7 +59,7 @@ Chris Brauckmuller aka [@cbrauckmuller](http://twitter.com/cbrauckmuller)
 
 How many times before variableizing? **1**
 
-Naming approach? **It depends. For neutrals I usually have $gray, $gray-light and $gray-dark. For the main brand colors, I would name the original color something like $brand-green. Then if I needed variants of that, I might do $brand-green-lighterX, where X just represents how many percent lighter it is versus the original.**
+Naming approach? **It depends. For neutrals I usually have $gray, $gray-light and $gray-dark. For the main brand colors, I would name the original color something like $brand-green. Then if I needed variants of that, I might do \$brand-green-lighterX, where X just represents how many percent lighter it is versus the original.**
 
 Sample? [https://github.com/cbrauckmuller/helium/blob/master/scss/config.scss](https://github.com/cbrauckmuller/helium/blob/master/scss/config.scss)
 
@@ -76,4 +77,4 @@ How many times before variableizing? **2**
 
 Naming approach? **I try to stick to a `groupName-differentiator` naming convention.**
 
-Sample? [https://github.com/chasewoodford/chasewoodford.com/blob/master/css/sass/_variables.scss](https://github.com/chasewoodford/chasewoodford.com/blob/master/css/sass/_variables.scss)
+Sample? [https://github.com/chasewoodford/chasewoodford.com/blob/master/css/sass/\_variables.scss](https://github.com/chasewoodford/chasewoodford.com/blob/master/css/sass/_variables.scss)

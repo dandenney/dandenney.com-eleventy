@@ -5,6 +5,7 @@ summary: A recap from attending re:build Conf
 date: "2012-09-22"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 I was recently lucky enough to tag along with [Jason VanLue](http://twitter.com/jasonvanlue) up to Indianapolis to attend [re:build 2012.](http://rebuildconf.com) Big, big thank you to Jason for working it out, [Envy Labs](http://envylabs.com) for sending me and to the re:build team for their hospitality.

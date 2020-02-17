@@ -6,6 +6,7 @@ date: "2017-07-23"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 <small>Read time: 29:33</small>

@@ -5,6 +5,7 @@ summary: "Leaving Code School and Pluralsight"
 date: "2017-07-02"
 tags:
   - general
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/general/turning-the-page/in-memoriam.jpg)

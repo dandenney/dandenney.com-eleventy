@@ -5,6 +5,7 @@ summary: "Changing from a split role to a product one"
 date: "2014-03-03"
 tags:
   - general
+layout: layouts/post.njk
 ---
 
 ![Code School brackets](/img/posts/general/a-shift-in-focus/brackets-code-school.png)

@@ -5,6 +5,7 @@ summary: Our last two times of running the conf
 date: "2014-06-09"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/conferences/front-end-conf-finales/dan-cherrie-stage.svg)

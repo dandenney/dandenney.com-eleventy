@@ -5,6 +5,7 @@ summary: Launching the site for the 5th Front-End Conf
 date: "2013-03-20"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/front-end-dev/going-live-with-number-five/stage.png)

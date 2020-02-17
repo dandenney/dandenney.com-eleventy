@@ -1,9 +1,10 @@
 ---
-path: '/blips/taste'
+path: "/blips/taste"
 title: Taste
-date: '2014-01-29'
+date: "2014-01-29"
 tags:
   - blips
+layout: layouts/post.njk
 ---
 
 One of my all-time favorite quotes got a really nice typographical treatment. It is one of the most important things I've ever heard and should be shared with everyone getting into any form of creative work.

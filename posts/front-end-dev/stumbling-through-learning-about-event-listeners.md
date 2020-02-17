@@ -5,6 +5,7 @@ summary: In which I think I figure something out but I'm wrong
 date: "2016-09-15"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 **Disclaimer:** In this post, I am sharing something that I've been learning. It's in no way a how-to and in fact I'd love feedback on better ways to do what I've done.

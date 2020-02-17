@@ -5,6 +5,7 @@ summary: "Joining Envy Labs and Code School!"
 date: "2012-07-12"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 I recently signed on with the Envy Labs team as a front-end dev to work on projects including Code School. This is a little post sharing how big of a change this is for me and how excited I am.

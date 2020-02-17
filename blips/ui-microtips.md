@@ -4,6 +4,7 @@ title: "UI Microtips"
 date: "2020-01-18"
 tags:
   - blips
+layout: layouts/post.njk
 ---
 
 import TweetEmbed from 'react-tweet-embed'

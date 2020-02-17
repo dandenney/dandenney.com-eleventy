@@ -5,6 +5,7 @@ summary: Building up to running our first event in Portland
 date: "2014-07-21"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 Ok, we will sleep. [Carl Smith](http://twitter.com/carlsmith) made it clear how important sleep is during his awesome talk in St. Pete. It's more like "Portland or Bust", but [Nathan Yoder](http://twitter.com/nathanyoder) just claimed that recently as he moved there.

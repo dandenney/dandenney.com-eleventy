@@ -5,6 +5,7 @@ summary: The conference goes on, thanks to friends
 date: "2014-10-23"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/conferences/front-end-conf-lives/plan-comes-together.jpg)

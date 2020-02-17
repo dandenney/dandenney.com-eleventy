@@ -1,10 +1,11 @@
 ---
-path: '/posts/front-end-dev/production-vs-shipping'
+path: "/posts/front-end-dev/production-vs-shipping"
 title: Production vs. Shipping
 summary: The differences it makes when you think about shipping
-date: '2012-07-16'
+date: "2012-07-16"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 <small>I try not to 'rock the boat' too often. However, it is impossible to share this post without pointing out the differences in the cultures that I have worked in during my first few years in the web design industry. Out of respect for the ones that aren't getting the best review, I don't want to name names of the companies. I want to be sure to say that I have also had a couple positions with great company cultures that ended for other reasons.</small>

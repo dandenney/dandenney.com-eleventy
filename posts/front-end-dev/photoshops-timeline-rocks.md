@@ -5,6 +5,7 @@ summary: Sharing my experience in making a GIF with the timeline
 date: "2014-01-08"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 This is another of my anti-tutorials, where I share how I stumbled my way through something. It's not necessarily how things should be done and I'd love any feedback from people that really know what they're doing.

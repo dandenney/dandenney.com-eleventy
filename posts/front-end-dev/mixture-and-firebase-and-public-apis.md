@@ -1,10 +1,11 @@
 ---
-path: '/posts/front-end-dev/mixture-and-firebase-and-public-apis'
+path: "/posts/front-end-dev/mixture-and-firebase-and-public-apis"
 title: Mixture and Firebase and Public APIs
 summary: Playing with a cool tool
-date: '2013-04-07'
+date: "2013-04-07"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 ### I'm learning how to work with APIs and how to share via video

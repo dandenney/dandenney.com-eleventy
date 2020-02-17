@@ -1,11 +1,12 @@
 ---
-path: '/posts/front-end-dev/reducing-html-email-code'
+path: "/posts/front-end-dev/reducing-html-email-code"
 title: Reducing HTML Email Code
 summary: Sharing how I took a a crack at refactoring an email
-date: '2016-07-16'
+date: "2016-07-16"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 I recently came across an article, [The Problem with Email Newsletters](https://medium.com/@cloverfounders/the-problem-with-email-newsletters-f606a485ccc1#.56k4k0uh3). I was really curious about the problems that people run into with creating them, but I was surprised by the main problem that this one covered:

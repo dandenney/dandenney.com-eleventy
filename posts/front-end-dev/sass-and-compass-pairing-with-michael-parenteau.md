@@ -1,11 +1,12 @@
 ---
-path: '/posts/front-end-dev/sass-and-compass-pairing-with-michael-parenteau'
+path: "/posts/front-end-dev/sass-and-compass-pairing-with-michael-parenteau"
 title: Sass and Compass Pairing with Michael Parenteau
 summary: Big thank you to Michael for showing me the ropes
-date: '2012-06-17'
+date: "2012-06-17"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 [Michael Parenteau](http://michaelparenteau.com), aka [@parenteau](http://twitter.com/parenteau) recently offered to show me the ropes of getting started with Sass and Compass on a project. He works for [Relevance](http://thinkrelevance.com) and does some really fun side projects so I jumped at the chance.
@@ -99,7 +100,7 @@ Now, we did some extra stuff to the new version of the button but here is the ne
         @include box-shadow(inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee);
         border: 1px solid #5b992b;
           border-bottom: 1px solid #538c27;
-      } 
+      }
     }
 
 Not only is that more concise, it is waaaay more powerful and extendable. We made our own button mixin that sets the things that will be on every button to be written right away. I won't go into the full breakdown here but this is the kind of code that I want to be writing. Lean and mean, man.

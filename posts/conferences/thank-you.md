@@ -5,6 +5,7 @@ summary: People are amazing, thank you so much
 date: "2014-08-28"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/conferences/thank-you/thank-you.svg)

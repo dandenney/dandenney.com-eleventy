@@ -5,6 +5,7 @@ summary: A recap from attending Circles Conf
 date: "2012-09-22"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 I am flying back home from Dallas, where Cherrie and I attended the first [Circles Conference.](http://www.circlesconference.com) If you haven't heard of it before, it was an event to bring together creatives that do work for non-profit and/or religious organizations. Ismael Burciaga, aka Ish, had the idea for the event which is why we had to be there.

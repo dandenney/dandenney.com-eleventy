@@ -1,10 +1,11 @@
 ---
-path: '/posts/front-end-dev/mondays-rock'
+path: "/posts/front-end-dev/mondays-rock"
 title: Mondays Rock
 summary: Mondays are so different at Envy
-date: '2012-07-16'
+date: "2012-07-16"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 Mondays have a tendency to suck in most jobs. As I've been bragging, though, I now work for a company that does things a little differently. I wake up at 6 a.m., get ready and drive 2 hours over to Orlando on Mondays now and I'm happy to do it.

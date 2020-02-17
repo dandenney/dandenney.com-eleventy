@@ -5,6 +5,7 @@ summary: A review of the awesomeness that is Grok
 date: "2014-04-07"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 <figure>

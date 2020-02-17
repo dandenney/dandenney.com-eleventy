@@ -6,6 +6,7 @@ date: "2016-08-08"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/front-end-dev/learning-javascript-problem-solving/crash-js.svg)

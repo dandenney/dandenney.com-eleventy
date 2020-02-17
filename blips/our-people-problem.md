@@ -1,9 +1,10 @@
 ---
-path: '/blips/our-people-problem'
+path: "/blips/our-people-problem"
 title: Our Industry's Drinking Problem?
-date: '2013-10-24'
+date: "2013-10-24"
 tags:
   - blips
+layout: layouts/post.njk
 ---
 
 In our industry, we really like social events and writing posts about social events. One of the latest [Does Our Industry Have a Drinking Problem?](http://alistapart.com/column/does-our-industry-have-a-drinking-problem) poses the "as advertised" question. I'm not going to chime in with my answer, because [this comment](http://alistapart.com/comments/does-our-industry-have-a-drinking-problem#335656) says it better than I could.

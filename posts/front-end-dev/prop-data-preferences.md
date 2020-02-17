@@ -6,6 +6,7 @@ date: "2020-01-18"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 This week I was working on a page that had a significant amount of looped data. In the PR, we discussed options and preferences for how to pass data down through props.

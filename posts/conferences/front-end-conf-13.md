@@ -5,6 +5,7 @@ summary: A recap of from running the 2013 event
 date: "2013-07-18"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 ![Front-End Conf photo booth](/img/posts/conferences/front-end-conf-13/131.jpg)

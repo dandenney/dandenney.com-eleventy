@@ -5,6 +5,7 @@ summary: "A friend is trying to build an iPad app"
 date: "2013-02-27"
 tags:
   - general
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/general/ricardo-rally-time/all2.png)

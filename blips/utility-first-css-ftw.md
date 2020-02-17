@@ -4,6 +4,7 @@ title: "Utility-First CSS, FTW"
 date: 2019-01-15T17:59:14.819Z
 tags:
   - blips
+layout: layouts/post.njk
 ---
 
 This is the best breakdown of the pros/cons of utility-first CSS that I've seen: [In Defense of Utility-First CSS](https://frontstuff.io/in-defense-of-utility-first-css).

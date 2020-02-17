@@ -5,6 +5,7 @@ summary: Some changes for future versions of the events
 date: "2012-10-05"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/conferences/future-of-front-end-conf/front-end-2009.jpg)

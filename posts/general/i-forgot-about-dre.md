@@ -5,6 +5,7 @@ summary: "Review of the awesome work behind the Beats app"
 date: "2014-01-27"
 tags:
   - general
+layout: layouts/post.njk
 ---
 
 ![Beats ad with Dre](/img/posts/general/i-forgot-about-dre/dre-ad.jpg)

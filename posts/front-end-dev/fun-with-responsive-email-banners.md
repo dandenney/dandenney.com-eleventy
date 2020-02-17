@@ -5,6 +5,7 @@ summary: Responsive design and HTML Tables, FTW
 date: "2014-03-27"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 ## Backstory

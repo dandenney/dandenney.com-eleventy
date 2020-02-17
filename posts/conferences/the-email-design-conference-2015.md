@@ -1,10 +1,11 @@
 ---
-path: '/posts/conferences/the-email-design-conference-2015'
+path: "/posts/conferences/the-email-design-conference-2015"
 title: The Email Design Conference 2015
 summary: A recap from attending this awesome event
-date: '2015-08-29'
+date: "2015-08-29"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 <iframe src="https://player.vimeo.com/video/137720165?color=b51f24&amp;byline=0" width="700" height="394" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>

@@ -5,6 +5,7 @@ summary: Sharing some benefits of using data URIs for images
 date: "2013-03-21"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/front-end-dev/playing-with-data-uris/grossness.jpg)

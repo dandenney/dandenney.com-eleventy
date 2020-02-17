@@ -6,7 +6,11 @@ eleventyNavigation:
   order: 2
 ---
 
-<h1>Posts</h1>
+<section class="postlist-section">
 
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+  <h1>Posts</h1>
+
+  {% set postslist = collections.posts %}
+  {% include "postslist.njk" %}
+
+</section>

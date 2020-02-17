@@ -1,11 +1,12 @@
 ---
-path: '/posts/front-end-dev/injecting-a-banner-populated-by-cookie-data'
+path: "/posts/front-end-dev/injecting-a-banner-populated-by-cookie-data"
 title: Injecting a banner populated with cookie data
 summary: Sharing how I made a banner for a promo
-date: '2019-09-18'
+date: "2019-09-18"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 It’s time for another round of sharing something that I recently learned how to do. My standard disclaimer applies: I’m not sure that I know what I’m doing and I’m always open to feedback if you know how I can improve it.
@@ -43,10 +44,10 @@ If you’re wanting to see this in action, you can pop open your console and pas
 
 ```javascript
 const d = document;
-const b = d.getElementsByTagName('body');
-const p = d.createElement('p');
-b[0].insertAdjacentElement('afterbegin', p);
-p.innerHTML = 'all your body are belong to JS';
+const b = d.getElementsByTagName("body");
+const p = d.createElement("p");
+b[0].insertAdjacentElement("afterbegin", p);
+p.innerHTML = "all your body are belong to JS";
 ```
 
 Sidenote: you can use [insertAdjacentHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) if you are only inserting some HTML.
@@ -72,29 +73,29 @@ var BANNER_CONFIG = {
     time_remaining_in_seconds: 86400,
     presentation_data: {
       background_color:
-        'linear-gradient( 109.6deg, rgba(83,5,5,1) 11.2%, rgba(0,0,0,1) 91.1% );',
-      countdown_text: 'I need to have a cookie in the next',
-      text_color: '#ffffff',
+        "linear-gradient( 109.6deg, rgba(83,5,5,1) 11.2%, rgba(0,0,0,1) 91.1% );",
+      countdown_text: "I need to have a cookie in the next",
+      text_color: "#ffffff",
       banner_text:
-        'Subscribe now. Save discount_percentage% on an individual subscription on DataCamp and commit to learning data science and analytics.',
-      time_background_color: 'none',
+        "Subscribe now. Save discount_percentage% on an individual subscription on DataCamp and commit to learning data science and analytics.",
+      time_background_color: "none"
     },
-    demo_key: 'demo_banner',
-    landing_page: '#',
+    demo_key: "demo_banner",
+    landing_page: "#",
     title:
-      'I would show my preferred cookie type here and the longest it should be before I should eat another cookie.',
-  },
+      "I would show my preferred cookie type here and the longest it should be before I should eat another cookie."
+  }
 };
 
 function demoBanner(data) {
   const d = document;
-  const bannerCookiePrefix = 'DEMOBANNER_';
+  const bannerCookiePrefix = "DEMOBANNER_";
   let demoConfig = data.data,
     endDate =
       new Date().getTime() + demoConfig.time_remaining_in_seconds * 1000;
 
   const presentationData = demoConfig.presentation_data,
-    elBody = d.getElementsByTagName('body'),
+    elBody = d.getElementsByTagName("body"),
     elFirst = elBody[0].firstChild,
     countdownMarkup =
       "<time class='dc-ps-banner-time' data-countdown-wrapper><span data-countdown-days></span><span>days</span><span data-countdown-hours></span><span>hrs</span><span data-countdown-minutes></span><span>mins</span><span data-countdown-seconds></span><span>secs</span><span class='dc-ps-banner-time-icon'></span></time>",
@@ -103,13 +104,13 @@ function demoBanner(data) {
   (styles =
     "<style> @keyframes slideIn { to { max-height: 500px; opacity: 1; } } @keyframes slideOut { from { max-height: 500px; opacity: 1; } to { max-height: 0; opacity: 0.25; } } .dc-ps-banner-wrapper { font-family: Lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; overflow: hidden; position: sticky; top: 0; z-index: 80; } .dc-ps-banner { animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards slideIn; background: " +
     presentationData.background_color +
-    '; border: 0; color: ' +
+    "; border: 0; color: " +
     presentationData.text_color +
-    ' !important; display: block; max-height: 0; opacity: 0.25; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.77, 0, 0.175, 1); text-decoration: none; } .dc-ps-banner.dc-is-hidden { animation: 0.5s cubic-bezier(0.77, 0, 0.175, 1) slideOut; } .dc-ps-banner-content { flex-grow: 1; margin: 12px 42px 12px 12px; text-align: center; } .dc-ps-banner-heading { color: ' +
+    " !important; display: block; max-height: 0; opacity: 0.25; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.77, 0, 0.175, 1); text-decoration: none; } .dc-ps-banner.dc-is-hidden { animation: 0.5s cubic-bezier(0.77, 0, 0.175, 1) slideOut; } .dc-ps-banner-content { flex-grow: 1; margin: 12px 42px 12px 12px; text-align: center; } .dc-ps-banner-heading { color: " +
     presentationData.text_color +
-    ' !important; font-size: 18px; margin: 0 0 8px; } .dc-ps-banner-countdown { margin: 4px 0 0 0; } .dc-ps-banner-time { align-items: center; background: ' +
+    " !important; font-size: 18px; margin: 0 0 8px; } .dc-ps-banner-countdown { margin: 4px 0 0 0; } .dc-ps-banner-time { align-items: center; background: " +
     presentationData.time_background_color +
-    '; border-radius: 4px; display: inline-flex; font-weight: bold; line-height: 1; padding: 4px 6px 4px 4px; } .dc-ps-banner-time > span { padding-left: 4px; } .dc-ps-banner-time-icon { position: relative; top: 1px; } .dc-ps-close { background: none; border: 0; cursor: pointer; position: absolute; right: 8px; top: calc(50% - 10px); transition: opacity 0.3s cubic-bezier(0.77, 0, 0.175, 1); z-index: 90; } .dc-ps-close:hover { opacity: 0.8; } @media screen and (min-width: 768px) { .dc-ps-banner-heading { font-size: 22px; margin: 0; } }</style>'),
+    "; border-radius: 4px; display: inline-flex; font-weight: bold; line-height: 1; padding: 4px 6px 4px 4px; } .dc-ps-banner-time > span { padding-left: 4px; } .dc-ps-banner-time-icon { position: relative; top: 1px; } .dc-ps-close { background: none; border: 0; cursor: pointer; position: absolute; right: 8px; top: calc(50% - 10px); transition: opacity 0.3s cubic-bezier(0.77, 0, 0.175, 1); z-index: 90; } .dc-ps-close:hover { opacity: 0.8; } @media screen and (min-width: 768px) { .dc-ps-banner-heading { font-size: 22px; margin: 0; } }</style>"),
     (bannerMarkup =
       "<a class='dc-ps-banner' data-ps-banner href=" +
       demoConfig.landing_page +
@@ -118,16 +119,16 @@ function demoBanner(data) {
       "</h5><p class='dc-ps-banner-countdown'>" +
       presentationData.countdown_text +
       countdownMarkup +
-      '</p></div></a>' +
+      "</p></div></a>" +
       closeMarkup +
       styles);
 
   function countdown(endDate) {
-    const elCountdownWrapper = d.querySelector('[data-countdown-wrapper]'),
-      elCountdownDays = d.querySelector('[data-countdown-days]'),
-      elCountdownHours = d.querySelector('[data-countdown-hours]'),
-      elCountdownMinutes = d.querySelector('[data-countdown-minutes]'),
-      elCountdownSeconds = d.querySelector('[data-countdown-seconds]');
+    const elCountdownWrapper = d.querySelector("[data-countdown-wrapper]"),
+      elCountdownDays = d.querySelector("[data-countdown-days]"),
+      elCountdownHours = d.querySelector("[data-countdown-hours]"),
+      elCountdownMinutes = d.querySelector("[data-countdown-minutes]"),
+      elCountdownSeconds = d.querySelector("[data-countdown-seconds]");
 
     let days, hours, minutes, seconds;
 
@@ -156,9 +157,9 @@ function demoBanner(data) {
         seconds = parseInt(timeRemaining);
 
         elCountdownDays.innerHTML = parseInt(days, 10);
-        elCountdownHours.innerHTML = ('0' + hours).slice(-2);
-        elCountdownMinutes.innerHTML = ('0' + minutes).slice(-2);
-        elCountdownSeconds.innerHTML = ('0' + seconds).slice(-2);
+        elCountdownHours.innerHTML = ("0" + hours).slice(-2);
+        elCountdownMinutes.innerHTML = ("0" + minutes).slice(-2);
+        elCountdownSeconds.innerHTML = ("0" + seconds).slice(-2);
       }
     }
   }
@@ -166,15 +167,15 @@ function demoBanner(data) {
   function setCookie(name, value, milliseconds) {
     d.cookie =
       name +
-      '=' +
+      "=" +
       value +
-      ';path=/;domain=COOKIE_DOMAIN;expires=' +
+      ";path=/;domain=COOKIE_DOMAIN;expires=" +
       new Date(milliseconds).toUTCString();
   }
 
   function removeBanner() {
-    const elBanner = d.querySelector('[data-ps-banner]');
-    elBanner.classList.add('dc-is-hidden');
+    const elBanner = d.querySelector("[data-ps-banner]");
+    elBanner.classList.add("dc-is-hidden");
     setCookie(
       bannerCookiePrefix + demoConfig.demo_key,
       1,
@@ -185,25 +186,25 @@ function demoBanner(data) {
   }
 
   function enableClose() {
-    const elClose = d.querySelector('[data-promo-close]');
-    elClose.addEventListener('click', removeBanner);
+    const elClose = d.querySelector("[data-promo-close]");
+    elClose.addEventListener("click", removeBanner);
   }
 
   function insertBanner() {
-    const bannerElement = d.createElement('article');
-    bannerElement.classList.add('dc-ps-banner-wrapper');
-    elBody[0].insertAdjacentElement('afterbegin', bannerElement);
+    const bannerElement = d.createElement("article");
+    bannerElement.classList.add("dc-ps-banner-wrapper");
+    elBody[0].insertAdjacentElement("afterbegin", bannerElement);
     bannerElement.innerHTML = bannerMarkup;
     enableClose();
   }
 
   function getCookie(name) {
-    var v = d.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    var v = d.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
     return v ? v[2] : null;
   }
 
   if (
-    !d.querySelector('.dc-ps-banner-wrapper') &&
+    !d.querySelector(".dc-ps-banner-wrapper") &&
     !getCookie(bannerCookiePrefix + demoConfig.demo_key)
   ) {
     insertBanner();

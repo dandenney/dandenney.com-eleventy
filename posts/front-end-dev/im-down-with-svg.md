@@ -5,6 +5,7 @@ summary: Sharing the benefits of SVG over PNG
 date: "2012-09-30"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 After coming across a couple of articles [Wrangling SVGs](http://samsoff.es/posts/wrangling-svgs) and [Pixel Fitting](http://dcurt.is/pixel-fitting) , I wanted to check out what SVG can do. While many people are using them for icons and logos, I was particularly interested in how they can render [Ricardo Gimenes'](http://ricardogimenes.com) awesome illustrations for the [Front-End Conf site.](http://frontendconf.com)

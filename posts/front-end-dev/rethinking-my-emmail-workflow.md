@@ -5,6 +5,7 @@ summary: Changing from all local dev to using Builder
 date: "2016-06-30"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 In 2015, I was lucky enough to get to share [The Organized Chaos of Email](https://speakerdeck.com/dandenney/the-organized-chaos-of-email-creation) Creation at [The Email Design Conference](https://litmus.com/conference). While I was on stage talking about an offline workflow, people from the Litmus team were in the lobby demoing a game-changer: live client previews built into [Builder](https://litmus.com/email-builder).

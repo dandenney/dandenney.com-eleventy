@@ -5,6 +5,7 @@ summary: "Supporting an awesome project in our community"
 date: "2014-10-07"
 tags:
   - general
+layout: layouts/post.njk
 ---
 
 ![](/img/posts/general/give-back/give-back.jpg)  

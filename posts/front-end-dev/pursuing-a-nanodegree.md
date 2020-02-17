@@ -5,6 +5,7 @@ summary: Diving into learning JavaScript on Udacity
 date: "2016-06-26"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 I've been wanting to learn functional JavaScript for a while. I've stocked up on some books, we've released some great [JavaScript courses at Code School](https://codeschool.com/paths/javascript), we have a team account at [Front-end Masters](https://frontendmasters.com), and I grabbed Wes Bos' [React for Beginners](https://reactforbeginners.com). Basically, I have all the things.

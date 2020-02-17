@@ -4,6 +4,7 @@ title: "Web Perf Resources"
 date: "2019-11-24"
 tags:
   - blips
+layout: layouts/post.njk
 ---
 
 import TweetEmbed from 'react-tweet-embed'

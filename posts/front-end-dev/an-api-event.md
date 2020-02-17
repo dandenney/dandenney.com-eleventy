@@ -1,10 +1,11 @@
 ---
-path: '/posts/front-end-dev/an-api-event'
+path: "/posts/front-end-dev/an-api-event"
 title: An API Event?
 summary: Testing the waters for an event I'd like to run
-date: '2014-01-23'
+date: "2014-01-23"
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 ## I want to learn more about APIs
@@ -23,4 +24,3 @@ If this sounds like something you'd be even remotely interested in, would you mi
 <iframe width="100%" height="100%" frameborder="0" src="https://dandenney.typeform.com/to/Kj3vxs?typeform-embed=embed-widget" data-qa="iframe"></iframe>
 
 </div>
-

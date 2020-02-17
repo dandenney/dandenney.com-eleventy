@@ -5,6 +5,7 @@ summary: Updates about this and future events
 date: "2014-01-19"
 tags:
   - conferences
+layout: layouts/post.njk
 ---
 
 ![plane](/img/posts/conferences/front-end-conf-update/plane.svg)

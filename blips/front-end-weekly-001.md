@@ -1,19 +1,22 @@
 ---
-path: '/blips/front-end-weekly-no-1'
+path: "/blips/front-end-weekly-no-1"
 title: Front-End Weekly - No. 1
-date: '2013-11-01'
+date: "2013-11-01"
 tags:
   - blips
+layout: layouts/post.njk
 ---
 
 I'm working on creating a weekly email, so I collected my fave things from the week and decided to share it since I'm not ready to launch yet. It will be a lot more fun looking in the email.
 
 ## Fave of the Week
+
 [Dave Rupert Strikes Again](http://codepen.io/davatron5000/pen/iJuzF)
 
 This was great. Yaron Schoen tweets about wanting to redirect to an image if someone puts 'ASAP' into his contact form. Dave whips it up.
 
 ## Process
+
 [Smart Transitions In User Experience Design](http://uxdesign.smashingmagazine.com/2013/10/23/smart-transitions-in-user-experience-design)
 
 [Animating DOM Transitions](http://blog.alexmaccaw.com/animating-dom-transitions)
@@ -69,6 +72,7 @@ This was great. Yaron Schoen tweets about wanting to redirect to an image if som
 [Color + Math + Motion by Mark Lee](http://codepen.io/leemark/pen/AkbzD)
 
 ## Social
+
 [@tj_fogarty](https://mobile.twitter.com/tj_fogarty/status/395495748654993408)
 
 ## Events

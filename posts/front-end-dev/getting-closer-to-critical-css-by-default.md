@@ -1,11 +1,12 @@
 ---
-path: '/posts/front-end-dev/getting-closer-to-critical-css-by-default'
+path: "/posts/front-end-dev/getting-closer-to-critical-css-by-default"
 title: Getting Closer To Critical CSS By Default
 summary: How adopting CSS-In-JS tooling is improving performance
-date: '2019-10-20'
+date: "2019-10-20"
 codeHighlighting: true
 tags:
   - front-end-dev
+layout: layouts/post.njk
 ---
 
 import { CustomTable } from 'styles/getting-closer-to-critical-css-by-default.js';
