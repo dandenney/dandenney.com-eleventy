@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+permalink: /blips/
+eleventyNavigation:
+  key: Blips
+  order: 2
+---
+
+<h1>Blips</h1>
+
+{% set blipslist = collections.blips %}
+{% include "blipslist.njk" %}

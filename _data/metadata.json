@@ -1,15 +1,15 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Dan Denney",
+  "url": "https://www.dandenney.com",
+  "description": "My little corner of the internet to share the things I enjoy.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "My little corner of the internet to share the things I enjoy.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "https://www.dandenney.com"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Dan Denney",
+    "email": "dd.subscriptions@gmail.com"
   }
 }
