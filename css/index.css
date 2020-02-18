@@ -172,12 +172,23 @@ table {
   border-collapse: collapse;
   border: 1px solid var(--accent);
   color: var(--text);
+  margin-top: 2rem;
   width: 100%;
 }
 
+td,
 th {
+  border: 1px solid var(--accent);
+}
+
+th {
+  background: rgba(239, 241, 243, 0.5);
   padding: 0.5rem;
   text-align: left;
+}
+
+tr:nth-child(even) td {
+  background: rgba(239, 241, 243, 0.5);
 }
 
 td {
@@ -236,6 +247,7 @@ pre {
 }
 
 .site-nav-item {
+  font-weight: 700;
   margin: 1rem 0 0 1rem;
 }
 
@@ -271,7 +283,14 @@ pre {
 }
 
 .postlist-link {
-  font-size: 28px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 600px) {
+  .postlist-link {
+    font-size: 28px;
+  }
 }
 
 .postlist-meta {
@@ -312,6 +331,7 @@ pre {
 
 .post-title {
   display: inline-block;
+  margin-top: 2rem;
   text-align: left;
 }
 
@@ -322,6 +342,14 @@ pre[class*="language-"] {
 
 pre[class*="language-"] {
   margin-top: 1rem;
+}
+
+p > code {
+  background-color: #eff1f3;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 4px;
 }
 
 .full-bleed,

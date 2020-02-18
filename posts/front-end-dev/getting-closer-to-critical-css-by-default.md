@@ -9,8 +9,6 @@ tags:
 layout: layouts/post.njk
 ---
 
-import { CustomTable } from 'styles/getting-closer-to-critical-css-by-default.js';
-
 A few years back, the concept of [Critical CSS](https://www.smashingmagazine.com/2015/08/understanding-critical-css/) was introduced, and I’ve been aspiring to it ever since. (Read: I’ve never successfully implemented in an existing work production project). I love the principle of only shipping the necessary CSS to a visitor, but even with generators and tooling, I fell short of it in the SCSS-based Rails apps that I’ve worked in.
 
 ## A Game Changer

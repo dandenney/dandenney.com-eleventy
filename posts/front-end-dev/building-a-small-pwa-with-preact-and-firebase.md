@@ -135,7 +135,11 @@ export default class ExercisesList extends Component {
 }
 ```
 
-And it’s imported like this (depending on its location) `import ExercisesList from './img/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/./img/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/components/ExercisesList';`
+And it’s imported like this (depending on its location)
+
+```jsx
+import ExercisesList from "./img/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/./img/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/components/ExercisesList";
+```
 
 [commit](https://github.com/dandenney/building-a-small-pwa-with-preact-and-firebase/commit/9959c25db94cb7827acfc73e13f213c50e5dea82)
 
@@ -143,7 +147,14 @@ And it’s imported like this (depending on its location) `import ExercisesList 
 
 By default, no one can read or write to a Firebase database unless they are authed. One way of making sure that it’s installed and working is to use logic to toggle an auth UI or the content of a component.
 
-In ExercisesList, I imported auth and database from Firebase. At that point I only needed auth, but I knew that the reason that I was using auth was to access the database, so I brought them both in at the same time. `import { auth, database } from './img/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/./img/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/firebase';`
+In ExercisesList, I imported auth and database from Firebase. At that point I only needed auth, but I knew that the reason that I was using auth was to access the database, so I brought them both in at the same time.
+
+```jsx
+import {
+  auth,
+  database
+} from "./img/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/./img/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase/firebase";
+```
 
 I needed auth available for the logic, but there a few steps to “toggle” them based on auth status.
 
@@ -441,7 +452,11 @@ I learned the hard way to make sure that you get state configured correctly in y
 
 ### Retrieving Data from Firebase
 
-Since I’m an authed user, Firebase will allow me to read and write to the database. Reading is done via a URL acting as an endpoint. In this case, it’s `[<span>https</span><span>://</span><span>pwa</span><span>-</span><span>preact</span><span>-</span><span>firebase</span><span>.</span><span>firebaseio</span><span>.</span><span>com</span><span>/</span><span>user01</span>](https://pwa-preact-firebase.firebaseio.com/user01)`.
+Since I’m an authed user, Firebase will allow me to read and write to the database. Reading is done via a URL acting as an endpoint. In this case, it’s
+
+```jsx
+https://pwa-preact-firebase.firebaseio.com/user01
+```
 
 I added `exercises: null` to state so that it can be updated once the data is retrieved. Some of the URL is in the config, so I access it by piecing together bits with my UID. That doesn’t match the dummy data that I added, so I hard-coded `user01` to test.
 

@@ -118,7 +118,7 @@ const Song = ({ song }) => {
 };
 ```
 
-<TweetEmbed id="1218653209499181057" />
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here&#39;s the simple reason why you should reconsider option 1: because all of those properties belong together! The song is a single entity with properties directly related to it.<br><br>Otherwise, this becomes possible:<br>&lt;Song artist=&quot;Rammstein&quot; title=&quot;Party in the USA&quot; /&gt;</p>&mdash; David K. 🎹 (@DavidKPiano) <a href="https://twitter.com/DavidKPiano/status/1218652798511976448?ref_src=twsrc%5Etfw">January 18, 2020</a></blockquote>
 
 ### Two: Spread the props
 
@@ -148,7 +148,7 @@ const Song = ({ imageUrl, runtime, title }) => {
 };
 ```
 
-<TweetEmbed id="1218629478752100363" />
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">For what it&#39;s worth, I usually do what was presented in option #2.</p>&mdash; Nathan Smith (@nathansmith) <a href="https://twitter.com/nathansmith/status/1218629478752100363?ref_src=twsrc%5Etfw">January 18, 2020</a></blockquote>
 
 ### Three: Destructure in the parent component
 
@@ -181,7 +181,7 @@ const Song = ({ imageUrl, runtime, title }) => {
 };
 ```
 
-<TweetEmbed id="1218648200086724615" />
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m usually a #3. In general I like to keep component props as primitives (strings, numbers, bools) so you’re less-bound to a data schema and re-rendering is simpler.<br><br>Also shouts to #4 cuz don’t abstract if you don’t need to</p>&mdash; Drew Powers (@_drewpowers) <a href="https://twitter.com/_drewpowers/status/1218648200086724615?ref_src=twsrc%5Etfw">January 18, 2020</a></blockquote>
 
 ### Four: One Component to Rule Them All
 
@@ -204,7 +204,7 @@ const Songs = ({ songs }) => (
 );
 ```
 
-<TweetEmbed id="1218656821076021251" />
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I usually don’t abstract something until I actually *do* need to reuse it AND the purpose is identical. I don’t try and anticipate or abstract early. “Duplication is far cheaper than the wrong abstraction” and all</p>&mdash; Drew Powers (@_drewpowers) <a href="https://twitter.com/_drewpowers/status/1218656821076021251?ref_src=twsrc%5Etfw">January 18, 2020</a></blockquote>
 
 ### Five? Choose Your Own Adventure
 
@@ -213,3 +213,5 @@ I'm sure there are other options people would take, and I'll add any that are sh
 ## My take
 
 While I originally wrote it using version one, it's now my least favorite. I'm heavily torn between two and three. I love the simplicity of two, with minimal redundancy. I'd have to look to the original data query or the `propTypes` to know that is available, but that feels like a worthwhile risk for me personally. What I question is if someone new to the project would feel the same way. Three feels like a proper separation of concerns and is very descriptive. There's just something about the redundancy and the scale of when there are 10+ props that makes me not love it as much. On the flip side, it feels way more friendly for a future developer. There's plenty more I'm likely missing about these and other options, so I'd love to hear your thoughts. Please [@me](https://twitter.com/dandenney) on Twitter if you have some.
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
