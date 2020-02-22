@@ -2,32 +2,14 @@
 layout: layouts/home.njk
 ---
 
-<section class="home-intro">
+<section class="home-posts">
 
-  <div class="home-intro-text post-body">
-
-    <h2>Hi! I'm Dan Denney and I'm a Front-end Engineer at <a href="https://www.datacamp.com/">DataCamp</a>.</h2>
-    <p>That title is a bit dated. These days I'm a half-stack engineer, which is a full-stack engineer focused on half of the stack. In my case, it's the front-end half. A Front-End Full Stack Engineer, if you will.</p>
-
-    <p class="u-fs-h3">In reality, I write <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> for a living. (And, for fun)</p>
-
-    <img alt="animated 8-bit character digging a ditch" class="home-gif" src="/img/under-construction.gif" />
-    
-    <h3>Remember those?</h3>
-    <p>If you, too, have made many trips around the sun, then you may have seen these GIFs in action. I'm revamping the tech behind this site and the visuals, but I chose a poor time to do it. I'm right near the end of <a href="https://www.newline.co/fullstack-d3">Fullstack D3</a> so I'm trying to get back to that. However, I wanted to change back to <a href="https://www.11ty.dev">11ty</a> to make some near-future projects easier.</p>
-
-  </div>
-
-</section>
-
-<section class="postlist-section">
-
-  <h2>Latest 3 Posts</h2>
+  <h2 class="u-ta-c heading-accent">Recent Posts</h2>
 
   {% set postslist = collections.posts | head(-3) %}
   {% set postslistCounter = collections.posts | length %}
-  {% include "postslist.njk" %}
+  {% include "homeposts.njk" %}
 
-  <p class="u-pt-2">More posts can be found in <a href="{{ '/posts/' | url }}">posts</a>.</p>
+  <p class="u-pt-2 u-ta-c">For the rest, check out <a href="{{ '/posts/' | url }}">posts</a>.</p>
 
 </section>
