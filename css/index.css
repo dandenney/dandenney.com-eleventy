@@ -253,14 +253,6 @@ pre {
   text-align: center;
 }
 
-.heading-accent::after {
-  content: "";
-  border-bottom: 4px double var(--heading);
-  display: block;
-  margin: 1rem auto 0;
-  width: 100px;
-}
-
 @media screen and (min-width: 660px) {
   .site-footer {
     justify-content: space-between;
