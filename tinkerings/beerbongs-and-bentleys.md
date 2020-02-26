@@ -155,6 +155,7 @@ tags:
   }
 
   blockquote {
+    color: rgba(255, 255, 255, 0.75);
     font-size: 2rem;
   }
 
@@ -221,7 +222,7 @@ tags:
 
   .divider {
     display: block;
-    margin: 8rem auto;
+    margin: 4rem auto;
   }
 
   .barText {
@@ -401,12 +402,15 @@ tags:
     }
 
     blockquote {
-      color: rgba(255, 255, 255, 0.75);
       font-size: 3rem;
     }
 
     .counts-table td {
       text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.75);
+    }
+
+    .divider {
+      margin: 8rem auto;
     }
 
     .count-13,
