@@ -27,7 +27,6 @@ function handleResize() {
 
 // scrollama event handlers
 function handleStepEnter(response) {
-  console.log(response);
   // response = { element, direction, index }
 
   // add color to current step only
@@ -62,16 +61,117 @@ function handleStepEnter(response) {
       map.setPaintProperty("step04", "circle-radius", 4);
       map.setPaintProperty("step05", "circle-radius", 8);
       map.setPaintProperty("step05Line", "line-opacity", 0.35);
+      map.setPaintProperty("step06", "circle-radius", 0);
     }
 
     if (response.index == 5) {
       map.setPaintProperty("step05", "circle-radius", 4);
       map.setPaintProperty("step06", "circle-radius", 8);
+      map.setPaintProperty("step07", "circle-radius", 0);
     }
 
-    // if (response.index == 5) {
-    //   map.setPaintProperty("step05", "circle-radius", 4);
-    // }
+    if (response.index == 6) {
+      map.setPaintProperty("step06", "circle-radius", 4);
+      map.setPaintProperty("step07", "circle-radius", 8);
+      map.setPaintProperty("step08", "circle-radius", 0);
+    }
+
+    if (response.index == 7) {
+      map.setPaintProperty("step07", "circle-radius", 4);
+      map.setPaintProperty("step08", "circle-radius", 8);
+      map.setPaintProperty("step09", "circle-radius", 0);
+    }
+
+    if (response.index == 8) {
+      map.setPaintProperty("step08", "circle-radius", 4);
+      map.setPaintProperty("step09", "circle-radius", 8);
+      map.setPaintProperty("step10", "circle-radius", 0);
+    }
+
+    if (response.index == 9) {
+      map.setPaintProperty("step09", "circle-radius", 4);
+      map.setPaintProperty("step10", "circle-radius", 8);
+      map.setPaintProperty("step11", "circle-radius", 0);
+    }
+
+    if (response.index == 10) {
+      map.setPaintProperty("step10", "circle-radius", 4);
+      map.setPaintProperty("step11", "circle-radius", 8);
+      map.setPaintProperty("step12", "circle-radius", 0);
+    }
+
+    if (response.index == 11) {
+      map.setPaintProperty("step11", "circle-radius", 4);
+      map.setPaintProperty("step12", "circle-radius", 8);
+      map.setPaintProperty("step13", "circle-radius", 0);
+    }
+
+    if (response.index == 12) {
+      map.setPaintProperty("step12", "circle-radius", 4);
+      map.setPaintProperty("step13", "circle-radius", 8);
+      map.setPaintProperty("step14", "circle-radius", 0);
+    }
+
+    if (response.index == 13) {
+      map.setPaintProperty("step13", "circle-radius", 4);
+      map.setPaintProperty("step14", "circle-radius", 8);
+      map.setPaintProperty("step15", "circle-radius", 0);
+      map.setPaintProperty("step15Line", "line-opacity", 0);
+    }
+
+    if (response.index == 14) {
+      map.setPaintProperty("step15", "circle-radius", 4);
+      map.setPaintProperty("step15", "circle-radius", 8);
+      map.setPaintProperty("step15Line", "line-opacity", 0.35);
+      map.setPaintProperty("step16A", "circle-radius", 0);
+      map.setPaintProperty("step16B", "circle-radius", 0);
+      map.setPaintProperty("step16C", "circle-radius", 0);
+      map.setPaintProperty("step16ALine", "line-opacity", 0);
+      map.setPaintProperty("step16BLine", "line-opacity", 0);
+      map.setPaintProperty("step16CLine", "line-opacity", 0);
+    }
+
+    if (response.index == 15) {
+      map.setPaintProperty("step15", "circle-radius", 4);
+      map.setPaintProperty("step16A", "circle-radius", 8);
+      map.setPaintProperty("step16B", "circle-radius", 8);
+      map.setPaintProperty("step16C", "circle-radius", 8);
+      map.setPaintProperty("step16ALine", "line-opacity", 0.35);
+      map.setPaintProperty("step16BLine", "line-opacity", 0.35);
+      map.setPaintProperty("step16CLine", "line-opacity", 0.35);
+      map.setPaintProperty("step17", "circle-radius", 0);
+      map.setPaintProperty("step17Line", "line-opacity", 0);
+    }
+
+    if (response.index == 16) {
+      map.setPaintProperty("step16A", "circle-radius", 4);
+      map.setPaintProperty("step16B", "circle-radius", 4);
+      map.setPaintProperty("step16C", "circle-radius", 4);
+      map.setPaintProperty("step17", "circle-radius", 8);
+      map.setPaintProperty("step17Line", "line-opacity", 0.35);
+      map.setPaintProperty("step18", "circle-radius", 0);
+      map.setPaintProperty("step18Line", "line-opacity", 0);
+    }
+
+    if (response.index == 17) {
+      map.setPaintProperty("step17", "circle-radius", 4);
+      map.setPaintProperty("step18", "circle-radius", 8);
+      map.setPaintProperty("step18Line", "line-opacity", 0.35);
+      map.setPaintProperty("step19", "circle-radius", 0);
+      map.setPaintProperty("step19Line", "line-opacity", 0);
+    }
+
+    if (response.index == 18) {
+      map.setPaintProperty("step18", "circle-radius", 4);
+      map.setPaintProperty("step19", "circle-radius", 8);
+      map.setPaintProperty("step19Line", "line-opacity", 0.35);
+      map.setPaintProperty("step20", "circle-radius", 0);
+    }
+
+    if (response.index == 19) {
+      map.setPaintProperty("step19", "circle-radius", 4);
+      map.setPaintProperty("step20", "circle-radius", 8);
+    }
   }
 
   // update graphic based on step
@@ -207,7 +307,7 @@ map.on("load", function() {
     source: "step04",
     paint: {
       "circle-radius": 0,
-      "circle-color": "#b51f24",
+      "circle-color": "#f1ad4e",
       "circle-stroke-color": "white",
       "circle-stroke-width": 1
     }
@@ -308,4 +408,740 @@ map.on("load", function() {
       "circle-stroke-width": 1
     }
   });
+
+  map.addSource("step07", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.6473005, 40.6734285]
+          },
+          properties: {
+            title: "Jane Doe No 3 Initial"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step07",
+    type: "circle",
+    source: "step07",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step08", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-72.823336, 40.862609]
+          },
+          properties: {
+            title: "Jane Doe No 6 Initial"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step08",
+    type: "circle",
+    source: "step08",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step09", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-72.782624, 40.87809]
+          },
+          properties: {
+            title: "Jessica Taylor's Initial"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step09",
+    type: "circle",
+    source: "step09",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step10", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.9813194, 40.757136]
+          },
+          properties: {
+            title: "Maureen Brainard-Barnes Initial"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step10",
+    type: "circle",
+    source: "step10",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#f1ad4e",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step11", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.86232, 40.829701]
+          },
+          properties: {
+            title: "Melissa Barthelemy Initial"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step11",
+    type: "circle",
+    source: "step11",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#f1ad4e",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step12", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.2767838, 40.6384703]
+          },
+          properties: {
+            title: "Shannan's last known"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step12",
+    type: "circle",
+    source: "step12",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#f1ad4e",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step13", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.2213584, 40.8075961]
+          },
+          properties: {
+            title: "Megan's last known"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step13",
+    type: "circle",
+    source: "step13",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#f1ad4e",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step14", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.3530307, 40.7228315]
+          },
+          properties: {
+            title: "Amber's last known"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step14",
+    type: "circle",
+    source: "step14",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#f1ad4e",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step15", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.376259, 40.624613]
+          },
+          properties: {
+            title: "Melissa's remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step15",
+    type: "circle",
+    source: "step15",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step15Line", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          // Maureen's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-73.86232, 40.829701],
+              [-73.376259, 40.624613]
+            ]
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step15Line",
+    type: "line",
+    source: "step15Line",
+    paint: {
+      "line-width": 3,
+      "line-color": "#b51f24",
+      "line-opacity": 0
+    }
+  });
+
+  map.addSource("step16A", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.374864, 40.625077]
+          },
+          properties: {
+            title: "Maureen's remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step16A",
+    type: "circle",
+    source: "step16A",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step16B", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.373233, 40.62559]
+          },
+          properties: {
+            title: "Megan's remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step16B",
+    type: "circle",
+    source: "step16B",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step16C", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.377814, 40.624157]
+          },
+          properties: {
+            title: "Amber's remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step16C",
+    type: "circle",
+    source: "step16C",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step16ALine", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          // Maureen's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-73.9813194, 40.757136],
+              [-73.374864, 40.625077]
+            ]
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step16ALine",
+    type: "line",
+    source: "step16ALine",
+    paint: {
+      "line-width": 3,
+      "line-color": "#b51f24",
+      "line-opacity": 0
+    }
+  });
+
+  map.addSource("step16BLine", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          // Maureen's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-73.2213584, 40.8075961],
+              [-73.373233, 40.62559]
+            ]
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step16BLine",
+    type: "line",
+    source: "step16BLine",
+    paint: {
+      "line-width": 3,
+      "line-color": "#b51f24",
+      "line-opacity": 0
+    }
+  });
+
+  map.addSource("step16CLine", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          // Maureen's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-73.3530307, 40.7228315],
+              [-73.377814, 40.624157]
+            ]
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step16CLine",
+    type: "line",
+    source: "step16CLine",
+    paint: {
+      "line-width": 3,
+      "line-color": "#b51f24",
+      "line-opacity": 0
+    }
+  });
+
+  map.addSource("step17", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.359936, 40.629753]
+          },
+          properties: {
+            title: "Jessica Taylor's remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step17",
+    type: "circle",
+    source: "step17",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step17Line", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          // Maureen's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-72.782624, 40.87809],
+              [-73.359936, 40.629753]
+            ]
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step17Line",
+    type: "line",
+    source: "step17Line",
+    paint: {
+      "line-width": 3,
+      "line-color": "#b51f24",
+      "line-opacity": 0
+    }
+  });
+
+  map.addSource("step18", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.334313, 40.63716]
+          },
+          properties: {
+            title: "Jane Doe No 6's final remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step18",
+    type: "circle",
+    source: "step18",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step18Line", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          // Maureen's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-72.823336, 40.862609],
+              [-73.334313, 40.63716]
+            ]
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step18Line",
+    type: "line",
+    source: "step18Line",
+    paint: {
+      "line-width": 3,
+      "line-color": "#b51f24",
+      "line-opacity": 0
+    }
+  });
+
+  map.addSource("step19", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.334077, 40.637266]
+          },
+          properties: {
+            title: "Jane Doe No 6's final remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step19",
+    type: "circle",
+    source: "step19",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step19Line", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          // Maureen's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-73.334077, 40.637266],
+              [-73.6473005, 40.6734285]
+            ]
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step19Line",
+    type: "line",
+    source: "step19Line",
+    paint: {
+      "line-width": 3,
+      "line-color": "#b51f24",
+      "line-opacity": 0
+    }
+  });
+
+  map.addSource("step20", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.369828, 40.626528]
+          },
+          properties: {
+            title: "Jane Doe No 6's final remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step20",
+    type: "circle",
+    source: "step20",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  // End
 });
