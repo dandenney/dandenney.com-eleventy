@@ -120,14 +120,14 @@ layout: layouts/post-custom.njk
         <p>She was found in a wooded area by a group of hunters and she was strangled, but reports don't state that the same level of violence was present as with Rita Tangredi.</p>
       </div>
     </li>
-    <li class="step" data-step="4">
+    <li class="step right" data-step="4">
       <div class="details">
         <img alt="Colleen McNamee" src="/img/posts/true-crime/working-title/colleen-mcnamee.jpg" width="220" />
         <h3>Colleen McNamee was last seen on January 5, 1994</h3>
         <p>She was getting into a small blue car at the Blue Dawn Diner.</p>
       </div>
     </li>
-    <li class="step" data-step="5">
+    <li class="step right" data-step="5">
       <div class="details">
         <h3>Colleen's remains were found on January 30, 1994</h3>
         <p>Similarly to Rita Tangredi, she was found in the woods. She, too, was beaten, strangled, and left in the same pose.</p>
@@ -245,6 +245,7 @@ layout: layouts/post-custom.njk
         <p>She was found in a marsh not far from where she had called 911. The findings of her autopsy have been debated, with the original ruling of "death by misadventure".</p>
       </div>
     </li>
+    <li class="step right" data-step="23"></li>
   </ol>
 </section>
 

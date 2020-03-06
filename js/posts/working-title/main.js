@@ -89,6 +89,7 @@ function handleStepEnter(response) {
     }
 
     if (response.index == 9) {
+      map.flyTo({ center: [-73.3530307, 40.7228315] });
       map.setPaintProperty("step09", "circle-radius", 4);
       map.setPaintProperty("step10", "circle-radius", 8);
       map.setPaintProperty("step11", "circle-radius", 0);
@@ -120,7 +121,7 @@ function handleStepEnter(response) {
     }
 
     if (response.index == 14) {
-      map.setPaintProperty("step15", "circle-radius", 4);
+      map.setPaintProperty("step14", "circle-radius", 4);
       map.setPaintProperty("step15", "circle-radius", 8);
       map.setPaintProperty("step15Line", "line-opacity", 0.35);
       map.setPaintProperty("step16A", "circle-radius", 0);
@@ -171,6 +172,21 @@ function handleStepEnter(response) {
     if (response.index == 19) {
       map.setPaintProperty("step19", "circle-radius", 4);
       map.setPaintProperty("step20", "circle-radius", 8);
+      map.setPaintProperty("step21", "circle-radius", 0);
+      map.setPaintProperty("step21Lines", "line-opacity", 0);
+    }
+
+    if (response.index == 20) {
+      map.setPaintProperty("step20", "circle-radius", 4);
+      map.setPaintProperty("step21", "circle-radius", 8);
+      map.setPaintProperty("step21Lines", "line-opacity", 0.35);
+      map.setPaintProperty("step22", "circle-radius", 0);
+    }
+
+    if (response.index == 21) {
+      map.setPaintProperty("step21", "circle-radius", 4);
+      map.setPaintProperty("step22", "circle-radius", 8);
+      map.setPaintProperty("step22Line", "line-opacity", 0.35);
     }
   }
 
@@ -213,13 +229,99 @@ mapboxgl.accessToken =
 const map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/light-v10",
-  center: [-73.3530307, 40.7228315],
+  center: [-72.9376117, 40.855779],
   zoom: 9
 });
 
 map.scrollZoom.disable();
 
 map.on("load", function() {
+  // Lines
+
+  map.addSource("step21Lines", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          // Jane Doe No. 7's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-73.009932, 40.682775],
+              [-73.449677, 40.606655]
+            ]
+          }
+        },
+        {
+          // Jane Doe No. 3's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-73.6473005, 40.6734285],
+              [-73.47802, 40.600857]
+            ]
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step21Lines",
+    type: "line",
+    source: "step21Lines",
+    paint: {
+      "line-width": 3,
+      "line-color": "#b51f24",
+      "line-opacity": 0
+    }
+  });
+
+  map.addSource("step22Line", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          // Jane Doe No. 7's line
+          type: "Feature",
+          properties: {
+            color: "#F7455D" // red
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [-73.2767838, 40.6384703],
+              [-73.271089, 40.639732]
+            ]
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step22Line",
+    type: "line",
+    source: "step22Line",
+    paint: {
+      "line-width": 3,
+      "line-color": "#b51f24",
+      "line-opacity": 0
+    }
+  });
+
+  // Dots
+
   map.addSource("step02", {
     type: "geojson",
     data: {
@@ -1124,7 +1226,7 @@ map.on("load", function() {
             coordinates: [-73.369828, 40.626528]
           },
           properties: {
-            title: "Jane Doe No 6's final remains"
+            title: "John Doe's final remains"
           }
         }
       ]
@@ -1135,6 +1237,78 @@ map.on("load", function() {
     id: "step20",
     type: "circle",
     source: "step20",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step21", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.449677, 40.606655]
+          },
+          properties: {
+            title: "Jane Doe No. 7's final remains"
+          }
+        },
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.47802, 40.600857]
+          },
+          properties: {
+            title: "Jane Doe No. 3's final remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step21",
+    type: "circle",
+    source: "step21",
+    paint: {
+      "circle-radius": 0,
+      "circle-color": "#b51f24",
+      "circle-stroke-color": "white",
+      "circle-stroke-width": 1
+    }
+  });
+
+  map.addSource("step22", {
+    type: "geojson",
+    data: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [-73.271089, 40.639732]
+          },
+          properties: {
+            title: "Shannan's final remains"
+          }
+        }
+      ]
+    }
+  });
+
+  map.addLayer({
+    id: "step22",
+    type: "circle",
+    source: "step22",
     paint: {
       "circle-radius": 0,
       "circle-color": "#b51f24",
