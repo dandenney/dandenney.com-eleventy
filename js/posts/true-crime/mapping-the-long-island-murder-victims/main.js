@@ -34,7 +34,7 @@ function handleStepEnter(response) {
     return i === response.index;
   });
 
-  if (map.isStyleLoaded) {
+  if (map.isStyleLoaded()) {
     if (response.index == 0) {
       map.setPaintProperty("step02", "circle-radius", 0);
     }
@@ -60,12 +60,13 @@ function handleStepEnter(response) {
     if (response.index == 4) {
       map.setPaintProperty("step04", "circle-radius", 6);
       map.setPaintProperty("step05", "circle-radius", 12);
-      map.setPaintProperty("step05Line", "line-opacity", 0.35);
+      map.setPaintProperty("step05Line", "line-opacity", 0.8);
       map.setPaintProperty("step06", "circle-radius", 0);
     }
 
     if (response.index == 5) {
       map.setPaintProperty("step05", "circle-radius", 6);
+      map.setPaintProperty("step05Line", "line-opacity", 0.35);
       map.setPaintProperty("step06", "circle-radius", 12);
       map.setPaintProperty("step07", "circle-radius", 0);
     }
@@ -123,7 +124,7 @@ function handleStepEnter(response) {
     if (response.index == 14) {
       map.setPaintProperty("step14", "circle-radius", 6);
       map.setPaintProperty("step15", "circle-radius", 12);
-      map.setPaintProperty("step15Line", "line-opacity", 0.35);
+      map.setPaintProperty("step15Line", "line-opacity", 0.8);
       map.setPaintProperty("step16A", "circle-radius", 0);
       map.setPaintProperty("step16B", "circle-radius", 0);
       map.setPaintProperty("step16C", "circle-radius", 0);
@@ -134,12 +135,13 @@ function handleStepEnter(response) {
 
     if (response.index == 15) {
       map.setPaintProperty("step15", "circle-radius", 6);
+      map.setPaintProperty("step15Line", "line-opacity", 0.35);
       map.setPaintProperty("step16A", "circle-radius", 12);
       map.setPaintProperty("step16B", "circle-radius", 12);
       map.setPaintProperty("step16C", "circle-radius", 12);
-      map.setPaintProperty("step16ALine", "line-opacity", 0.35);
-      map.setPaintProperty("step16BLine", "line-opacity", 0.35);
-      map.setPaintProperty("step16CLine", "line-opacity", 0.35);
+      map.setPaintProperty("step16ALine", "line-opacity", 0.8);
+      map.setPaintProperty("step16BLine", "line-opacity", 0.8);
+      map.setPaintProperty("step16CLine", "line-opacity", 0.8);
       map.setPaintProperty("step17", "circle-radius", 0);
       map.setPaintProperty("step17Line", "line-opacity", 0);
     }
@@ -148,28 +150,34 @@ function handleStepEnter(response) {
       map.setPaintProperty("step16A", "circle-radius", 6);
       map.setPaintProperty("step16B", "circle-radius", 6);
       map.setPaintProperty("step16C", "circle-radius", 6);
+      map.setPaintProperty("step16ALine", "line-opacity", 0.35);
+      map.setPaintProperty("step16BLine", "line-opacity", 0.35);
+      map.setPaintProperty("step16CLine", "line-opacity", 0.35);
       map.setPaintProperty("step17", "circle-radius", 12);
-      map.setPaintProperty("step17Line", "line-opacity", 0.35);
+      map.setPaintProperty("step17Line", "line-opacity", 0.8);
       map.setPaintProperty("step18", "circle-radius", 0);
       map.setPaintProperty("step18Line", "line-opacity", 0);
     }
 
     if (response.index == 17) {
+      map.setPaintProperty("step17Line", "line-opacity", 0.35);
       map.setPaintProperty("step17", "circle-radius", 6);
       map.setPaintProperty("step18", "circle-radius", 12);
-      map.setPaintProperty("step18Line", "line-opacity", 0.35);
+      map.setPaintProperty("step18Line", "line-opacity", 0.8);
       map.setPaintProperty("step19", "circle-radius", 0);
       map.setPaintProperty("step19Line", "line-opacity", 0);
     }
 
     if (response.index == 18) {
+      map.setPaintProperty("step18Line", "line-opacity", 0.35);
       map.setPaintProperty("step18", "circle-radius", 6);
       map.setPaintProperty("step19", "circle-radius", 12);
-      map.setPaintProperty("step19Line", "line-opacity", 0.35);
+      map.setPaintProperty("step19Line", "line-opacity", 0.8);
       map.setPaintProperty("step20", "circle-radius", 0);
     }
 
     if (response.index == 19) {
+      map.setPaintProperty("step19Line", "line-opacity", 0.35);
       map.setPaintProperty("step19", "circle-radius", 6);
       map.setPaintProperty("step20", "circle-radius", 12);
       map.setPaintProperty("step21", "circle-radius", 0);
@@ -179,18 +187,20 @@ function handleStepEnter(response) {
     if (response.index == 20) {
       map.setPaintProperty("step20", "circle-radius", 6);
       map.setPaintProperty("step21", "circle-radius", 12);
-      map.setPaintProperty("step21Lines", "line-opacity", 0.35);
+      map.setPaintProperty("step21Lines", "line-opacity", 0.8);
       map.setPaintProperty("step22", "circle-radius", 0);
     }
 
     if (response.index == 21) {
+      map.setPaintProperty("step21Lines", "line-opacity", 0.35);
       map.setPaintProperty("step21", "circle-radius", 6);
       map.setPaintProperty("step22", "circle-radius", 12);
-      map.setPaintProperty("step22Line", "line-opacity", 0.35);
+      map.setPaintProperty("step22Line", "line-opacity", 0.8);
       map.setPaintProperty("step23", "circle-radius", 0);
     }
 
     if (response.index == 22) {
+      map.setPaintProperty("step22Line", "line-opacity", 0.35);
       map.setPaintProperty("step22", "circle-radius", 6);
       map.setPaintProperty("step23", "circle-radius", 12);
       map.setPaintProperty("step24Lines", "line-opacity", 0);
@@ -201,10 +211,14 @@ function handleStepEnter(response) {
 
     if (response.index == 23) {
       map.setPaintProperty("step23", "circle-radius", 6);
-      map.setPaintProperty("step24Lines", "line-opacity", 0.35);
+      map.setPaintProperty("step24Lines", "line-opacity", 0.8);
       map.setPaintProperty("step02", "circle-color", "#059E3D");
       map.setPaintProperty("step04", "circle-color", "#059E3D");
       map.setPaintProperty("step05", "circle-color", "#059E3D");
+    }
+
+    if (response.index == 24) {
+      map.setPaintProperty("step24Lines", "line-opacity", 0.35);
     }
   }
 
