@@ -44,7 +44,7 @@ layout: layouts/post-custom.njk
   }
 
   .details {
-    max-width: 33.333%;
+    max-width: 468px;
   }
 
   .details img {
