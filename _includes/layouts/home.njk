@@ -18,7 +18,7 @@
 
         <p class="u-fs-h3 u-pt-1">Titles are weird, so basically I write <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> for a living. (And, for fun)</p>
 
-        <div class="home-header-nav-wrapper">        
+        <div class="home-header-nav-wrapper">
           <p>Some stuff on the site:</p>
           {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
           <ul class="site-nav">
@@ -52,13 +52,18 @@
 
     <!-- Google Analytics -->
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    var host = window.location.hostname;
+    if(host != "localhost")
+    {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-3589831-2', 'auto');
-    ga('send', 'pageview');
+      ga('create', 'UA-3589831-2', 'auto');
+      ga('send', 'pageview');
+    }
+
     </script>
     <!-- End Google Analytics -->
 
