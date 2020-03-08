@@ -309,8 +309,8 @@ If you have any information about these victims, please share on the [Gilgo News
 
 <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
 <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-<script src="/js/posts/working-title/stickyfill.min.js"></script>
-<script src="/js/posts/working-title/scrollama.min.js"></script>
+<script src="/js/posts/true-crime/mapping-the-long-island-murder-victims/stickyfill.min.js"></script>
+<script src="/js/posts/true-crime/mapping-the-long-island-murder-victims/scrollama.min.js"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
 <script src="/js/posts/true-crime/mapping-the-long-island-murder-victims/main.js"></script>
