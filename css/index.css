@@ -252,6 +252,10 @@ pre {
   margin-top: 1rem;
 }
 
+.u-pb-1 {
+  padding-bottom: 1rem;
+}
+
 .u-pt-05 {
   padding-top: 0.5rem;
 }
@@ -361,28 +365,63 @@ pre {
   margin-top: 2rem;
 }
 
+.home-postlist-item:first-child {
+  align-items: center;
+  background-image: url("/img/nijwam-swargiary-FPNnKfjcbNU-unsplash-resized.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 1rem;
+  position: relative;
+}
+
 .home-postlist-item:first-child::before {
-  background: linear-gradient(to right, #fc5c2f 0%, #ffae29 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   border-bottom: 4px double var(--accent);
   content: "That Latest Fire";
-  display: block;
   margin-bottom: 0.5rem;
   font-size: 0.888888889rem;
   font-weight: 700;
   padding-bottom: 0.25rem;
   text-transform: uppercase;
-  width: 140px;
+}
+
+.home-postlist-item:first-child .postlist-link,
+.home-postlist-item:first-child .postlist-tag {
+  background: linear-gradient(to right, #fc5c2f 0%, #f5d020 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home-postlist-item:first-child .postlist-link {
-  font-size: 32px;
+  font-size: 28px;
+}
+
+.home-postlist-item:first-child .postlist-link:active,
+.home-postlist-item:first-child .postlist-link:focus,
+.home-postlist-item:first-child .postlist-link:hover,
+.home-postlist-item:first-child .postlist-tag:active,
+.home-postlist-item:first-child .postlist-tag:focus,
+.home-postlist-item:first-child .postlist-tag:hover {
+  background: none;
+  color: #f5d020;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: #f5d020;
 }
 
 .home-postlist-item .postlist-meta {
   font-size: 1rem;
   margin-top: 0.5rem;
+}
+
+.home-postlist-item:first-child .postlist-meta::before {
+  content: "";
+  border-top: 1px solid var(--accent);
+  display: block;
+  margin: 1rem auto 0.5rem;
+  width: 140px;
 }
 
 @media screen and (min-width: 768px) {
@@ -399,7 +438,7 @@ pre {
   }
 
   .home-postlist-item:first-child .postlist-link {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .home-header-copy {
@@ -409,6 +448,7 @@ pre {
 
 @media screen and (min-width: 1000px) {
   .home-postlist {
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -418,6 +458,7 @@ pre {
 
   .home-postlist-item:first-child {
     grid-area: 1 / 1 / 2 / 3;
+    padding: 5rem 2rem;
   }
   .home-postlist-item:nth-child(2) {
     grid-area: 2 / 1 / 3 / 2;
@@ -427,7 +468,6 @@ pre {
     border-left: 4px double var(--accent);
     grid-area: 2 / 2 / 3 / 3;
     padding-left: 3rem;
-    padding-top: 2rem;
   }
 
   .home-postlist-item:first-child .postlist-link {
@@ -453,7 +493,7 @@ pre {
     border-left: 0;
     grid-area: 2 / 2 / 3 / 3;
     margin: 0 0 0 3rem;
-    padding: 2rem 0 0 0;
+    padding: 0;
   }
 }
 
