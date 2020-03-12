@@ -1,5 +1,7 @@
 ---
 path: "/posts/front-end-dev/prop-data-preferences"
+thumb: "/img/posts/front-end-dev/prop-data-preferences/thumb.jpg"
+thumb2x: "/img/posts/front-end-dev/prop-data-preferences/thumb@2x.jpg"
 title: Prop Data Preferences
 summary: What's the "best practice" for passing down data
 date: "2020-01-18"
