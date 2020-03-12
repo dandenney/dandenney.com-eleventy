@@ -2,14 +2,28 @@
 layout: layouts/home.njk
 ---
 
-<section class="home-posts">
+<section class="home-posts u-py-4">
 
   <h2 class="u-ta-c heading-accent">Recent Posts</h2>
+  <p class="u-ta-c">Your typical blog posts, albeit less well-written.</p>
 
   {% set postslist = collections.posts | head(-4) %}
   {% set postslistCounter = collections.posts | length %}
   {% include "homeposts.njk" %}
 
   <p class="u-pt-2 u-ta-c">For the rest, check out <a href="{{ '/posts/' | url }}">posts</a>.</p>
+
+</section>
+
+<section class="home-blips u-py-4">
+
+  <h2 class="u-ta-c heading-accent">Recent Blips</h2>
+  <p class="u-ta-c">Quick shares and reactions, mostly around front-end</h2>
+
+  {% set blipslist = collections.blips | head(-3) %}
+  {% set blipslistCounter = collections.blips | length %}
+  {% include "homeblips.njk" %}
+
+  <p class="u-pt-2 u-ta-c">For the rest, check out <a href="{{ '/blips/' | url }}">blips</a>.</p>
 
 </section>

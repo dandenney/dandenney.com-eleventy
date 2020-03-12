@@ -276,6 +276,11 @@ pre {
   padding-top: 2rem;
 }
 
+.u-py-4 {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
 .u-ta-c {
   text-align: center;
 }
@@ -352,12 +357,14 @@ pre {
 }
 
 .home-posts {
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media screen and (min-width: 375px) {
   .home-posts {
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .home-header-copy {
@@ -429,6 +436,25 @@ pre {
   position: relative;
 }
 
+/* Home Blips */
+
+.home-bliplist-item {
+  margin-top: 2rem;
+}
+
+.home-bliplist-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.home-bliplist-info .postlist-date {
+  margin-right: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .home-header {
     align-items: center;
@@ -480,6 +506,17 @@ pre {
 
   .home-postlist-item:nth-child(even) .home-postlist-thumb {
     justify-self: end;
+  }
+
+  .home-bliplist {
+    display: flex;
+  }
+
+  /* Home Blips */
+
+  .home-bliplist-item {
+    padding: 0 2rem;
+    width: 33.3333%;
   }
 }
 
