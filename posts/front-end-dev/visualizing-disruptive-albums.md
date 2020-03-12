@@ -1,5 +1,7 @@
 ---
 path: "/posts/front-end-dev/visualizing-disruptive-albums"
+thumb: "/img/posts/front-end-dev/visualizing-disruptive-albums/thumb.png"
+thumb2x: "/img/posts/front-end-dev/visualizing-disruptive-albums/thumb@2x.png"
 title: "Visualizing a Disruptive Album: beerbongs & bentleys"
 summary: Applying some of what I learned in Fullstack D3 to a passion project
 date: "2020-02-17"
