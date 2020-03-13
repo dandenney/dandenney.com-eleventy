@@ -53,6 +53,7 @@ body {
 ul[class],
 ol[class] {
   list-style: none;
+  padding: 0;
 }
 
 /* A elements that don't have a class get default styles */
@@ -256,6 +257,15 @@ pre {
   display: block;
 }
 
+.u-mh-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-mb-4 {
+  margin-bottom: 4rem;
+}
+
 .u-mt-1 {
   margin-top: 1rem;
 }
@@ -274,6 +284,15 @@ pre {
 
 .u-pt-2 {
   padding-top: 2rem;
+}
+
+.u-pt-4 {
+  padding-top: 4rem;
+}
+
+.u-px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .u-py-4 {
@@ -383,7 +402,7 @@ pre {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .home-postlist-thumb {
@@ -398,6 +417,7 @@ pre {
 }
 
 .home-postlist-thumb {
+  border-radius: 50%;
   width: 300px;
 }
 
@@ -439,7 +459,16 @@ pre {
 /* Home Blips */
 
 .home-bliplist-item {
-  margin-top: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.home-bliplist-item:not(:first-child)::before {
+  content: "";
+  display: block;
+  border-top: 1px solid var(--accent);
+  margin: 0 auto 2rem;
+  width: 140px;
 }
 
 .home-bliplist-info {
@@ -453,6 +482,66 @@ pre {
 
 .home-bliplist-info .postlist-date {
   margin-right: 1rem;
+}
+
+/* Home Roulettingale */
+
+.home-roulettingale {
+  background-color: #ecf1ec;
+}
+
+.home-roulettingale-meta {
+  margin: 0 auto 2rem;
+  max-width: 640px;
+}
+
+.home-roulettingale-btn {
+  background: #fee077;
+  border-radius: 2rem;
+  color: #4f5950;
+  display: inline-flex;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  padding: 0.5rem 2rem;
+  transition: transform 0.3s;
+}
+
+.home-roulettingale-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Home Beerbongs */
+
+.home-beerbongs {
+  background-color: #dfc309;
+  border: 1rem solid #ffffff;
+  color: #000000;
+  padding: 4rem 2rem;
+}
+
+.home-beerbongs-meta {
+  margin: 0 auto 2rem;
+  max-width: 640px;
+}
+
+.home-beerbongs h3 {
+  color: #000000;
+}
+
+.home-beerbongs-btn {
+  background: #ffffff;
+  box-shadow: 5px 5px 0 #000;
+  color: #000000;
+  display: inline-flex;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  padding: 0.5rem 2rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.home-beerbongs-btn:hover {
+  box-shadow: 15px 15px 0 #000;
+  transform: translate(-5px, -5px);
 }
 
 @media screen and (min-width: 768px) {
@@ -487,8 +576,12 @@ pre {
 }
 
 @media screen and (min-width: 1000px) {
+  .home-dan {
+    height: 400px;
+  }
+
   .home-postlist-info {
-    margin: 1rem;
+    margin: 3rem 1rem 1rem 1rem;
     max-width: 400px;
   }
 
@@ -502,6 +595,17 @@ pre {
 
   .home-postlist-item:nth-child(odd) .home-postlist-info {
     justify-self: end;
+    margin-right: 3rem;
+  }
+
+  .home-postlist-item:nth-child(2) .home-postlist-info,
+  .home-postlist-item:nth-child(4) .home-postlist-info {
+    margin: 0 1rem 3rem 3rem;
+  }
+
+  .home-postlist-item:nth-child(3),
+  .home-postlist-item:nth-child(4) {
+    margin-top: 6rem;
   }
 
   .home-postlist-item:nth-child(even) .home-postlist-thumb {
@@ -515,18 +619,54 @@ pre {
   /* Home Blips */
 
   .home-bliplist-item {
+    margin: 4rem 0;
     padding: 0 2rem;
+    position: relative;
     width: 33.3333%;
+  }
+
+  .home-bliplist-item:not(:first-child) {
+    border-left: 1px solid var(--accent);
+  }
+
+  .home-bliplist-item:not(:first-child)::before {
+    content: "";
+    display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .home-postlist {
-    padding-top: 2rem;
+  .home-dan {
+    height: 500px;
   }
 
   .home-postlist-thumb {
     width: 400px;
+  }
+
+  .home-roulettingale {
+    align-items: center;
+    display: flex;
+    padding: 4rem 2rem 0;
+  }
+
+  .home-roulettingale-meta {
+    margin: 4rem 0 0 0;
+    order: 1;
+    padding-left: 2rem;
+  }
+
+  .home-beerbongs {
+    align-items: center;
+    background-color: #dfc309;
+    display: flex;
+    padding: 8rem 2rem;
+  }
+
+  .home-beerbongs-meta {
+    margin: 0;
+    order: 1;
+    padding-left: 2rem;
   }
 }
 
