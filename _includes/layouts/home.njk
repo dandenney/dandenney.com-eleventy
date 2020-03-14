@@ -6,32 +6,17 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7537438/6246012/css/fonts.css" />
-    <link rel="stylesheet" href="{{ '/css/prism.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    {% set css %}
+      {% include "index.css" %}
+    {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
   <body>
 
-    <header class="home-header">
-      <div class="home-header-copy">
-        <h1>Hi! I'm Dan Denney and I'm a Front-end Engineer at <a href="https://www.datacamp.com/">DataCamp</a>.</h1>
-
-        <p class="u-fs-h3 u-pt-1">Titles are weird, so basically I write <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> for a living. (And, for fun)</p>
-
-        <div class="home-header-nav-wrapper">
-          <p>Some stuff on the site:</p>
-          {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-          <ul class="site-nav">
-            {%- for entry in collections.all | eleventyNavigation %}
-              <li class="site-nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-            {%- endfor %}
-          </ul>
-        </div>
-      </div>
-      <figure>
-        <img class="home-dan" alt="Illustration of Dan Denney by Ricardo Gimenes" src="/img/dan-masked.svg" />
-      </figure>
-    </header>
+    {% include "homeheader.njk" %}
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}

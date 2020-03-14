@@ -1,10 +1,20 @@
-<ol reversed class="home-bliplist" style="counter-reset: start-from {{ (blipslistCounter or blipslist.length) + 1 }}">
-{% for blip in blipslist | reverse %}
-  <li class="home-bliplist-item{% if blip.url == url %} home-postlist-item-active{% endif %}">
-    <div class="home-bliplist-info">
-      <time class="postlist-date" datetime="{{ blip.date | htmlDateString }}"><span class="home-postlist-month">{{ blip.date | postMonth }}</span><span class="home-postlist-day">{{ blip.date | postDay }}</span><span class="home-postlist-year">{{ blip.date | postYear }}</span></time>
-      <div class="home-postlist-meta"><a href="{{ blip.url | url }}" class="postlist-link">{% if blip.data.title %}{{ blip.data.title }}{% else %}<code>{{ blip.url }}</code>{% endif %}</a>{% if blip.data.summary %}<p>{{blip.data.summary}}</p></div>{% endif %}
-    </div>
-  </li>
-{% endfor %}
-</ol>
+{% set css %}
+  {% include "homeblips.css" %}
+{% endset %}
+<style>
+  {{ css | cssmin | safe }}
+</style>
+
+<section class="home-blips u-px-2 u-py-4">
+
+  <h2 class="u-ta-c heading-accent">Recent Blips</h2>
+  <p class="u-ta-c">Quick shares and reactions, mostly around front-end</h2>
+
+  {% set blipslist = collections.blips | head(-3) %}
+  {% set blipslistCounter = collections.blips | length %}
+  {% include "homebliplist.njk" %}
+
+  <p class="u-ta-c">For the rest, check out
+    <a href="{{ '/blips/' | url }}">blips</a>.</p>
+
+</section>

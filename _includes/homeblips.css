@@ -1,0 +1,49 @@
+/* Home Blips */
+
+.home-bliplist-item {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.home-bliplist-item:not(:first-child)::before {
+  content: "";
+  display: block;
+  border-top: 1px solid var(--accent);
+  margin: 0 auto 2rem;
+  width: 140px;
+}
+
+.home-bliplist-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.home-bliplist-info .postlist-date {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .home-bliplist {
+    display: flex;
+  }
+
+  .home-bliplist-item {
+    margin: 4rem 0;
+    padding: 0 2rem;
+    position: relative;
+    width: 33.3333%;
+  }
+
+  .home-bliplist-item:not(:first-child) {
+    border-left: 1px solid var(--accent);
+  }
+
+  .home-bliplist-item:not(:first-child)::before {
+    content: "";
+    display: none;
+  }
+}

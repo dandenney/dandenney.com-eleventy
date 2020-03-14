@@ -3,6 +3,13 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
+{% set css %}
+  {% include "prism.css" %}
+{% endset %}
+<style>
+  {{ css | cssmin | safe }}
+</style>
+
 <article>
   {{ content | safe }}
 </article>

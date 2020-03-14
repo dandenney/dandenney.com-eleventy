@@ -1,0 +1,10 @@
+<ol reversed class="home-bliplist" style="counter-reset: start-from {{ (blipslistCounter or blipslist.length) + 1 }}">
+{% for blip in blipslist | reverse %}
+  <li class="home-bliplist-item{% if blip.url == url %} home-postlist-item-active{% endif %}">
+    <div class="home-bliplist-info">
+      <time class="postlist-date" datetime="{{ blip.date | htmlDateString }}"><span class="postlist-month">{{ blip.date | postMonth }}</span><span class="postlist-day">{{ blip.date | postDay }}</span><span class="postlist-year">{{ blip.date | postYear }}</span></time>
+      <div class="home-postlist-meta"><a href="{{ blip.url | url }}" class="postlist-link">{% if blip.data.title %}{{ blip.data.title }}{% else %}<code>{{ blip.url }}</code>{% endif %}</a>{% if blip.data.summary %}<p>{{blip.data.summary}}</p></div>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ol>
