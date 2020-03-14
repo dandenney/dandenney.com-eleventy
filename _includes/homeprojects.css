@@ -1,0 +1,86 @@
+/* Roulettingale */
+
+.home-roulettingale {
+  background-color: #ecf1ec;
+}
+
+.home-roulettingale-meta {
+  margin: 0 auto 2rem;
+  max-width: 640px;
+}
+
+.home-roulettingale-btn {
+  background: #fee077;
+  border-radius: 2rem;
+  color: #4f5950;
+  display: inline-flex;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  padding: 0.5rem 2rem;
+  transition: transform 0.3s;
+}
+
+.home-roulettingale-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Beerbongs */
+
+.home-beerbongs {
+  background-color: #dfc309;
+  border: 1rem solid #ffffff;
+  color: #000000;
+  padding: 4rem 2rem;
+}
+
+.home-beerbongs-meta {
+  margin: 0 auto 2rem;
+  max-width: 640px;
+}
+
+.home-beerbongs h3 {
+  color: #000000;
+}
+
+.home-beerbongs-btn {
+  background: #ffffff;
+  box-shadow: 5px 5px 0 #000;
+  color: #000000;
+  display: inline-flex;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  padding: 0.5rem 2rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.home-beerbongs-btn:hover {
+  box-shadow: 15px 15px 0 #000;
+  transform: translate(-5px, -5px);
+}
+
+@media screen and (min-width: 1200px) {
+  .home-roulettingale {
+    align-items: center;
+    display: flex;
+    padding: 4rem 2rem 0;
+  }
+
+  .home-roulettingale-meta {
+    margin: 4rem 0 0 0;
+    order: 1;
+    padding-left: 2rem;
+  }
+
+  .home-beerbongs {
+    align-items: center;
+    background-color: #dfc309;
+    display: flex;
+    padding: 8rem 2rem;
+  }
+
+  .home-beerbongs-meta {
+    margin: 0;
+    order: 1;
+    padding-left: 2rem;
+  }
+}
