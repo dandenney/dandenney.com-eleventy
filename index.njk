@@ -1,57 +1,9 @@
 ---
 layout: layouts/home.njk
 ---
-<section class="home-posts u-px-2 u-py-4">
 
-  <h2 class="u-ta-c heading-accent">Recent Posts</h2>
-  <p class="u-ta-c">Your typical blog posts, albeit less well-written.</p>
+{% include "homeposts.njk" %}
 
-  {% set postslist = collections.posts | head(-4) %}
-  {% set postslistCounter = collections.posts | length %}
-  {% include "homeposts.njk" %}
+{% include "homeblips.njk" %}
 
-  <p class="u-pt-4 u-ta-c">For the rest, check out
-    <a href="{{ '/posts/' | url }}">posts</a>.</p>
-
-</section>
-
-<section class="home-blips u-px-2 u-py-4">
-
-  <h2 class="u-ta-c heading-accent">Recent Blips</h2>
-  <p class="u-ta-c">Quick shares and reactions, mostly around front-end</h2>
-
-  {% set blipslist = collections.blips | head(-3) %}
-  {% set blipslistCounter = collections.blips | length %}
-  {% include "homeblips.njk" %}
-
-  <p class="u-ta-c">For the rest, check out
-    <a href="{{ '/blips/' | url }}">blips</a>.</p>
-
-</section>
-
-<section class="home-projects u-pt-4">
-
-  <h2 class="u-ta-c heading-accent">Featured Projects</h2>
-  <p class="u-ta-c u-mb-4">Some of my fave things I've built.</p>
-
-  <article class="home-roulettingale u-px-2 u-pt-4">
-    <div class="home-roulettingale-meta">
-      <h3>Roulettingale v2</h3>
-      <p class="u-mt-1">If you apply the
-        <a href="https://en.wikipedia.org/wiki/Martingale_(betting_system)">Martingale betting system</a>
-        when playing roulette, there are only two ways you can lose: not having enough money to make the necessary bet or the casino let letting you bet enough. This project tracks a few thousand spins to show what values you could attempt this at in casinos.</p>
-      <a class="home-roulettingale-btn" href="/tinkerings/roulettingale-v2">Take a spin</a>
-    </div>
-    <img alt="Screenshot of roulette spin results" class="u-mh-auto" src="/img/home/roulettingale.png" srcset="/img/home/roulettingale.png 1x, /img/home/roulettingale@2x.png 2x" width="720"/>
-  </article>
-
-  <article class="home-beerbongs u-px-2 u-pt-4">
-    <div class="home-beerbongs-meta">
-      <h3>Visualizing beerbongs &amp; bentleys</h3>
-      <p class="u-mt-1">After learning D3, I took a crack at making a fun page to show off how much of an impact Post Malone's album had on the Spotify Charts.</p>
-      <a class="home-beerbongs-btn" href="/tinkerings/beerbongs-and-bentleys">Peep it</a>
-    </div>
-    <img alt="Screenshot of roulette spin results" class="u-mh-auto" src="/img/home/beerbongs-and-bentleys.png" srcset="/img/home/beerbongs-and-bentleys.png 1x, /img/home/beerbongs-and-bentleys@2x.png 2x" width="720"/>
-  </article>
-
-</section>
+{% include "homeprojects.njk" %}

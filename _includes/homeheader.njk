@@ -1,0 +1,27 @@
+{% set css %}
+  {% include "homeheader.css" %}
+{% endset %}
+<style>
+  {{ css | cssmin | safe }}
+</style>
+
+<header class="home-header">
+  <div class="home-header-copy">
+    <h1>Hi! I'm Dan Denney and I'm a Front-end Engineer at <a href="https://www.datacamp.com/">DataCamp</a>.</h1>
+
+    <p class="u-fs-h3 u-pt-1">Titles are weird, so basically I write <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> for a living. (And, for fun)</p>
+
+    <div class="home-header-nav-wrapper">
+      <p>Some stuff on the site:</p>
+      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+      <ul class="site-nav">
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="site-nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+  <figure>
+    <img class="home-dan" alt="Illustration of Dan Denney by Ricardo Gimenes" src="/img/dan-masked.svg" />
+  </figure>
+</header>

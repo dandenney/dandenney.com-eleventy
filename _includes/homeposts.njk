@@ -1,11 +1,20 @@
-<ol reversed class="home-postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
-{% for post in postslist | reverse %}
-  <li class="home-postlist-item{% if post.url == url %} home-postlist-item-active{% endif %}">
-    {% if post.data.thumb %}<img alt="{{post.data.title}}" class="home-postlist-thumb" src="{{post.data.thumb}}" srcset="{{post.data.thumb}} 1x, {{post.data.thumb2x}} 2x" />{% endif %}
-    <div class="home-postlist-info">
-      <time class="postlist-date" datetime="{{ post.date | htmlDateString }}"><span class="home-postlist-month">{{ post.date | postMonth }}</span><span class="home-postlist-day">{{ post.date | postDay }}</span><span class="home-postlist-year">{{ post.date | postYear }}</span></time>
-      <div class="home-postlist-meta"><a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>{% if post.data.summary %}<p>{{post.data.summary}}</p></div>{% endif %}
-    </div>
-  </li>
-{% endfor %}
-</ol>
+{% set css %}
+  {% include "homeposts.css" %}
+{% endset %}
+<style>
+  {{ css | cssmin | safe }}
+</style>
+
+<section class="home-posts u-px-2 u-py-4">
+
+  <h2 class="u-ta-c heading-accent">Recent Posts</h2>
+  <p class="u-ta-c">Your typical blog posts, albeit less well-written.</p>
+
+  {% set postslist = collections.posts | head(-4) %}
+  {% set postslistCounter = collections.posts | length %}
+  {% include "homepostlist.njk" %}
+
+  <p class="u-pt-4 u-ta-c">For the rest, check out
+    <a href="{{ '/posts/' | url }}">posts</a>.</p>
+
+</section>
