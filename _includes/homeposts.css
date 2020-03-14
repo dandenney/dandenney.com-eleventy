@@ -48,19 +48,6 @@
   padding: 0.5rem;
 }
 
-.home-postlist-day,
-.home-postlist-month,
-.home-postlist-year {
-  display: block;
-  font-weight: 700;
-  line-height: 1;
-  text-align: center;
-}
-
-.home-postlist-day {
-  font-size: 42px;
-}
-
 .home-postlist-intro {
   align-items: center;
   display: flex;

@@ -346,26 +346,53 @@ pre {
 }
 
 .postlist-item {
+  align-items: center;
+  display: flex;
   text-align: left;
 }
 
+.posts .postlist-item {
+  align-items: flex-start;
+}
+
 .postlist-item {
-  margin-top: 1rem;
+  margin-top: 3rem;
+}
+
+.postlist-day,
+.postlist-month,
+.postlist-year {
+  display: block;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.postlist-day {
+  font-size: 42px;
+}
+
+.postlist-meta {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
 }
 
 .postlist-link {
   font-size: 24px;
   font-weight: 700;
+  margin: -0.5rem 0 0.25rem;
+}
+
+.postlist-tag {
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 600px) {
   .postlist-link {
     font-size: 28px;
   }
-}
-
-.postlist-meta {
-  display: flex;
 }
 
 .postlist-section {
