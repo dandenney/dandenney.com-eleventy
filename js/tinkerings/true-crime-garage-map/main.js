@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "The Forgotten WM3 /// 386 /// 387",
+      Release: "3/31/2020",
+      URL: "https://truecrimegarage.com/home/blog/the-forgotten-wm3-386-387",
+      Earliest_Date: "5/5/1993",
+      Earliest_Year: "1993",
+      Notes: "Estimated area based on static maps"
+    },
+    geometry: {
+      coordinates: [-90.171837, 35.161179],
+      type: "Point"
+    },
+    id: "2cdf305d7850d0a38ae4815651e71226"
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Delphi Murders /// 110 & 111",
       Release: "5/31/2017",
       URL: "https://truecrimegarage.com/home/blog/delphi-murders-110-111",
