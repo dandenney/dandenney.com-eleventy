@@ -7,7 +7,7 @@ tags:
   - tinkerings
 ---
 
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7537438/6246012/css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7537438/6246012/css/fonts.css" media="print" onload="this.media='all'" />
 
 <style>
 html {
