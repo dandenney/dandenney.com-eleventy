@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Liko Kenney /// 388 /// 389",
+      Release: "4/7/2020",
+      URL: "https://www.truecrimegarage.com/home/blog/liko-kenney-388-389",
+      Earliest_Date: "1/26/2003",
+      Earliest_Year: "2003",
+      Notes: "General ares of Fox Hill Park"
+    },
+    geometry: {
+      coordinates: [-71.749355, 44.222889],
+      type: "Point"
+    },
+    id: "3f5085fc994a507f7d809f48bb9734f8"
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "The Forgotten WM3 /// 386 /// 387",
       Release: "3/31/2020",
       URL: "https://truecrimegarage.com/home/blog/the-forgotten-wm3-386-387",
