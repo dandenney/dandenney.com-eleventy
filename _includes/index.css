@@ -34,7 +34,7 @@ dd {
 /* Set core body defaults */
 body {
   color: var(--text);
-  font-family: "Sentinel A", "Sentinel B";
+  font-family: "Sentinel A", "Sentinel B", Palatino;
   font-size: 18px;
   min-height: 100vh;
   scroll-behavior: smooth;
