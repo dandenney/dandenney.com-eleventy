@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "McMartin Pre-School ////// 390",
+      Release: "4/14/2020",
+      URL: "https://truecrimegarage.com/home/blog/mcmartin-pre-school-390",
+      Earliest_Date: "9/8/1983",
+      Earliest_Year: "1983",
+      Notes: "900 block of Manhattan Beach Boulevard"
+    },
+    geometry: {
+      coordinates: [-118.402573, 33.88739],
+      type: "Point"
+    },
+    id: "b807ec450d8cc47e0651938cf7d27273"
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Liko Kenney /// 388 /// 389",
       Release: "4/7/2020",
       URL: "https://www.truecrimegarage.com/home/blog/liko-kenney-388-389",
