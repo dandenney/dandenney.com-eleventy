@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Jason Corbett /// 391 /// 392",
+      Release: "4/21/2020",
+      URL: "https://truecrimegarage.com/home/blog/jason-corbett-391-392",
+      Earliest_Date: "8/2/2015",
+      Earliest_Year: "2015",
+      Notes: "160 Panther Creek Court in the Meadowlands"
+    },
+    geometry: {
+      coordinates: [-80.16219, 35.9972],
+      type: "Point"
+    },
+    id: "af3080ae5c9f016f771744ce219e2bf2"
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "McMartin Pre-School ////// 390",
       Release: "4/14/2020",
       URL: "https://truecrimegarage.com/home/blog/mcmartin-pre-school-390",
