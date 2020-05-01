@@ -12,6 +12,23 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "The Evansdale Murders /// 393 /// 394",
+      Release: "4/28/2020",
+      URL:
+        "https://truecrimegarage.com/home/blog/the-evansdale-murders-393-394",
+      Earliest_Date: "7/13/2012",
+      Earliest_Year: "2012",
+      Notes: "Brovan Boulevard in Evansdale\n"
+    },
+    geometry: {
+      coordinates: [-92.293763, 42.475896],
+      type: "Point"
+    },
+    id: "75862dca6819e13d2e550a8ab843759c"
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Jason Corbett /// 391 /// 392",
       Release: "4/21/2020",
       URL: "https://truecrimegarage.com/home/blog/jason-corbett-391-392",
