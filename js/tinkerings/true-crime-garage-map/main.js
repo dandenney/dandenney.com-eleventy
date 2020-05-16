@@ -12,6 +12,40 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Taylor Behl /// 396 /// 397",
+      Release: "5/12/2020",
+      URL: "https://truecrimegarage.com/home/blog/taylor-behl-396-397",
+      Earliest_Date: "9/5/2005",
+      Earliest_Year: "2005",
+      Notes: "Gladding Residence Center, VCU 711 W Main St, Richmond, VA 23220"
+    },
+    geometry: {
+      coordinates: [-77.45098, 37.54547],
+      type: "Point"
+    },
+    id: "8269d616f91014641350cf9b3a987b57"
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Delphi Murders Discussion ////// 395",
+      Release: "5/5/2020",
+      URL:
+        "https://truecrimegarage.com/home/blog/delphi-murders-discussion-395",
+      Earliest_Date: "2/13/2017",
+      Earliest_Year: "2017",
+      Notes:
+        "Coordinates according to https://tools.wmflabs.org/geohack/geohack.php?pagename=Murders_of_Abigail_Williams_and_Liberty_German&params=40_35_20.7_N_86_38_34.2_W_type:landmark"
+    },
+    geometry: {
+      coordinates: [-86.642833, 40.589083],
+      type: "Point"
+    },
+    id: "d9f03c69471d0e67def7bf245fb20897"
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "The Evansdale Murders /// 393 /// 394",
       Release: "4/28/2020",
       URL:
