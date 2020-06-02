@@ -12,6 +12,39 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Ahmaud Arbery /// 400 /// 401",
+      Release: "5/26/2020",
+      URL: "https://truecrimegarage.com/home/blog/ahmaud-arbery-400-401",
+      Earliest_Date: "2/23/2020",
+      Earliest_Year: "2020",
+      Notes: "419 Holmes Rd\nBrunswick, Georgia"
+    },
+    geometry: {
+      coordinates: [-81.55572, 31.12425],
+      type: "Point"
+    },
+    id: "5433160d7ac4effb559fe312ae9abe2a"
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "The Casanova Killer /// 398 /// 399",
+      Release: "5/19/2020",
+      URL: "https://truecrimegarage.com/home/blog/the-casanova-killer-398-399",
+      Earliest_Date: "7/26/1974",
+      Earliest_Year: "1974",
+      Notes:
+        "John E. Goode Pre-trial Detention Facility 500 E Adams St, Jacksonville, FL 32202 (couldn't find an address for Alice Curtis)"
+    },
+    geometry: {
+      coordinates: [-81.6513, 30.32596],
+      type: "Point"
+    },
+    id: "c37db324144195ab513f2c05af53528c"
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Taylor Behl /// 396 /// 397",
       Release: "5/12/2020",
       URL: "https://truecrimegarage.com/home/blog/taylor-behl-396-397",
