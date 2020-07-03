@@ -34,7 +34,7 @@ dd {
 /* Set core body defaults */
 body {
   color: var(--text);
-  font-family: "Sentinel A", "Sentinel B", Palatino;
+  font-family: "Sentinel A", "Sentinel B", Georgia;
   font-size: 18px;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -253,8 +253,32 @@ pre {
   margin-top: 1rem;
 }
 
+.u-ai-c {
+  align-items: center;
+}
+
+.u-b-t {
+  border-top: 1px solid var(--accent);
+}
+
 .u-d-b {
   display: block;
+}
+
+.u-d-f {
+  display: flex;
+}
+
+.u-fd-c {
+  flex-direction: column;
+}
+
+.u-fs-1 {
+  font-size: 1rem;
+}
+
+.u-jc-fe {
+  justify-content: flex-end;
 }
 
 .u-mh-auto {
@@ -272,6 +296,18 @@ pre {
 
 .u-pb-1 {
   padding-bottom: 1rem;
+}
+
+.u-pl-1 {
+  padding-left: 1rem;
+}
+
+.u-pr-1 {
+  padding-right: 1rem;
+}
+
+.u-pr-2 {
+  padding-right: 2rem;
 }
 
 .u-pt-05 {
@@ -302,6 +338,10 @@ pre {
 
 .u-ta-c {
   text-align: center;
+}
+
+.u-w-100pc {
+  width: 100%;
 }
 
 @media screen and (min-width: 660px) {

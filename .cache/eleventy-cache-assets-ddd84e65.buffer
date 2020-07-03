@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[c3xInturTyKStoXBHjcStg]]></key>
+    <method><![CDATA[review_list]]></method>
+  </Request>
+  
+  <shelf exclusive='true' id='10505313' name='read' sortable='false'></shelf>
+
+<reviews start="1" end="5" total="145">
+    <review>
+  <id>3406180726</id>
+    <book>
+  <id type="integer">37538508</id>
+  <isbn nil="true"/>
+  <isbn13 nil="true"/>
+  <text_reviews_count type="integer">25</text_reviews_count>
+  <uri>kca://book/amzn1.gr.book.v1.GaF6_pKsa6DPCEqUS_u3nA</uri>
+  <title>The Coveted Girls (Suburban Murder #3)</title>
+  <title_without_series>The Coveted Girls</title_without_series>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/37538508-the-coveted-girls</link>
+  <num_pages></num_pages>
+  <format></format>
+  <edition_information/>
+  <publisher></publisher>
+  <publication_day></publication_day>
+  <publication_year></publication_year>
+  <publication_month></publication_month>
+  <average_rating>4.39</average_rating>
+  <ratings_count>313</ratings_count>
+  <description>In the magnificent, sought after Hamptons a young au pair has vanished. When she shows up savagely raped and murdered, in the Bronx, top SVU detective Bella de Franco is called to the scene and ordered to find her killer. She enters the life this young woman led, from the sleazy NYC nanny agency whose owner runs a sex ring, to the wealthy families who employ these girls, both in the city and at the beach, and finds a world whose physical beauty masks a twisted existence. &lt;br /&gt; &lt;br /&gt;Bella is no longer a stranger to places where privilege and money hide secrets. She and her new partner, Mack, have just solved two murders in towns inhabited with the one percent. But in this fabled playground of the rich, where thirty million dollar homes hide behind electric wrought iron gates and hand cut hedges, Bella encounters a culture sharper, and more shocking, than anything she has seen before. Husbands with power and influence, revered for their money and status, do whatever they want. Wives, fixtures for a public image, look the other way, as long as the perks keep coming. Friends, who love the lifestyle, keep friends secrets. Even the kids, who once knew better, remain quiet in the face of it all. &lt;br /&gt; &lt;br /&gt;Bella works tirelessly to uncover the truth about the high paid escorts, phony marriages, and broken families that littered the life of her victim, and to find who it was who needed the young girl out of the way. But she doesn’t expect the answer she gets, one that leads her to question all she thought she knew…</description>
+<authors>
+<author>
+<id>9835153</id>
+<name>Alexa Steele</name>
+<role></role>
+<image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png]]>
+</image_url>
+<small_image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/9835153.Alexa_Steele]]></link>
+<average_rating>3.90</average_rating>
+<ratings_count>10713</ratings_count>
+<text_reviews_count>750</text_reviews_count>
+</author>
+</authors>
+  <published></published>
+<work>  <id>59139898</id>
+  <uri>kca://work/amzn1.gr.work.v1.5nl-4BFCYCnuvD0N0yG1_Q</uri>
+</work></book>
+
+
+  <rating>3</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+  
+
+<shelves>
+    <shelf name="read" exclusive="true" id="10505313" review_shelf_id= ""/>
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at>Mon Jun 22 19:49:30 -0700 2020</started_at>
+  <read_at>Sun Jun 28 20:26:13 -0700 2020</read_at>
+  <date_added>Mon Jun 22 19:49:30 -0700 2020</date_added>
+  <date_updated>Sun Jun 28 20:26:13 -0700 2020</date_updated>
+  <read_count>1</read_count>
+  <body>
+  </body>
+
+  
+
+  <comments_count>0</comments_count>
+    <url><![CDATA[https://www.goodreads.com/review/show/3406180726]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/3406180726]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>3387956187</id>
+    <book>
+  <id type="integer">23516078</id>
+  <isbn nil="true"/>
+  <isbn13 nil="true"/>
+  <text_reviews_count type="integer">615</text_reviews_count>
+  <uri>kca://book/amzn1.gr.book.v1.mqXOdBN16uXIOw2rpcKfOQ</uri>
+  <title>The Forgotten Girls (Suburban Murder, #1)</title>
+  <title_without_series>The Forgotten Girls</title_without_series>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/23516078-the-forgotten-girls</link>
+  <num_pages></num_pages>
+  <format></format>
+  <edition_information/>
+  <publisher>Amazon Digital Services</publisher>
+  <publication_day></publication_day>
+  <publication_year></publication_year>
+  <publication_month></publication_month>
+  <average_rating>3.84</average_rating>
+  <ratings_count>8558</ratings_count>
+  <description></description>
+<authors>
+<author>
+<id>9835153</id>
+<name>Alexa Steele</name>
+<role></role>
+<image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png]]>
+</image_url>
+<small_image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/9835153.Alexa_Steele]]></link>
+<average_rating>3.90</average_rating>
+<ratings_count>10713</ratings_count>
+<text_reviews_count>750</text_reviews_count>
+</author>
+</authors>
+  <published></published>
+<work>  <id>43119185</id>
+  <uri>kca://work/amzn1.gr.work.v1.bsbKfaB337iNJM_JDz-8rA</uri>
+</work></book>
+
+
+  <rating>4</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+  
+
+<shelves>
+    <shelf name="read" exclusive="true" id="10505313" review_shelf_id= ""/>
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at>Fri Jun 12 05:39:39 -0700 2020</started_at>
+  <read_at>Sun Jun 21 20:22:15 -0700 2020</read_at>
+  <date_added>Fri Jun 12 05:39:39 -0700 2020</date_added>
+  <date_updated>Sun Jun 21 20:22:15 -0700 2020</date_updated>
+  <read_count>1</read_count>
+  <body>
+  </body>
+
+  
+
+  <comments_count>0</comments_count>
+    <url><![CDATA[https://www.goodreads.com/review/show/3387956187]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/3387956187]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>3373342019</id>
+    <book>
+  <id type="integer">26877353</id>
+  <isbn nil="true"/>
+  <isbn13 nil="true"/>
+  <text_reviews_count type="integer">106</text_reviews_count>
+  <uri>kca://book/amzn1.gr.book.v1.GHtG3ozm1bZnhd_ik2CfFA</uri>
+  <title>The Lost Girls: A Bella DeFranco Mystery (Suburban Murder, #2)</title>
+  <title_without_series>The Lost Girls: A Bella DeFranco Mystery</title_without_series>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/26877353-the-lost-girls</link>
+  <num_pages></num_pages>
+  <format></format>
+  <edition_information/>
+  <publisher></publisher>
+  <publication_day></publication_day>
+  <publication_year></publication_year>
+  <publication_month></publication_month>
+  <average_rating>4.11</average_rating>
+  <ratings_count>1827</ratings_count>
+  <description>THE LOST GIRLS is book #2 in the #1 bestselling Suburban Murder series, which begins with THE FORGOTTEN GIRLS, book #1 (a free download)! &lt;br /&gt; &lt;br /&gt;The brutally beaten body of a young girl is discovered in a marsh in Jamesport, one of New York’s most elite suburbs. Police comb the area, while many speculate her murder might be connected to the abduction, six months earlier, of three girls from Jamesport. The FBI has evidence of an underage prostitution and trafficking ring which may be related. &lt;br /&gt; &lt;br /&gt;At the request of the FBI, Billy Dee, captain of the Ninth Precinct in the Bronx, head of its Sex Crimes Unit, sends two of his most seasoned detectives to Jamesport to conduct their own investigation: Bella de Franco and Jimmy “Mack” Menendez. They are sent north, back into the land of the beautiful. &lt;br /&gt; &lt;br /&gt;Between local politics, fractured families, a heroin epidemic and a dark secret that the wealthy town strives to keep hidden, the unspeakably dark and twisted reality lurking behind Jamesport life is uncovered. As they learn that everything is not what it seems in this wealthy suburb, Bella and Mack must race against the clock to save one last girl before she is sold across state lines, where she will vanish forever. &lt;br /&gt; &lt;br /&gt;Book #3 in the Suburban Murder series will be released soon!</description>
+<authors>
+<author>
+<id>9835153</id>
+<name>Alexa Steele</name>
+<role></role>
+<image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png]]>
+</image_url>
+<small_image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/9835153.Alexa_Steele]]></link>
+<average_rating>3.90</average_rating>
+<ratings_count>10713</ratings_count>
+<text_reviews_count>750</text_reviews_count>
+</author>
+</authors>
+  <published></published>
+<work>  <id>46922628</id>
+  <uri>kca://work/amzn1.gr.work.v1.IvtbPIIo9gLS9Feglf-P0g</uri>
+</work></book>
+
+
+  <rating>4</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+  
+
+<shelves>
+    <shelf name="read" exclusive="true" id="10505313" review_shelf_id= ""/>
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at>Wed Jun 03 20:03:25 -0700 2020</started_at>
+  <read_at>Fri Jun 12 05:56:28 -0700 2020</read_at>
+  <date_added>Wed Jun 03 20:03:25 -0700 2020</date_added>
+  <date_updated>Fri Jun 12 05:56:28 -0700 2020</date_updated>
+  <read_count>1</read_count>
+  <body>
+  </body>
+
+  
+
+  <comments_count>0</comments_count>
+    <url><![CDATA[https://www.goodreads.com/review/show/3373342019]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/3373342019]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>3369671786</id>
+    <book>
+  <id type="integer">6098657</id>
+  <isbn nil="true"/>
+  <isbn13 nil="true"/>
+  <text_reviews_count type="integer">149</text_reviews_count>
+  <uri>kca://book/amzn1.gr.book.v1.YYNbhGpX6isKT6owH8XH9g</uri>
+  <title>Red Dragon (Hannibal Lecter, #1)</title>
+  <title_without_series>Red Dragon</title_without_series>
+  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+  <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/6098657-red-dragon</link>
+  <num_pages>464</num_pages>
+  <format></format>
+  <edition_information>Reprint edition </edition_information>
+  <publisher>Berkley</publisher>
+  <publication_day>24</publication_day>
+  <publication_year>2008</publication_year>
+  <publication_month>12</publication_month>
+  <average_rating>4.03</average_rating>
+  <ratings_count>263854</ratings_count>
+  <description>An alternate cover edition of this ISBN can be found &lt;a href="https://www.goodreads.com/book/show/17947473-red-dragon" rel="nofollow"&gt;here&lt;/a&gt; and &lt;a href="https://www.goodreads.com/book/show/17945654-red-dragon" rel="nofollow"&gt;here&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;In the realm of psychological suspense, Thomas Harris stands alone. Exploring both the nature of human evil and the nerve-racking anatomy of a forensic investigation, Harris unleashes a frightening vision of the dark side of our well-lighted world. In this extraordinary novel, which preceded &lt;i&gt;The Silence of the Lambs and Hannibal&lt;/i&gt;, Harris introduced the unforgettable character Dr. Hannibal Lecter. And in it, Will Graham --- the FBI man who hunted Lecter down --- risks his sanity and his life to duel a killer called the ... RED DRAGON</description>
+<authors>
+<author>
+<id>12455</id>
+<name>Thomas  Harris</name>
+<role></role>
+<image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/m_200x266-d279b33f8eec0f27b7272477f09806be.png]]>
+</image_url>
+<small_image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/m_50x66-82093808bca726cb3249a493fbd3bd0f.png]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/12455.Thomas_Harris]]></link>
+<average_rating>4.06</average_rating>
+<ratings_count>854395</ratings_count>
+<text_reviews_count>16676</text_reviews_count>
+</author>
+</authors>
+  <published>2008</published>
+<work>  <id>925503</id>
+  <uri>kca://work/amzn1.gr.work.v1.WtyXu8zvIjduSuVvFU0Zjg</uri>
+</work></book>
+
+
+  <rating>5</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+  
+
+<shelves>
+    <shelf name="read" exclusive="true" id="10505313" review_shelf_id= ""/>
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at></started_at>
+  <read_at>Mon Jun 01 21:03:40 -0700 2020</read_at>
+  <date_added>Mon Jun 01 21:03:40 -0700 2020</date_added>
+  <date_updated>Mon Jun 01 21:03:41 -0700 2020</date_updated>
+  <read_count>1</read_count>
+  <body>
+      <![CDATA[<strong>Finally!</strong><br /><br />I've meant to read this forever and it ties many things together from the movies and the show. I could hardly put it down]]>
+  </body>
+
+  
+
+  <comments_count>0</comments_count>
+    <url><![CDATA[https://www.goodreads.com/review/show/3369671786]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/3369671786]]></link>
+    <owned>0</owned>
+</review>
+
+    <review>
+  <id>3340606807</id>
+    <book>
+  <id type="integer">40173806</id>
+  <isbn nil="true"/>
+  <isbn13 nil="true"/>
+  <text_reviews_count type="integer">589</text_reviews_count>
+  <uri>kca://book/amzn1.gr.book.v1.jzzF6_N6Y_aahIjubqPDwA</uri>
+  <title>The Vanishing Season (The Collector, #4)</title>
+  <title_without_series>The Vanishing Season</title_without_series>
+  <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542060712l/40173806._SX98_.jpg</image_url>
+  <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542060712l/40173806._SY75_.jpg</small_image_url>
+  <large_image_url/>
+  <link>https://www.goodreads.com/book/show/40173806-the-vanishing-season</link>
+  <num_pages>317</num_pages>
+  <format></format>
+  <edition_information/>
+  <publisher></publisher>
+  <publication_day></publication_day>
+  <publication_year></publication_year>
+  <publication_month></publication_month>
+  <average_rating>4.21</average_rating>
+  <ratings_count>6922</ratings_count>
+  <description>A recent abduction becomes an unexpected link to a decades-long spree of unspeakable crimes.&lt;br /&gt;&lt;br /&gt;Eight-year-old Brooklyn Mercer has gone missing. And as accustomed as FBI agents Eliza Sterling and Brandon Eddison are to such harrowing cases, this one has struck a nerve. It marks the anniversary of the disappearance of Eddison’s own little sister. Disturbing, too, is the girl’s resemblance to Eliza—so uncanny they could be mother and daughter.&lt;p&gt;With Eddison’s unsettled past rising again with rage and pain, Eliza is determined to solve this case at any cost. But the closer she looks, the more reluctant she is to divulge to her increasingly shaken partner what she finds. Brooklyn isn’t the only girl of her exact description to go missing. She’s just the latest in a frightening pattern going back decades in cities throughout the entire country.&lt;/p&gt;&lt;p&gt;In a race against time, Eliza’s determined to bring Brooklyn home and somehow find the link to the cold case that has haunted Eddison—and the entire Crimes Against Children team—since its inception.&lt;/p&gt;</description>
+<authors>
+<author>
+<id>5805694</id>
+<name>Dot Hutchison</name>
+<role></role>
+<image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/f_200x266-3061b784cc8e7f021c6430c9aba94587.png]]>
+</image_url>
+<small_image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/f_50x66-6a03a5c12233c941481992b82eea8d23.png]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/5805694.Dot_Hutchison]]></link>
+<average_rating>4.06</average_rating>
+<ratings_count>161102</ratings_count>
+<text_reviews_count>14599</text_reviews_count>
+</author>
+</authors>
+  <published></published>
+<work>  <id>62323493</id>
+  <uri>kca://work/amzn1.gr.work.v1.7j0wqAleormYQjNLulxEZQ</uri>
+</work></book>
+
+
+  <rating>4</rating>
+  <votes>0</votes>
+  <spoiler_flag>false</spoiler_flag>
+  <spoilers_state>none</spoilers_state>
+  
+
+<shelves>
+    <shelf name="read" exclusive="true" id="10505313" review_shelf_id= ""/>
+
+</shelves>
+
+  <recommended_for></recommended_for>
+  <recommended_by></recommended_by>
+  <started_at>Sat May 16 20:08:19 -0700 2020</started_at>
+  <read_at>Sat May 23 17:43:03 -0700 2020</read_at>
+  <date_added>Sat May 16 20:08:19 -0700 2020</date_added>
+  <date_updated>Sat May 23 17:47:02 -0700 2020</date_updated>
+  <read_count>1</read_count>
+  <body>
+      <![CDATA[<strong>Familiar characters but a new vibe</strong><br /><br />I feel like I know this group of characters, but this one took it to a new level. I couldn't put it down but this one was more heart-wrenchimg than suspenseful.]]>
+  </body>
+
+  
+
+  <comments_count>0</comments_count>
+    <url><![CDATA[https://www.goodreads.com/review/show/3340606807]]></url>
+  <link><![CDATA[https://www.goodreads.com/review/show/3340606807]]></link>
+    <owned>0</owned>
+</review>
+
+</reviews>
+
+</GoodreadsResponse>

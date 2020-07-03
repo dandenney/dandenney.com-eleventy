@@ -1,0 +1,64 @@
+<style>
+  .goodreads {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(/img/goodreads/lightpaperfibers_@2X.png);
+    background-size: 250px 250px;
+  }
+
+  .goodreads-section {
+    width: calc(50% - 80px);
+  }
+
+  @media screen and (min-width: 768px) {
+    .custom-fs-2-5 {
+      font-size: 2.5rem;
+    }
+
+    .custom-mh-vh-70 {
+      min-height: 70vh;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .custom-fs-2 {
+      font-size: 2rem;
+    }
+
+    .custom-mh-vh-70 {
+      min-height: 70vh;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .custom-mw-80 {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80%;
+    }
+  }
+</style>
+
+{% if goodreads.length %}
+  <ol class="goodreads">
+    {% for goodread in goodreads %}
+      <li class="custom-mh-vh-70 u-ai-c u-d-f u-px-2 u-py-4">
+        <figure class="u-w-100pc">
+          <div class="u-ai-c u-d-f">
+            <div class="goodreads-section u-d-f u-jc-fe u-pr-2">
+              <time class="postlist-date" datetime="{% if goodread.dateFinished != 'Invalid Date' %}{{ goodread.dateFinished | htmlDateString }}{% else %}{{ goodread.dateStarted | htmlDateString }}{% endif %}"><span class="postlist-month">{% if goodread.dateFinished != 'Invalid Date' %}{{ goodread.dateFinished | postMonth }}{% else %}{{ goodread.dateStarted | postMonth }}{% endif %}</span><span class="postlist-day">{% if goodread.dateFinished != 'Invalid Date' %}{{ goodread.dateFinished | postDay }}{% else %}{{ goodread.dateStarted | postDay }}{% endif %}</span><span class="postlist-year">{% if goodread.dateFinished != 'Invalid Date' %}{{ goodread.dateFinished | postYear }}{% else %}{{ goodread.dateStarted | postYear }}{% endif %}</span></time>
+            </div>
+
+            <img alt="Cover of {{ goodread.title }} by {{ goodread.author }}" loading="lazy" src="/img/goodreads/{{ goodread.sluggify }}.jpg" srcSet="/img/goodreads/{{ goodread.sluggify }}.jpg 1x, /img/goodreads/{{ goodread.sluggify }}@2x.jpg 2x" width="160" />
+
+            <div class="goodreads-section u-pl-1 custom-fs-2">{% for i in range(0, goodread.rating) -%}🍺{%- endfor %}</div>
+          </div>
+          <figcaption class="custom-mw-80 u-d-f u-ai-c u-fd-c u-pt-1 u-ta-c">
+            <h3 class="title custom-fs-2-5">{{goodread.title}}</h3>
+            <p class="u-b-t u-mt-1 u-pt-1">Written by {{ goodread.author }}</p>
+          </figcaption>
+        </figure>
+      </li>
+    {% endfor %}
+  </ol>
+{% endif %}
+
