@@ -1,12 +1,60 @@
 <style>
   .goodreads {
-    background-color: rgba(0, 0, 0, 0.3);
-    background-image: url(/img/goodreads/lightpaperfibers_@2X.png);
-    background-size: 250px 250px;
+    background-image: url(/img/goodreads/light-sand-72dpi-rgb.jpg);
+    background-size: 512px 512px;
   }
 
   .goodreads-section {
     width: calc(50% - 80px);
+  }
+
+  {# .image {
+    border: 0.75rem solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 1px 3px #c6a984;
+  } #}
+
+  .poster {
+    width: 190px;
+    padding: 15px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    -webkit-filter: saturate(70%) contrast(85%);
+            filter: saturate(70%) contrast(85%);
+  }
+
+  .poster img {
+    width: 100%;
+    display: block;
+    z-index: 1;
+  }
+  
+  .poster:before,
+  .poster:after {
+    content: '';
+    width: 100%;
+    left: 0;
+    position: absolute;
+  }
+
+  .poster:before {
+    height: 4%;
+    bottom: -4%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(177deg, rgba(0,0,0,0.22) 10%, transparent 50%), linear-gradient(-177deg, rgba(0,0,0,0.22) 10%, transparent 50%);
+    background-size: 49% 100%;
+    background-position: 2% 0, 98% 0;
+  }
+  
+  .poster:after {
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.1) 0.5%, rgba(0,0,0,0.15) 1.2%, transparent 1.2%), linear-gradient(to bottom, rgba(255,255,255,0.1) 0.5%, rgba(0,0,0,0.15) 1.2%, transparent 1.2%), linear-gradient(to bottom, rgba(255,255,255,0.1) 0.5%, rgba(0,0,0,0.15) 1.2%, transparent 1.2%), linear-gradient(265deg, rgba(0,0,0,0.2), transparent 10%), linear-gradient(5deg, rgba(0,0,0,0.2), transparent 15%), linear-gradient(-5deg, rgba(0,0,0,0.1), transparent 10%), linear-gradient(5deg, rgba(0,0,0,0.1), transparent 10%), linear-gradient(-265deg, rgba(0,0,0,0.2), transparent 10%), linear-gradient(-5deg, rgba(0,0,0,0.2), transparent 15%), linear-gradient(266deg, rgba(0,0,0,0.2), transparent 10%);
+    background-size: 50% 100%, 100% 33.3333%, 100% 33.3333%, 50% 33.3333%, 50% 33.3333%, 50% 33.3333%, 50% 33.3333%, 50% 33.3333%, 50% 33.3333%, 50% 33.3333%;
+    background-position: right top, left center, left bottom, left top, left top, right top, left center, right center, right center, left bottom;
   }
 
   @media screen and (min-width: 768px) {
@@ -48,7 +96,9 @@
               <time class="postlist-date" datetime="{% if goodread.dateFinished != 'Invalid Date' %}{{ goodread.dateFinished | htmlDateString }}{% else %}{{ goodread.dateStarted | htmlDateString }}{% endif %}"><span class="postlist-month">{% if goodread.dateFinished != 'Invalid Date' %}{{ goodread.dateFinished | postMonth }}{% else %}{{ goodread.dateStarted | postMonth }}{% endif %}</span><span class="postlist-day">{% if goodread.dateFinished != 'Invalid Date' %}{{ goodread.dateFinished | postDay }}{% else %}{{ goodread.dateStarted | postDay }}{% endif %}</span><span class="postlist-year">{% if goodread.dateFinished != 'Invalid Date' %}{{ goodread.dateFinished | postYear }}{% else %}{{ goodread.dateStarted | postYear }}{% endif %}</span></time>
             </div>
 
-            <img alt="Cover of {{ goodread.title }} by {{ goodread.author }}" loading="lazy" src="/img/goodreads/{{ goodread.sluggify }}.jpg" srcSet="/img/goodreads/{{ goodread.sluggify }}.jpg 1x, /img/goodreads/{{ goodread.sluggify }}@2x.jpg 2x" width="160" />
+            <div class="poster">
+              <img alt="Cover of {{ goodread.title }} by {{ goodread.author }}"  loading="lazy" src="/img/goodreads/{{ goodread.sluggify }}.jpg" srcSet="/img/goodreads/{{ goodread.sluggify }}.jpg 1x, /img/goodreads/{{ goodread.sluggify }}@2x.jpg 2x" width="160" />
+            </div>
 
             <div class="goodreads-section u-pl-1 custom-fs-2">{% for i in range(0, goodread.rating) -%}🍺{%- endfor %}</div>
           </div>
