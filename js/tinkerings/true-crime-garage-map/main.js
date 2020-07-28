@@ -12,6 +12,122 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Serial Confessor /// 413 /// 414",
+      Release: "7/21/2020",
+      URL: "https://truecrimegarage.com/home/blog/serial-confessor-413-414",
+      Earliest_Date: "6/16/1979",
+      Earliest_Year: "1979",
+      Notes:
+        "Poplar Montana, near Poplar River (general area not an exact location)\n"
+    },
+    geometry: {
+      coordinates: [-105.213843, 48.114847],
+      type: "Point"
+    },
+    id: "b421ee46056e662795b802c87f2452a2"
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Heather Teague /// 411 /// 412",
+      Release: "7/14/2020",
+      URL: "https://truecrimegarage.com/home/blog/heather-teague-411-412",
+      Earliest_Date: "8/26/1995",
+      Earliest_Year: "1995",
+      Notes: "Newburgh Beach, Henderson, KY"
+    },
+    geometry: {
+      coordinates: [-87.592789, 37.832768],
+      type: "Point"
+    },
+    id: "ed49efa010f62f845adfb6472f071fb8"
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Las Cruces Bowling Alley Massacre /// 409 /// 410",
+      Release: "6/30/2020",
+      URL:
+        "https://truecrimegarage.com/home/blog/las-cruces-bowling-alley-massacre-409-410",
+      Earliest_Date: "2/10/1990",
+      Earliest_Year: "1990",
+      Notes: "1201 East Amador Avenue, Las Cruces, NM"
+    },
+    geometry: {
+      coordinates: [-106.76633, 32.30993],
+      type: "Point"
+    },
+    id: "513a9cf8b32854bb83570173e99463ec"
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Jessica Gutierrez ////// 408",
+      Release: "6/23/2020",
+      URL: "https://truecrimegarage.com/home/blog/jessica-gutierrez-408",
+      Earliest_Date: "6/5/1986",
+      Earliest_Year: "1986",
+      Notes: "Lexington, South Carolina\n"
+    },
+    geometry: {
+      coordinates: [-81.238358, 33.9813],
+      type: "Point"
+    },
+    id: "4b3890f2fbfdc6459555552683460be1"
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Taylor Robinson /// 406 /// 407",
+      Release: "6/16/2020",
+      URL:
+        "https://truecrimegarage.com/blogs/true-crime-garage/posts/taylor-robinson-406-407",
+      Earliest_Date: "5/3/2013",
+      Earliest_Year: "2013",
+      Notes: "700 block of Kipling Street in Akron, Ohio"
+    },
+    geometry: {
+      coordinates: [-81.50363, 41.05729],
+      type: "Point"
+    },
+    id: "1aa4f7efde6c1e900bdeacbfd230dfb0"
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Slayer’s Book of Death /// 404 /// 405",
+      Release: "6/9/2020",
+      URL:
+        "https://truecrimegarage.com/home/blog/slayer-s-book-of-death-404-405",
+      Earliest_Date: "7/26/1993",
+      Earliest_Year: "1993",
+      Notes: "Cut-Off Rd, Ennis, Texas 75119"
+    },
+    geometry: {
+      coordinates: [-96.468518, 32.38919],
+      type: "Point"
+    },
+    id: "b91542fad639fa1d721542759fb1bc47"
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "The Hi-Fi Murders /// 402 /// 403",
+      Release: "6/2/2020",
+      URL: "https://truecrimegarage.com/home/blog/the-hi-fi-murders-402-403",
+      Earliest_Date: "4/22/1974",
+      Earliest_Year: "1974",
+      Notes: "2323 Washington Boulevard, Ogden"
+    },
+    geometry: {
+      coordinates: [-111.97052, 41.22434],
+      type: "Point"
+    },
+    id: "d7e5d428606875d99cb14b1642659942"
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Ahmaud Arbery /// 400 /// 401",
       Release: "5/26/2020",
       URL: "https://truecrimegarage.com/home/blog/ahmaud-arbery-400-401",
