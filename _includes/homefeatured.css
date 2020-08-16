@@ -26,15 +26,14 @@
 
 @media screen and (min-width: 1000px) {
   .home-featured {
-    background-image: none;
+    background-attachment: fixed;
+    background-position: 80px top;
+    background-size: 400px auto;
     width: 400px;
   }
 
   .home-featured-content {
-    background-color: none;
-    background-image: url("https://res.cloudinary.com/dtlow08pj/image/upload/v1597538137/posts/bg-true-crime-garage.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-color: transparent;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -50,6 +49,7 @@
 @media screen and (min-width: 1200px) {
   .home-featured,
   .home-featured-content {
+    background-size: 500px auto;
     width: 500px;
   }
 }
