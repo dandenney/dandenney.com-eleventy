@@ -12,6 +12,10 @@
   place-content: center;
 }
 
+.home-postlist-item .postlist-date {
+  font-size: 1rem;
+}
+
 @media screen and (min-width: 600px) {
   .home-postlist-item {
     display: grid;
