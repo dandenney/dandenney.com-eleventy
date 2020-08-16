@@ -6,6 +6,7 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7537438/6246012/css/fonts.css" media="print" onload="this.media='all'" />
+
     {% set css %}
       {% include "index.css" %}
     {% endset %}
@@ -14,24 +15,20 @@
     </style>
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
-  <body>
-
-    {% include "homeheader.njk" %}
-
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {{ content | safe }}
-    </main>
-
-    <footer class="site-footer">
-      <p class="site-meta">© 2020, Built with <a href="https://www.11ty.dev">11ty</a> and hosted on <a href="https://netlify.com">Netlify</a>.</p>
-
+  <body class="site-layout">
+    <header class="site-header">
+      <a class="site-logo" href="{{ '/' | url }}"><img alt="Illustration of Dan Denney by Ricardo Gimenes" src="/img/dan-masked.svg" width="48" /></a>
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="site-nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="site-nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="site-nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+        {%- endfor %}
       </ul>
-    </footer>
+    </header>
+
+    <main{% if templateClass %} class="site-main {{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
 
     <!-- Current page: {{ page.url | url }} -->
 
@@ -48,7 +45,6 @@
       ga('create', 'UA-3589831-2', 'auto');
       ga('send', 'pageview');
     }
-
     </script>
     <!-- End Google Analytics -->
 

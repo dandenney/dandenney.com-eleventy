@@ -2,9 +2,16 @@
 {% for post in postslist | reverse %}
   <li class="home-postlist-item{% if post.url == url %} home-postlist-item-active{% endif %}">
     {% if post.data.thumb %}<img alt="{{post.data.title}}" class="home-postlist-thumb" src="{{post.data.thumb}}" srcset="{{post.data.thumb}} 1x, {{post.data.thumb2x}} 2x" />{% endif %}
-    <div class="home-postlist-info">
-      <time class="postlist-date" datetime="{{ post.date | htmlDateString }}"><span class="postlist-month">{{ post.date | postMonth }}</span><span class="postlist-day">{{ post.date | postDay }}</span><span class="postlist-year">{{ post.date | postYear }}</span></time>
-      <div class="home-postlist-meta"><a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>{% if post.data.summary %}<p>{{post.data.summary}}</p></div>{% endif %}
+    <div class="home-postlist-info u-p-2">
+      <div class="home-postlist-meta">
+        <a href="{{ post.url | url }}" class="postlist-link">
+          {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
+        </a>
+        {% if post.data.summary %}
+          <p>{{post.data.summary}}</p>
+          <time class="postlist-date u-d-b u-mt-1" datetime="{{ post.date | htmlDateString }}">{{ post.date | postMonth }} {{ post.date | postDay }}, {{ post.date | postYear }}</time> 
+        {% endif %}
+      </div>
     </div>
   </li>
 {% endfor %}
