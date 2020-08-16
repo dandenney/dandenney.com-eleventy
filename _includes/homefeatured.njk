@@ -1,0 +1,14 @@
+{% set css %}
+  {% include "homefeatured.css" %}
+{% endset %}
+<style>
+  {{ css | cssmin | safe }}
+</style>
+
+<article class="home-featured">
+  <div class="home-featured-content u-c-white u-p-2">
+    <h2 class="u-c-white">Map of True Crime Garage Episodes</h2>
+    <p>Custom data saved in Airtable and used to create an interactive Mapbox map.</p>
+    <a href="/tinkerings/true-crime-garage-map">View the map</a>
+  </div>
+</article>

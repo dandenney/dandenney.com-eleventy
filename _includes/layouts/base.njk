@@ -15,35 +15,22 @@
     </style>
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
-  <body>
+  <body class="site-layout">
     <header class="site-header">
-      <h1 class="site-link">
-        <a href="{{ '/' | url }}"><img alt="Illustration of Dan Denney by Ricardo Gimenes" src="/img/dan-masked.svg" height="60" /></a>
-        Dan Denney
-      </h1>
-
+      <a class="site-logo" href="{{ '/' | url }}"><img alt="Illustration of Dan Denney by Ricardo Gimenes" src="/img/dan-masked.svg" width="48" /></a>
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="site-nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="site-nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="site-nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+        {%- endfor %}
       </ul>
     </header>
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <main{% if templateClass %} class="site-main {{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
 
-    <footer class="site-footer">
-      <p class="site-meta">© 2020, Built with <a href="https://www.11ty.dev">11ty</a> and hosted on <a href="https://netlify.com">Netlify</a>.</p>
-
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul class="site-nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="site-nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
-      </ul>
-    </footer>
+    {% include "footer.njk" %}
 
     <!-- Current page: {{ page.url | url }} -->
 

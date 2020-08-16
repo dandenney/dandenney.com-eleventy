@@ -1,0 +1,14 @@
+{% set css %}
+  {% include "homeintro.css" %}
+{% endset %}
+<style>
+  {{ css | cssmin | safe }}
+</style>
+
+<article class="home-intro u-p-2">
+
+  <h1 class="h2 u-c-white">Hi! I'm Dan Denney and I'm a Front-end Engineer at <a href="https://www.datacamp.com/">DataCamp</a>.</h1>
+
+  <p class="u-c-white u-fs-h3 u-pt-1">Titles are weird, so basically I write <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> for a living. (And, for fun)</p>
+
+</article>

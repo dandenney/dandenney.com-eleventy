@@ -1,0 +1,13 @@
+.home-intro {
+  background-image: url("https://res.cloudinary.com/dtlow08pj/image/upload/v1597590349/posts/screenshot-css.png");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 400px;
+  place-content: center;
+}
+
+.home-intro h1,
+.home-intro p {
+  max-width: 480px;
+}

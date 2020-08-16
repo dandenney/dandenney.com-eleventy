@@ -2,8 +2,25 @@
 layout: layouts/home.njk
 ---
 
-{% include "homeposts.njk" %}
+{% set css %}
+  {% include "homelinks.css" %}
+{% endset %}
+<style>
+  {{ css | cssmin | safe }}
+</style>
 
-{% include "homeblips.njk" %}
+<section class="home-links">
+  
+  {% include "homefeatured.njk" %}
 
-{% include "homeprojects.njk" %}
+  <div>
+    {% include "homeintro.njk" %}
+
+    {% include "homeposts.njk" %}
+
+    {% include "homeprojects.njk" %}
+
+    {% include "footer.njk" %}
+  </div>
+
+</section>  

@@ -1,123 +1,25 @@
-.home-posts {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.home-postlist {
-  padding: 0;
-}
-
 .home-postlist-item {
-  align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin-top: 4rem;
-}
-
-.home-postlist-thumb {
-  grid-area: 1 / 1 / 2 / 2;
 }
 
 .home-postlist-info {
-  align-items: flex-start;
   display: flex;
-  grid-area: 1 / 1 / 2 / 2;
-  margin: 0 1rem;
+  flex-wrap: wrap;
+  place-content: center;
 }
 
-.home-postlist-thumb {
-  border-radius: 50%;
-  width: 300px;
-}
-
-.home-postlist-meta {
-  background: #ffffff;
-  padding: 0.5rem;
-}
-
-.home-postlist-info .postlist-date {
-  background: #ffffff;
-  padding: 0.5rem;
-}
-
-.home-postlist .postlist-link-wrapper {
-  background: #ffffff;
-  padding: 0.5rem;
-}
-
-.home-postlist-intro {
-  align-items: center;
-  display: flex;
-  margin: 0 1rem -2rem 0;
-  position: relative;
-}
-
-@media screen and (min-width: 375px) {
-  .home-posts {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .home-postlist {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
+@media screen and (min-width: 600px) {
   .home-postlist-item {
-    width: 50%;
-  }
-
-  .home-postlist-info {
-    margin: 3rem 1rem 1rem 1rem;
-    max-width: 400px;
-  }
-
-  .home-postlist-item:nth-child(odd) {
-    align-items: start;
-  }
-
-  .home-postlist-item:nth-child(even) {
-    align-items: end;
-  }
-
-  .home-postlist-item:nth-child(odd) .home-postlist-info {
-    justify-self: end;
-    margin-right: 3rem;
-  }
-
-  .home-postlist-item:nth-child(2) .home-postlist-info,
-  .home-postlist-item:nth-child(4) .home-postlist-info {
-    margin: 0 1rem 3rem 3rem;
-  }
-
-  .home-postlist-item:nth-child(3),
-  .home-postlist-item:nth-child(4) {
-    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
   }
 
   .home-postlist-item:nth-child(even) .home-postlist-thumb {
-    justify-self: end;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .home-postlist-thumb {
-    width: 400px;
-  }
-}
-
-@media screen and (min-width: 1672px) {
-  .home-postlist {
-    margin: 0 auto !important;
-    max-width: 1600px;
-  }
-
-  .home-postlist-info {
-    max-width: 600px;
+    order: 1;
   }
 }

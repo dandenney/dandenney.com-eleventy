@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <p class="site-meta">© 2020, Built with <a href="https://www.11ty.dev">11ty</a> and hosted on <a href="https://netlify.com">Netlify</a>.</p>
+
+  {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+  <ul class="site-nav">
+  {%- for entry in collections.all | eleventyNavigation %}
+    <li class="site-nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+  {%- endfor %}
+  </ul>
+</footer>
