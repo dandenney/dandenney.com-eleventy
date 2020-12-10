@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #f0eeeb;
-  font-family: "Sentinel A", "Sentinel B";
+  font-family: "Gotham A", "Gotham B";
   font-size: 1.25rem;
   line-height: 1.4;
 }
@@ -188,7 +188,7 @@ svg {
 .mapboxgl-popup-content {
   background: #2a262a !important;
   color: #ffffff;
-  font-family: "Sentinel A", "Sentinel B";
+  font-family: "Gotham A", "Gotham B";
   font-size: 1rem;
   padding: 1rem !important;
 }

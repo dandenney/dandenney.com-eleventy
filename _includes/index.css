@@ -34,19 +34,14 @@ dd {
 /* Set core body defaults */
 body {
   color: var(--text);
-  font-family: "Sentinel A", "Sentinel B", Georgia;
+  font-family: "Gotham A", "Gotham B", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 20px;
-  }
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -92,7 +87,7 @@ h4,
 h5,
 h6 {
   color: var(--heading);
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.125;
 }
 
@@ -494,6 +489,7 @@ pre {
 
 .post-title {
   display: inline-block;
+  font-weight: 900;
   margin-top: 2rem;
   text-align: left;
 }
