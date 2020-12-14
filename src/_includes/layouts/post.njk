@@ -2,14 +2,14 @@
 layout: layouts/base.njk
 ---
 
-{# {% set css %}
+{% set css %}
   {% include "prism.css" %}
 {% endset %}
 <style>
   {{ css | cssmin | safe }}
-</style> #}
+</style>
 
-<article class="p-8 post-default">
+<article class="p-8 longform">
   <header class="mx-auto sm:max-w-4xl">
     <h1>{{ title }}</h1>
   </header>

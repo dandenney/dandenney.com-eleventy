@@ -8,26 +8,30 @@
 
 @tailwind utilities;
 
-.post-default h1 {
+.longform h1 {
   @apply font-black pb-10 text-6xl md:text-8xl;
 }
 
-.post-default h2 {
+.longform h2 {
   @apply font-black py-6 text-4xl md:text-5xl;
 }
 
-.post-default p {
+.longform h3 {
+  @apply font-black py-6 text-2xl md:text-3xl;
+}
+
+.longform p {
   @apply pb-6 text-lg;
 }
 
-.post-default a {
+.longform a {
   @apply text-red-700 hover:text-red-500;
 }
 
-.post-default blockquote {
+.longform blockquote {
   @apply bg-gray-50 p-4 mb-6;
 }
 
-.post-default blockquote p {
+.longform blockquote p {
   @apply pb-0 text-2xl;
 }

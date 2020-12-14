@@ -1,4 +1,6 @@
 const htmlmin = require("html-minifier");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -6,6 +8,11 @@ module.exports = function (eleventyConfig) {
   // Use a tmp for live reload with tailwind
   eleventyConfig.addWatchTarget("./_tmp/style.css");
   eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./styles/style.css" });
+
+  // CSS Min for minifying inline CSS
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   // Build images
   eleventyConfig.addPassthroughCopy("src/img");
@@ -35,6 +42,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
   });
+
+  // Syntax highlighting 
+  eleventyConfig.addPlugin(syntaxHighlight); 
 
   // Minify HTML except it's not working
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
