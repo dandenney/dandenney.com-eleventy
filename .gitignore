@@ -1,5 +1,5 @@
-_site/
-node_modules/
-package-lock.json
+_site
+_tmp
 .DS_Store
-.env
+node_modules
+package-lock.json

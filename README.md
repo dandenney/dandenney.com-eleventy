@@ -1,80 +1,15 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2d40c8da-f873-49ba-8aa6-f6d364e31d7a/deploy-status)](https://app.netlify.com/sites/friendly-noether-fa28e2/deploys)
+# Personal site, dandenney.com
 
-# eleventy-base-blog
+This thing holds a series of words that I've spewed onto the internet since 2012. It's mainly so that I have a place to learn and play with front-end development, but also to keep my Google juice up against the guy with my name that created an airplane. Seriously, there's other Dan Denneys?
 
-A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+## Eleventy
 
-[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
+Eleventy is amazing. It's a fast static-site generator that lets people use modern JS without making site visitors pay the price. I can't recommend it enough.
 
-## Demos
+## Tailwind
 
-- [Netlify](https://eleventy-base-blog.netlify.com/)
-- [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
+This round is going to use Tailwind. I've been really curious about it and will see what I can do with it.
 
-## Deploy this to your own site
+## Netlify
 
-These builders are amazing—try them out to get your own Eleventy site in a few clicks!
-
-- [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-- [Get your own Eleventy web site on ZEIT Now](https://zeit.co/new/project?template=11ty/eleventy-base-blog)
-
-## Getting Started
-
-### 1. Clone this Repository
-
-```
-git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
-```
-
-### 2. Navigate to the directory
-
-```
-cd my-blog-name
-```
-
-Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
-
-### 3. Install dependencies
-
-```
-npm install
-```
-
-### 4. Edit \_data/metadata.json
-
-### 5. Run Eleventy
-
-```
-npx eleventy
-```
-
-Or build and host locally for local development
-
-```
-npx eleventy --serve
-```
-
-Or build automatically when a template changes:
-
-```
-npx eleventy --watch
-```
-
-Or in debug mode:
-
-```
-DEBUG=* npx eleventy
-```
-
-### Implementation Notes
-
-- `about/index.md` shows how to add a content page.
-- `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
-- Add the `nav` tag to add a template to the top level site navigation. For example, this is in use on `index.njk` and `about/index.md`.
-- Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`. \* Because `css` and `png` are listed in `templateFormats` but are not supported template types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
-- The blog post feed template is in `feed/feed.njk`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
-- This example uses three layouts:
-  - `_includes/layouts/base.njk`: the top level HTML structure
-  - `_includes/layouts/base.njk`: the home page template (wrapped into `base.njk`)
-  - `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
-- `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
+The best hosting, ever. Netlify is what would happen if you sat down and dreamt up what hosting should be. Plus, they've hired some of the best folks in the game.

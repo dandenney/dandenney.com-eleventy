@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+permalink: /tinkerings/
+eleventyNavigation:
+  key: Tinkerings
+  order: 1
+---
+
+<section>
+
+  <h1 class="font-black text-9xl">Tinkerings</h1>
+
+  <nav>
+    {% for tinkering in collections.tinkerings | reverse %}
+      <a class="block mt-4 text-2xl text-red-700 hover:text-red-500" href="{{ tinkering.url | url }}">{{ tinkering.data.title }}</a>
+    {% endfor %} 
+  </nav> 
+
+</section>
