@@ -46,3 +46,9 @@ I'll take notes as I go, as I do with the things that I'm excited to learn.
 As I learn these things, I'm going to pay more attention to CI in my work as well. I know that if I approach it in the right way, I'll learn, and then I'll be more productive in and out of work.
 
 I'm a front-end dev, and tooling is a part of a job that I absolutely love.
+
+## Follow-up
+
+I kept notes on what it took to learn and configure a new version. I had it working, understood nearly every line of code, and then tried to bring it over to my initial project. The deploys failed. The same files from two repos, one succeeds ond one fails. I learned that Netlify locks in the version of Node that you use on your first build so unless you specify it, that version stays. Five days, over 15 hours when all it took was a single line of code to fix.
+
+[Notion notes](https://www.notion.so/Personal-site-6a96cb8224424d0c82ffe1a2559b94ff)
