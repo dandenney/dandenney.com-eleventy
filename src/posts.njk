@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+permalink: /posts/
+eleventyNavigation:
+  key: Posts
+  order: 1
+---
+
+<section>
+
+  <h1 class="font-black text-9xl">Posts</h1>
+
+  <nav>
+    {% for post in collections.posts | reverse %}
+      <a class="block mt-4 text-2xl text-red-700 hover:text-red-500" href="{{ post.url | url }}">{{ post.data.title }}</a>
+    {% endfor %} 
+  </nav> 
+
+</section>

@@ -1,17 +1,17 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-post
 ---
 
-{% set css %}
+{# {% set css %}
   {% include "prism.css" %}
 {% endset %}
 <style>
   {{ css | cssmin | safe }}
-</style>
+</style> #}
 
-<article>
+<article class="p-8">
+  <header>
+    <h1 class="post-title">{{ title }}</h1>
+  </header>
   {{ content | safe }}
 </article>
-
-<p><a href="{{ '/' | url }}">← Home</a></p>
