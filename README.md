@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2d40c8da-f873-49ba-8aa6-f6d364e31d7a/deploy-status)](https://app.netlify.com/sites/friendly-noether-fa28e2/deploys)
+
 # Personal site, dandenney.com
 
 This thing holds a series of words that I've spewed onto the internet since 2012. It's mainly so that I have a place to learn and play with front-end development, but also to keep my Google juice up against the guy with my name that created an airplane. Seriously, there's other Dan Denneys?
