@@ -16,6 +16,10 @@
   @apply font-black py-6 text-4xl md:text-5xl;
 }
 
+.post-default h3 {
+  @apply font-black py-6 text-2xl md:text-3xl;
+}
+
 .post-default p {
   @apply pb-6 text-lg;
 }
