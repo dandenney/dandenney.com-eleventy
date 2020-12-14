@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+permalink: /blips/
+eleventyNavigation:
+  key: Blips
+  order: 1
+---
+
+<section>
+
+  <h1 class="font-black text-9xl">Blips</h1>
+
+  <nav>
+    {% for blip in collections.blips | reverse %}
+      <a class="block mt-4 text-2xl text-red-700 hover:text-red-500" href="{{ blip.url | url }}">{{ blip.data.title }}</a>
+    {% endfor %} 
+  </nav> 
+
+</section>
