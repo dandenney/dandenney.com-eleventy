@@ -9,9 +9,11 @@ layout: layouts/base.njk
   {{ css | cssmin | safe }}
 </style> #}
 
-<article class="p-8">
-  <header>
-    <h1 class="post-title">{{ title }}</h1>
+<article class="p-8 post-default">
+  <header class="mx-auto sm:max-w-4xl">
+    <h1>{{ title }}</h1>
   </header>
-  {{ content | safe }}
+  <div class="sm:max-w-2xl mx-auto">
+    {{ content | safe }}
+  </div>
 </article>
