@@ -47,6 +47,12 @@
   @apply font-black mt-4 text-3xl md:text-5xl;
 }
 
+.link-post {
+  @apply bg-black flex items-end font-black p-6 text-4xl text-white transition duration-300 hover:bg-red-700;
+  height: 500px;
+  width: 310px;
+}
+
 .codepen {
   grid-area: 1 / 1 / 2 / 2;
 }
