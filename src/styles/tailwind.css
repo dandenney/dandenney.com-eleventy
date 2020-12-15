@@ -36,4 +36,5 @@
 .longform a {
   @apply bg-red-700 text-white px-2 py-0.5 transition duration-300 hover:bg-black;
   -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
