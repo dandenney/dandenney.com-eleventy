@@ -38,3 +38,45 @@
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+
+.link-social {
+  @apply bg-red-700 flex flex-col items-center justify-center p-8 text-white transition duration-300 hover:bg-black;
+}
+
+.link-social span {
+  @apply font-black mt-4 text-3xl md:text-5xl;
+}
+
+.codepen {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.github {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.twitter {
+  grid-area: 2 / 1 / 3 / 3;
+}
+.pinterest {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.instagram {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+@media screen and (min-width: 768px) {
+  .codepen {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .github {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .twitter {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+  .pinterest {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .instagram {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+}
