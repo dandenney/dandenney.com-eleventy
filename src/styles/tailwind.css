@@ -24,14 +24,16 @@
   @apply pb-6 text-lg;
 }
 
-.longform a {
-  @apply text-red-700 hover:text-red-500;
-}
-
 .longform blockquote {
   @apply bg-gray-50 p-4 mb-6;
 }
 
 .longform blockquote p {
   @apply pb-0 text-2xl;
+}
+
+.link,
+.longform a {
+  @apply bg-red-700 text-white px-2 py-0.5 transition duration-300 hover:bg-black;
+  -webkit-box-decoration-break: clone;
 }
