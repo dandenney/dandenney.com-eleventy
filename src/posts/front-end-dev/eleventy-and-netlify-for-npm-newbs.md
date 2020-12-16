@@ -130,7 +130,7 @@ Similar to the build command option, you can technically set your Node version i
 v13.12.0
 ```
 
-## A global, local alternative
+## Before we go: a global, local alternative
 
 One thing that can differ in many versions of Eleventy that you'll see is the use of `npx`. With a global install on your machine, you can run `npx @11ty/eleventy` instead `eleventy` and I've seen projects that configure the scripts differently. So, you could take our above example and do something like:
 
