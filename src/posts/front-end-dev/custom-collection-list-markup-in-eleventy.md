@@ -22,9 +22,9 @@ Each item in the collection is going to get a custom "poster." I grabbed this [
 
 When I was first considering it, I was wondering if you can pass HTML from frontmatter to a Nunjucks file. I know you can do strings, and it would be possible to achieve a lot of customization with only CSS classes, but I want the ability to be unique.
 
-Rightfully so, autoescaping in Nunjucks automatically treats the sources as unsafe to avoid accidentally allowing XSS injection. However, you can manually filter something as safe to override that behavior. From the docs:
+Rightfully so, autoescaping in Nunjucks automatically treats the sources as unsafe to avoid accidentally allowing XSS injection. However, you can manually filter something as safe to override that behavior. From [the docs](https://mozilla.github.io/nunjucks/templating.html):
 
-If autoescaping is enabled in the environment, all output will automatically be escaped for safe output. To manually mark the output as safe, use the safe filter. Nunjucks will not escape this output.
+> If autoescaping is enabled in the environment, all output will automatically be escaped for safe output. To manually mark the output as safe, use the safe filter. Nunjucks will not escape this output.
 
 ```html
 {% raw %}{{ foo }} // &lt;span%gt;
@@ -90,8 +90,7 @@ I had to alphabetize those attributes. My former self was wild and out of contro
 For the loop itself, checking for the existence of the poster and using the safe filter gives me exactly what I'm hoping for.
 
 ```html
-{% raw %}
-{% for post in collections.posts | reverse %}
+{% raw %}{% for post in collections.posts | reverse %}
 	{% if post.data.poster %}
 		<a href="{{ post.url | url }}">
 			{{ post.data.poster | safe }}
@@ -110,7 +109,7 @@ Look at this beauty!
 
 ## That's a wrap
 
-With a frontmatter attribute and a filter, you can add customized markup for a collection. It may be overkill for blog posts, but I could see it as useful for other types of collections like recipes, where you could avoid a series of conditions on what data to show about each item. Now all that's left to do is apply my questionable taste to my history of posts.
+With a frontmatter attribute and a filter, you can add customized markup for a collection. It may be overkill for blog posts, but I could see it as useful for other types of collections like recipes, where you could avoid a series of conditions on what data to show about each item. Now, all that's left to do is apply my questionable taste to my history of posts.
 
 ## Afterthought
 
