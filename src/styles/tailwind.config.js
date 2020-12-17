@@ -10,6 +10,10 @@ module.exports = {
       sans: ["Gotham A", "Gotham B", "Verdana"],
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      transform: ['hover', 'focus'],
+    }
+  },
   plugins: [],
 };

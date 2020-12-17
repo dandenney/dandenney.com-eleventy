@@ -100,13 +100,11 @@ layout: layouts/post-custom.njk
   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
 
-<div class="post-header">
+<header class="longform mx-auto sm:max-w-4xl">
+  <h1>Mapping the Long Island murder victims</h1>
+</header>
 
-# Mapping the Long Island murder victims
-
-</div>
-
-<div class="post-body">
+<div class="longform mx-auto sm:max-w-2xl">
 
 "The Long Island Serial Killer," aka "LISK," is a misnomer. The more that you look at Long Island from the early 90s until the 2010s, the worse it gets. [Joel Rifkin](https://en.wikipedia.org/wiki/Joel_Rifkin) lived in the Hempstead area and killed at least nine, but up to seventeen people from 1989 - 1993. [Robert Shulman](<https://en.wikipedia.org/wiki/Robert_Shulman_(serial_killer)>) killed at least five people from 1991 - 1996 while living in the Hicksville area.
 
@@ -291,7 +289,7 @@ The following is a timeline of events, with their locations, intending to show h
   </ol>
 </section>
 
-<div class="post-body">
+<div class="longform mt-16 mx-auto sm:max-w-2xl">
 
 There are many more persons of interest and/or suspects in these cases. John Bittrolff is the only one included because he is the only one with any charges against him. To be clear, the Suffolk County District Attorney has said ["There is no evidentiary or investigative link between this case and Gilgo."](https://pix11.com/2017/09/12/convicted-killer-may-be-tied-to-gilgo-beach-murders-prosecutor)
 
