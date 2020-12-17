@@ -1,14 +1,13 @@
 ---
-path: "/posts/front-end-dev/fighting-tooling-fatigue"
-thumb: "/img/posts/front-end-dev/fighting-tooling-fatigue/thumb.png"
-thumb2x: "/img/posts/front-end-dev/fighting-tooling-fatigue/thumb@2x.png"
-title: "Fighting Tooling Fatigue"
-summary: Failing deploys, build configurations, and plugins oh my
-date: "2020-12-13"
 codeHighlighting: true
+date: "2020-12-13"
+layout: layouts/post.njk
+path: "/posts/front-end-dev/fighting-tooling-fatigue"
+poster: '<span class="absolute font-black left-32 rotate-6 text-yellow-800 text-3xl top-28 transform w-40" style="background: linear-gradient(#c1a587, #7a604b); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Fighting tooling fatigue</span><img alt="Hard drive wrapped in plastic" src="/img/posts/front-end-dev/fighting-tooling-fatigue/poster-bg-1x.jpg" srcset="/img/posts/front-end-dev/fighting-tooling-fatigue/poster-bg-1x.jpg, /img/posts/front-end-dev/fighting-tooling-fatigue/poster-bg-2x.jpg 2x" height="303" width="290" />'
+summary: Failing deploys, build configurations, and plugins oh my
 tags:
   - front-end-dev
-layout: layouts/post.njk
+title: "Fighting Tooling Fatigue"
 ---
 
 Cue up the [Bryan Cranston lightbulb scene](https://www.youtube.com/watch?v=8fnfeuoh4s8&list=PLIBEU89rzszMGAbxHxjC6Gw6SNFfKPtSZ&index=68). I want to write some blog posts, so of course, it's time to redesign my site, right? And I've seen some really interesting things around Tailwind recently, so I might as well try out a new framework as I do it. All I'll have to do is add Tailwind to my Eleventy app and get to coding.

@@ -1,14 +1,13 @@
 ---
-path: "/posts/front-end-dev/eleventy-and-netlify-for-npm-newbs-like-me"
-thumb: "/img/posts/front-end-dev/eleventy-and-netlify-for-npm-newbs/thumb.png"
-thumb2x: "/img/posts/front-end-dev/eleventy-and-netlify-for-npm-newbs/thumb@2x.png"
-title: "Eleventy and Netlify for NPM newbs like me"
-summary: Sharing some basics of configuration that were new to me
-date: "2020-12-15"
 codeHighlighting: true
+date: "2020-12-15"
+layout: layouts/post.njk
+path: "/posts/front-end-dev/eleventy-and-netlify-for-npm-newbs-like-me"
+poster: '<span class="absolute font-black left-8 rotate-1 text-green-700 text-3xl top-32 transform w-72">Eleventy and Netlify for NPM newbs like me</span><img alt="Hard drive wrapped in plastic" src="/img/posts/front-end-dev/eleventy-and-netlify-for-npm-newbs/poster-bg-1x.jpg" srcset="/img/posts/front-end-dev/eleventy-and-netlify-for-npm-newbs/poster-bg-1x.jpg, /img/posts/front-end-dev/eleventy-and-netlify-for-npm-newbs/poster-bg-2x.jpg 2x" height="291" width="310" />'
+summary: Sharing some basics of configuration that were new to me
 tags:
   - front-end-dev
-layout: layouts/post.njk
+title: "Eleventy and Netlify for NPM newbs like me"
 ---
 
 ## Backstory
