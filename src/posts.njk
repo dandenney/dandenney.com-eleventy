@@ -10,9 +10,17 @@ eleventyNavigation:
 
   <h1 class="font-black mx-auto pb-4 text-center text-6xl md:text-9xl">Posts</h1>
 
-  <nav class="flex flex-wrap justify-center pb-12 posts">
+  <nav class="flex flex-wrap items-center justify-center pb-12 posts">
     {% for post in collections.posts | reverse %}
-      <a class="link-post m-4" href="{{ post.url | url }}">{{ post.data.title }}</a>
+      {% if post.data.poster %}
+        <a class="relative md:m-4" href="{{ post.url | url }}">
+          {{ post.data.poster | safe }}
+        </a>
+      {% else %}
+        <a class="link-post m-4" href="{{ post.url | url }}">
+        {{ post.data.title }}
+        </a>
+      {% endif %}
     {% endfor %} 
   </nav> 
 

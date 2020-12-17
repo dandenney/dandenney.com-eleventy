@@ -1,13 +1,12 @@
 ---
-path: "/posts/front-end-dev/simple-side-nav-flexbox-vs-grid"
-thumb: "/img/posts/front-end-dev/simple-side-nav-flexbox-vs-grid/thumb.jpg"
-thumb2x: "/img/posts/front-end-dev/simple-side-nav-flexbox-vs-grid/thumb@2x.jpg"
-title: "Simple side nav: Flexbox vs. Grid"
-summary: A popular question with a pretty clear answer in this case
 date: "2020-08-16"
+layout: layouts/post.njk
+path: "/posts/front-end-dev/simple-side-nav-flexbox-vs-grid"
+poster: '<span class="absolute font-black left-28 rotate-3 text-gray-600 text-4xl top-32 transform w-40">Simple side nav: Flexbox vs. Grid</span><img alt="Hard drive wrapped in plastic" src="/img/posts/front-end-dev/simple-side-nav-flexbox-vs-grid/poster-bg-1x.jpg" srcset="/img/posts/front-end-dev/simple-side-nav-flexbox-vs-grid/poster-bg-1x.jpg, /img/posts/front-end-dev/simple-side-nav-flexbox-vs-grid/poster-bg-2x.jpg 2x" height="557" width="297" />'
+summary: A popular question with a pretty clear answer in this case
 tags:
   - front-end-dev
-layout: layouts/post.njk
+title: "Simple side nav: Flexbox vs. Grid"
 ---
 
 I've seen more and more nav "sidebars" recently and wanted to try it on my site. My goal was to shift the layout in the tablet-range of viewport sizes and look something like the image below. This led to a popular question in CSS layout these days.
