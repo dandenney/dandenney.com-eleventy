@@ -359,6 +359,7 @@ While many of the cases have multiple locations, most are focused on a general a
 
 These were skipped, because they cover a range of cases or podcast-specific info.
 
+- [Must See True Crime /// 420 ](https://truecrimegarage.com/home/blog/must-see-true-crime-420)
 - [John Douglas - The Mind Hunter ////// 302](https://truecrimegarage.com/home/blog/john-douglas-the-mind-hunter-302)
 - [Must See True Crime ////// 197](https://truecrimegarage.com/home/blog/must-see-true-crime-197)
 - [Most Wanted /// 130 /// 131](https://truecrimegarage.com/home/blog/most-wanted-130-131-2ec8209d-b3aa-4807-80f2-84833428b213)
