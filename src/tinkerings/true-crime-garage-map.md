@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #f0eeeb;
-  font-family: "Sentinel A", "Sentinel B";
+  font-family: Gotham A, Gotham B, Verdana;
   font-size: 1.25rem;
   line-height: 1.4;
 }
@@ -72,6 +72,7 @@ ul, li {
 h1,
 h3 {
   margin-top: 0;
+  font-weight: 900;
 }
 
 h3 {
@@ -164,6 +165,10 @@ h5 {
   margin: 0;
 }
 
+p {
+  font-size: 1rem;
+}
+
 label {
   border-radius: 4px;
   border: 1px solid transparent;
@@ -188,7 +193,7 @@ svg {
 .mapboxgl-popup-content {
   background: #2a262a !important;
   color: #ffffff;
-  font-family: "Sentinel A", "Sentinel B";
+  font-family: Gotham A, Gotham B, Verdana;
   font-size: 1rem;
   padding: 1rem !important;
 }
@@ -359,6 +364,10 @@ While many of the cases have multiple locations, most are focused on a general a
 
 These were skipped, because they cover a range of cases or podcast-specific info.
 
+- [The Very Best of True Crime Garage ////// 453](https://truecrimegarage.com/home/blog/the-very-best-of-true-crime-garage-453)
+- [Best of 2020 ////// 452](https://truecrimegarage.com/home/blog/best-of-2020-452)
+- [Mind Hunter: John Douglas /// 445 /// 446 ](https://truecrimegarage.com/home/blog/mind-hunter-john-douglas-445-446)
+- [Must See True Crime /// 420 ](https://truecrimegarage.com/home/blog/must-see-true-crime-420)
 - [John Douglas - The Mind Hunter ////// 302](https://truecrimegarage.com/home/blog/john-douglas-the-mind-hunter-302)
 - [Must See True Crime ////// 197](https://truecrimegarage.com/home/blog/must-see-true-crime-197)
 - [Most Wanted /// 130 /// 131](https://truecrimegarage.com/home/blog/most-wanted-130-131-2ec8209d-b3aa-4807-80f2-84833428b213)
