@@ -12,6 +12,23 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Roxanne Paltauf /// 491 /// 492",
+      Release: "6/1/2021",
+      URL: "https://truecrimegarage.com/home/blog/roxanne-paltauf-491-492",
+      Earliest_Date: "7/7/2006",
+      Earliest_Year: "2006",
+      Notes:
+        "Budget Inn hotel in the vicinity of Interstate 35 and Rundberg in Austin, Texas https://charleyproject.org/case/roxanne-elizabeth-paltauf",
+    },
+    geometry: {
+      coordinates: [-97.671356, 30.423429],
+      type: "Point",
+    },
+    id: "e09332e6de105dfb03857e10079e5195",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Darlie Routier /// 489 /// 490",
       Release: "5/25/2021",
       URL: "https://truecrimegarage.com/home/blog/darlie-routier-489-490",
