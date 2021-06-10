@@ -12,6 +12,23 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Brice Rhodes /// 493 /// 494",
+      Release: "6/8/2021",
+      URL: "https://truecrimegarage.com/home/blog/brice-rhodes-489-490",
+      Earliest_Date: "5/22/2016",
+      Earliest_Year: "2016",
+      Notes:
+        "400 block of River Park in West Louisville  https://www.whas11.com/article/news/crime/deeper-look-into-brice-rhodes-3-murder-charges/417-353028045",
+    },
+    geometry: {
+      coordinates: [-85.79351, 38.2529],
+      type: "Point",
+    },
+    id: "a1be4a2ceaf65f3eb2690dd0e857296e",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Roxanne Paltauf /// 491 /// 492",
       Release: "6/1/2021",
       URL: "https://truecrimegarage.com/home/blog/roxanne-paltauf-491-492",
