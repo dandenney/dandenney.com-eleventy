@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Chelsea Small /// 495 /// 496",
+      Release: "6/15/2021",
+      URL: "https://truecrimegarage.com/home/blog/chelsea-small-491-492",
+      Earliest_Date: "11/12/2013",
+      Earliest_Year: "2013",
+      Notes: "8229 Telegraph Rd, Taylor, MI",
+    },
+    geometry: {
+      coordinates: [-83.2697, 42.24781],
+      type: "Point",
+    },
+    id: "47ff09553c0b69560122ee3188398a39",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Brice Rhodes /// 493 /// 494",
       Release: "6/8/2021",
       URL: "https://truecrimegarage.com/home/blog/brice-rhodes-489-490",
