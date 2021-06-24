@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Hunting Humans /// 497 /// 498",
+      Release: "6/22/2021",
+      URL: "https://truecrimegarage.com/home/blog/hunting-humans-493-494",
+      Earliest_Date: "12/2/1981",
+      Earliest_Year: "1981",
+      Notes: "Boniface Mall 5601 Camelot Dr Anchorage, AK",
+    },
+    geometry: {
+      coordinates: [-149.77574, 61.22064],
+      type: "Point",
+    },
+    id: "f88cfcc12f76f69df9d928b19ad7cb5a",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Chelsea Small /// 495 /// 496",
       Release: "6/15/2021",
       URL: "https://truecrimegarage.com/home/blog/chelsea-small-491-492",
