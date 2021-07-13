@@ -366,6 +366,7 @@ While many of the cases have multiple locations, most are focused on a general a
 
 These were skipped, because they cover a range of cases or podcast-specific info.
 
+- [Garage Party /// 499 /// 500](https://truecrimegarage.com/home/blog/garage-party-499-500)
 - [The Very Best of True Crime Garage ////// 453](https://truecrimegarage.com/home/blog/the-very-best-of-true-crime-garage-453)
 - [Best of 2020 ////// 452](https://truecrimegarage.com/home/blog/best-of-2020-452)
 - [Mind Hunter: John Douglas /// 445 /// 446 ](https://truecrimegarage.com/home/blog/mind-hunter-john-douglas-445-446)
