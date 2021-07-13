@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Circleville Writer /// 501 /// 502",
+      Release: "7/6/2021",
+      URL: "https://truecrimegarage.com/home/blog/circleville-writer-501-502",
+      Earliest_Date: "8/19/1977",
+      Earliest_Year: "1977",
+      Notes: "7100 Brooks-Miller Rd, Circleville, OH 43113",
+    },
+    geometry: {
+      coordinates: [-83.07889, 39.68851],
+      type: "Point",
+    },
+    id: "aad37161eb63f07c0ac4b9d9263e7613",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Hunting Humans /// 497 /// 498",
       Release: "6/22/2021",
       URL: "https://truecrimegarage.com/home/blog/hunting-humans-493-494",
