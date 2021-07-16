@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Ayla Reynolds /// 503 /// 504",
+      Release: "7/13/2021",
+      URL: "https://truecrimegarage.com/home/blog/ayla-reynolds-503-504",
+      Earliest_Date: "12/17/2011",
+      Earliest_Year: "2011",
+      Notes: "29 Violette Ave, Waterville, ME 04901",
+    },
+    geometry: {
+      coordinates: [-69.64978, 44.54633],
+      type: "Point",
+    },
+    id: "99af425ea11bc831a474c724ca3f72c9",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Circleville Writer /// 501 /// 502",
       Release: "7/6/2021",
       URL: "https://truecrimegarage.com/home/blog/circleville-writer-501-502",
