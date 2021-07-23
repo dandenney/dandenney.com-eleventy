@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Derontae Martin /// 505 /// 506",
+      Release: "7/21/2021",
+      URL: "https://truecrimegarage.com/home/blog/derontae-martin-505-506",
+      Earliest_Date: "4/23/2021",
+      Earliest_Year: "2021",
+      Notes: "1763 Highway Z, Fredericktown, MO 63645",
+    },
+    geometry: {
+      coordinates: [-90.25901, 37.54758],
+      type: "Point",
+    },
+    id: "fdf4165949f668b963e2702753d59560",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Ayla Reynolds /// 503 /// 504",
       Release: "7/13/2021",
       URL: "https://truecrimegarage.com/home/blog/ayla-reynolds-503-504",
