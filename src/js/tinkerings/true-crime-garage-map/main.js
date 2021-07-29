@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Trish Haynes ///507 /// 508",
+      Release: "7/28/2021",
+      URL: "https://truecrimegarage.com/home/blog/trish-haynes-507-508",
+      Earliest_Date: "5/16/2018",
+      Earliest_Year: "2018",
+      Notes: "Last date that her family spoke to her",
+    },
+    geometry: {
+      coordinates: [-71.92354, 43.56502],
+      type: "Point",
+    },
+    id: "a41c4c4ae66e0f67573ce1b44faf8cfe",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Derontae Martin /// 505 /// 506",
       Release: "7/21/2021",
       URL: "https://truecrimegarage.com/home/blog/derontae-martin-505-506",
