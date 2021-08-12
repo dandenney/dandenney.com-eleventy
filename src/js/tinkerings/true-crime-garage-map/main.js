@@ -12,6 +12,41 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "The Bonebreaker Killer /// 512 /// 513",
+      Release: "8/10/2021",
+      URL:
+        "https://truecrimegarage.com/home/blog/the-bonebreaker-killer-512-513",
+      Earliest_Date: "7/4/1994",
+      Earliest_Year: "1994",
+      Notes: "Pine Island National Wildlife Refuge",
+    },
+    geometry: {
+      coordinates: [-89.563911, 43.535829],
+      type: "Point",
+    },
+    id: "ae4a44e999faa7e6c1d7df158f76375d",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Delphi Murders /// Under the Bridge /// 509 /// 510 /// 511",
+      Release: "8/2/2021",
+      URL:
+        "https://truecrimegarage.com/home/blog/delphi-murders-under-the-bridge-509-510-511",
+      Earliest_Date: "2/13/2017",
+      Earliest_Year: "2017",
+      Notes:
+        "Coordinates according to https://tools.wmflabs.org/geohack/geohack.php?pagename=Murders_of_Abigail_Williams_and_Liberty_German&params=40_35_20.7_N_86_38_34.2_W_type:landmark",
+    },
+    geometry: {
+      coordinates: [-86.642833, 40.589083],
+      type: "Point",
+    },
+    id: "34a35319fa12dc437ae416ca95ca6f59",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Trish Haynes ///507 /// 508",
       Release: "7/28/2021",
       URL: "https://truecrimegarage.com/home/blog/trish-haynes-507-508",
