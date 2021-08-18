@@ -19,9 +19,7 @@ layout: layouts/base.njk
   <nav class="flex flex-wrap items-center justify-center pb-12 posts">
     {% set homePosts = collections.posts | reverse %}
     {% for homePost in homePosts.slice(0, 3) %}
-      <a class="duration-300 relative transition-transform md:m-4 hover:transform hover:scale-105" href="{{ homePost.url | url }}">
-        {{ homePost.data.poster | safe }}
-      </a>
+      <a class="link-post m-4" href="{{ homePost.url | url }}">{{ homePost.data.title }}</a>
     {% endfor %} 
   </nav>
 
