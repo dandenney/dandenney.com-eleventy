@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Tracy Sissom /// 514 /// 515",
+      Release: "8/17/2021",
+      URL: "https://truecrimegarage.com/home/blog/tracy-sissom-514-515",
+      Earliest_Date: "10/8/2004",
+      Earliest_Year: "2004",
+      Notes: "General area of Nelson Ridge Road north of State Road 46",
+    },
+    geometry: {
+      coordinates: [-86.085933, 39.204767],
+      type: "Point",
+    },
+    id: "5d3eae4d6d2a87b3acbaf485dd934b1c",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "The Bonebreaker Killer /// 512 /// 513",
       Release: "8/10/2021",
       URL:
