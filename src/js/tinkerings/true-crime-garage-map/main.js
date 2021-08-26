@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "LeeAnna Warner /// 516 /// 517",
+      Release: "8/24/2021",
+      URL: "https://truecrimegarage.com/home/blog/leeanna-warner-516-517",
+      Earliest_Date: "6/14/2003",
+      Earliest_Year: "2003",
+      Notes: "19 2nd St SWChisholm, MN 55719 home address",
+    },
+    geometry: {
+      coordinates: [-92.87741, 47.48671],
+      type: "Point",
+    },
+    id: "0bc430175bfc883049d4b2dde811e386",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Tracy Sissom /// 514 /// 515",
       Release: "8/17/2021",
       URL: "https://truecrimegarage.com/home/blog/tracy-sissom-514-515",
