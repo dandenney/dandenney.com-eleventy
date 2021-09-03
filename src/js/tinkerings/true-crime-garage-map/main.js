@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Jimmy Ryce /// 518 /// 519",
+      Release: "8/31/2021",
+      URL: "https://truecrimegarage.com/home/blog/jimmy-ryce-518-519",
+      Earliest_Date: "9/11/1995",
+      Earliest_Year: "1995",
+      Notes: "SW 232nd St & SW 162nd Ave, Florida 33170",
+    },
+    geometry: {
+      coordinates: [-80.454322, 25.550735],
+      type: "Point",
+    },
+    id: "21b0f92daf41da5a4e0d07b7aef05ad6",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "LeeAnna Warner /// 516 /// 517",
       Release: "8/24/2021",
       URL: "https://truecrimegarage.com/home/blog/leeanna-warner-516-517",
