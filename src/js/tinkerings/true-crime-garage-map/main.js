@@ -12,7 +12,39 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
-      Title: "Jimmy Ryce /// 518 /// 519",
+      Title: "Missing on Campus /// 522 /// 523",
+      Release: "9/14/2021",
+      URL: "https://truecrimegarage.com/home/blog/missing-on-campus-522-523",
+      Earliest_Date: "5/24/1978",
+      Earliest_Year: "1978",
+      Notes: "Engelman Hall 175 Terrace Dr, Kent, OH 44243",
+    },
+    geometry: {
+      coordinates: [-81.34639, 41.15211],
+      type: "Point",
+    },
+    id: "dfc435595aa6096cb037f47008ab3947",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Murder in Alliance /// 520 /// 521",
+      Release: "9/7/2021",
+      URL: "https://truecrimegarage.com/home/blog/murder-in-alliance-520-521",
+      Earliest_Date: "4/1/1999",
+      Earliest_Year: "1999",
+      Notes: "916 Devine StAlliance, OH 44601",
+    },
+    geometry: {
+      coordinates: [-81.09329, 40.9063],
+      type: "Point",
+    },
+    id: "d75ff6a4afc41d48b9a2e9f6739d0e66",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Jimmy Ryce /// 518 /// ,519",
       Release: "8/31/2021",
       URL: "https://truecrimegarage.com/home/blog/jimmy-ryce-518-519",
       Earliest_Date: "9/11/1995",
