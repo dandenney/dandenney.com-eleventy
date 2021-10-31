@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+permalink: /learning-to-cook/
+eleventyNavigation:
+  key: LearningToCook
+  order: 1
+---
+
+<section class="">
+
+  <h1 class="font-black mx-auto pb-4 text-center text-6xl md:text-9xl">Learning to Cook</h1>
+
+  <nav class="flex flex-col items-start mx-auto pb-12 sm:max-w-3xl">
+    {% for cooking in collections.cookings | reverse %}
+      <a class="link my-3 text-xl md:text-2xl" href="{{ cooking.url | url }}">{{ cooking.data.title }}</a>
+    {% endfor %} 
+  </nav> 
+
+</section>
