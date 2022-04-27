@@ -12,6 +12,437 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Jonathan Luna /// 572 /// 573",
+      Release: "4/19/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/jonathan-luna-part-1-572",
+      Earliest_Date: "12/4/2003",
+      Earliest_Year: "2003",
+      Notes: "Dry Tavern Road, in Lancaster County",
+    },
+    geometry: {
+      coordinates: [-76.056366, 40.202221],
+      type: "Point",
+    },
+    id: "72643aa3a35166538e5173a79f090253",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Daviess County John Doe /////// 571",
+      Release: "4/12/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/daviess-county-john-doe-571",
+      Earliest_Date: "1/7/1990",
+      Earliest_Year: "1990",
+      Notes: "Owensboro, Kentucky\n",
+    },
+    geometry: {
+      coordinates: [-87.159245, 37.760408],
+      type: "Point",
+    },
+    id: "e7beb0cc94a1632ad4a3b4b438e6cfdf",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "The Boardman Murders /// 4 Part Series",
+      Release: "3/29/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/the-boardman-murders-part-1-567",
+      Earliest_Date: "3/31/1972",
+      Earliest_Year: "1972",
+      Notes: "61 McClurg RdYoungstown, OH 44512",
+    },
+    geometry: {
+      coordinates: [-80.65752, 40.99491],
+      type: "Point",
+    },
+    id: "14fe45e43a903efd73522440a18f97ac",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Heather Norris ////// 566",
+      Release: "3/22/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/heather-norris-566",
+      Earliest_Date: "4/13/2007",
+      Earliest_Year: "2007",
+      Notes: "Lowe's Beech Grove 4444 S Emerson Ave, Indianapolis, IN 46203",
+    },
+    geometry: {
+      coordinates: [-86.08573, 39.70208],
+      type: "Point",
+    },
+    id: "00fffb7feda23084bc9f1df53b0eeb31",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Raymond Timbrook /// 564 /// 565",
+      Release: "3/15/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/raymond-timbrook-564-565",
+      Earliest_Date: "3/13/1992",
+      Earliest_Year: "1992",
+      Notes: "General Hunting Hills, Drive\n",
+    },
+    geometry: {
+      coordinates: [-81.351672, 41.634226],
+      type: "Point",
+    },
+    id: "2f1d70617a6a5611f98c2e7e247aa8d2",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "The Bakersfield 3 /// 562 /// 563",
+      Release: "3/8/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/the-bakersfield-3-part-1-562",
+      Earliest_Date: "3/23/2018",
+      Earliest_Year: "2018",
+      Notes: "Mount Vernon and Flower Street",
+    },
+    geometry: {
+      coordinates: [-118.967386, 35.38093],
+      type: "Point",
+    },
+    id: "12e97fceff8d3d3e03786831edb1260b",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Safe Feeling Gone ////// 561",
+      Release: "3/1/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/safe-feeling-gone-561",
+      Earliest_Date: "11/14/2015",
+      Earliest_Year: "2015",
+      Notes:
+        "Allen County-Scottsville High School 570 W Oliver St, Scottsville, KY 42164",
+    },
+    geometry: {
+      coordinates: [-86.2173, 36.74269],
+      type: "Point",
+    },
+    id: "95272f7151b89f4943997b4f56249b3b",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Donnah Winger /// 559 /// 560",
+      Release: "2/22/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/donnah-winger-559-560",
+      Earliest_Date: "8/29/1995",
+      Earliest_Year: "1995",
+      Notes: "General springfield, illinois",
+    },
+    geometry: {
+      coordinates: [-89.655709, 39.823198],
+      type: "Point",
+    },
+    id: "6c48e7a22ef7e80b068d1dea0a56edc5",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Chance Englebert /// 557 /// 558",
+      Release: "2/15/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/chance-englebert-557-558",
+      Earliest_Date: "7/6/2019",
+      Earliest_Year: "2019",
+      Notes: "700 Block O St Gering, NE 69341",
+    },
+    geometry: {
+      coordinates: [-103.65573, 41.82408],
+      type: "Point",
+    },
+    id: "ab3bdb773897363716fc7f16b0b2de29",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Lauren Smith Fields ////// 556",
+      Release: "2/8/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/lauren-smith-fields-556",
+      Earliest_Date: "12/12/2021",
+      Earliest_Year: "2021",
+      Notes: "Plymouth St, Bridgeport, CT",
+    },
+    geometry: {
+      coordinates: [-73.17554, 41.19821],
+      type: "Point",
+    },
+    id: "2d3d7fa85feae2928a62309b199756b6",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "When A Killer Calls /// 3 Part Series",
+      Release: "2/1/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/when-a-killer-calls-3-part-series",
+      Earliest_Date: "5/31/1985",
+      Earliest_Year: "1985",
+      Notes: "5700 Platt Springs RdLexington, SC 29073",
+    },
+    geometry: {
+      coordinates: [-81.23603, 33.90884],
+      type: "Point",
+    },
+    id: "ca0d72b4cc087efec9aced4af10a5ce5",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Getting Away With Murder /// Part 1 /// 551",
+      Release: "1/25/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/getting-away-with-murder-part-1-551",
+      Earliest_Date: "2/20/2009",
+      Earliest_Year: "2009",
+      Notes: "1146 Wampum New Galilee RdNew Galilee, PA 16141",
+    },
+    geometry: {
+      coordinates: [-80.35913, 40.88155],
+      type: "Point",
+    },
+    id: "8223cd81fbd08a48d2fb2d9f4bda5ab2",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "The Murdaugh Murders /// 4 Part Series /// 547-550",
+      Release: "1/11/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/the-murdaugh-murders-4-part-series-547-550",
+      Earliest_Date: "2/23/2019",
+      Earliest_Year: "2019",
+      Notes: "Archers Creek Bridge ",
+    },
+    geometry: {
+      coordinates: [-80.712991, 32.362078],
+      type: "Point",
+    },
+    id: "2776c80f53eed16cf8f22e5c09deba64",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Serial Killer Phone Call ////// 544",
+      Release: "12/21/2021",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/serial-killer-phone-call-544",
+      Earliest_Date: "8/13/1997",
+      Earliest_Year: "1997",
+      Notes: "General New Orleans",
+    },
+    geometry: {
+      coordinates: [-90.0715, 29.9511],
+      type: "Point",
+    },
+    id: "7b419518a3924a95aa550e3d12bde7e4",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Delphi Murders /// 542 /// 543 /// Off The Record",
+      Release: "12/14/2021",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/delphi-murders-542-543-off-the-record",
+      Earliest_Date: "2/13/2017",
+      Earliest_Year: "2017",
+      Notes:
+        "Coordinates according to https://tools.wmflabs.org/geohack/geohack.php?pagename=Murders_of_Abigail_Williams_and_Liberty_German&params=40_35_20.7_N_86_38_34.2_W_type:landmark",
+    },
+    geometry: {
+      coordinates: [-86.642833, 40.589083],
+      type: "Point",
+    },
+    id: "a78ec1417d92ed510dcf13b2c4b943a5",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Paige Coffey ////// 541",
+      Release: "12/8/2021",
+      URL: "https://www.truecrimegarage.com/home/blog/paige-coffey-541",
+      Earliest_Date: "5/1/2019",
+      Earliest_Year: "2019",
+      Notes:
+        "Steelyard Commons Shopping plaza 3447 Steelyard Dr, Cleveland, OH 44109",
+    },
+    geometry: {
+      coordinates: [-81.69066, 41.45989],
+      type: "Point",
+    },
+    id: "862b7216d60559777d702acae2968ecd",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Yogurt Shop Murders - 30 Years Later /// 539 /// 540",
+      Release: "11/30/2021",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/yogurt-shop-murders-30-years-later-539-540",
+      Earliest_Date: "12/6/1991",
+      Earliest_Year: "1991",
+      Notes: "Hillside strip mall in the 2900 block of West Anderson Lane",
+    },
+    geometry: {
+      coordinates: [-97.73834, 30.359573],
+      type: "Point",
+    },
+    id: "88cb108c5e422fed069fea79f00fb986",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Flora Fire ////// 538",
+      Release: "11/23/2021",
+      URL: "https://www.truecrimegarage.com/home/blog/flora-fire-538",
+      Earliest_Date: "11/21/2016",
+      Earliest_Year: "2016",
+      Notes: "103 E Columbia St, Flora, IN 46929",
+    },
+    geometry: {
+      coordinates: [-86.52278, 40.54688],
+      type: "Point",
+    },
+    id: "9961acb5c13dec5c513f52bfcaf3a6a0",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "If I Can't Have You /// 3 Part Series",
+      Release: "11/17/2021",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/if-i-can-t-have-you-3-part-series",
+      Earliest_Date: "4/28/2007",
+      Earliest_Year: "2007",
+      Notes: "Popeye's Chicken 700 E North AveBelton, MO 64012",
+    },
+    geometry: {
+      coordinates: [-94.52191, 38.81453],
+      type: "Point",
+    },
+    id: "e2ca92849c55da0fde9df943c164561f",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Man With No Hands /// 534",
+      Release: "11/9/2021",
+      URL: "https://www.truecrimegarage.com/home/blog/man-with-no-hands-534",
+      Earliest_Date: "4/9/1989",
+      Earliest_Year: "1989",
+      Notes: "1350 N Main St, Williamstown, KY 41097,",
+    },
+    geometry: {
+      coordinates: [-84.576722, 38.659389],
+      type: "Point",
+    },
+    id: "da223a335963e42769c17109fc1a4d99",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Jennifer Medernach /// 532 /// 533",
+      Release: "11/2/2021",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/jennifer-medernach-532-533",
+      Earliest_Date: "11/5/2001",
+      Earliest_Year: "2001",
+      Notes: "Woodland Estates 9359 103rd St, Jacksonville, FL 32210",
+    },
+    geometry: {
+      coordinates: [-81.81078, 30.25213],
+      type: "Point",
+    },
+    id: "3dba7b3b31a688435b2fa631538f0d77",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Spookyville /// 530 /// 531",
+      Release: "10/26/2021",
+      URL: "https://truecrimegarage.com/home/blog/spookyville-530-531",
+      Earliest_Date: "8/5/2021",
+      Earliest_Year: "2021",
+      Notes: "386 Moon Valley RdLebanon, MO 65536",
+    },
+    geometry: {
+      coordinates: [-92.86982, 37.70085],
+      type: "Point",
+    },
+    id: "6b46f285dd61c2173540133614726118",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "The Beatrice 6 ////// 529",
+      Release: "10/19/2021",
+      URL: "https://truecrimegarage.com/home/blog/the-beatrice-6-529",
+      Earliest_Date: "2/5/1985",
+      Earliest_Year: "1985",
+      Notes: "212 North 6th Street",
+    },
+    geometry: {
+      coordinates: [-96.74647, 40.2675],
+      type: "Point",
+    },
+    id: "8a6d1db33bf4c8ca58240df6cb0bd4f2",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Cathy Nameth /// 527 /// 528",
+      Release: "10/12/2021",
+      URL: "https://truecrimegarage.com/home/blog/cathy-nameth-527-528",
+      Earliest_Date: "10/12/2002",
+      Earliest_Year: "2002",
+      Notes: "Road near the 44 acre loon lake",
+    },
+    geometry: {
+      coordinates: [-89.098804, 45.389012],
+      type: "Point",
+    },
+    id: "da8a1c349e1f9b97f937874f6a085e3c",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Detrez Green /// 525 /// 526",
+      Release: "10/6/2021",
+      URL: "https://truecrimegarage.com/home/blog/detrez-green-525-526",
+      Earliest_Date: "1/22/2017",
+      Earliest_Year: "2017",
+      Notes: "3527 Sylvester Rd, Albany, GA 31705",
+    },
+    geometry: {
+      coordinates: [-84.04022, 31.57672],
+      type: "Point",
+    },
+    id: "722337017e1f979e992007f8d162d246",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Gerald Cotten ////// 524",
+      Release: "9/28/2021",
+      URL: "https://www.truecrimegarage.com/home/blog/gerald-cotten-524",
+      Earliest_Date: "12/9/2018",
+      Earliest_Year: "2018",
+      Notes:
+        "Fortis Hospital J.L.N Marg, Jawahar Lal Nehru Marg, Mata colony, Jaipur, Rajasthan 302018, India",
+    },
+    geometry: {
+      coordinates: [75.80688, 26.8625],
+      type: "Point",
+    },
+    id: "3c4e29e7076e7632f76dc1285004c2f6",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Missing on Campus /// 522 /// 523",
       Release: "9/14/2021",
       URL: "https://truecrimegarage.com/home/blog/missing-on-campus-522-523",
