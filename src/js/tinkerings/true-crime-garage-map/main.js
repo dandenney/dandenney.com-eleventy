@@ -12,6 +12,23 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Las Vegas Crime Stories /// Part 1 /// 574",
+      Release: "4/26/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/las-vegas-crime-stories-part-1-574",
+      Earliest_Date: "5/7/2007",
+      Earliest_Year: "2007",
+      Notes: "3900 S Las Vegas Blvd, Las Vegas, NV 89119",
+    },
+    geometry: {
+      coordinates: [-115.176064, 36.095509],
+      type: "Point",
+    },
+    id: "40272686bcaf2fb177eadc890eb331c0",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Jonathan Luna /// 572 /// 573",
       Release: "4/19/2022",
       URL: "https://www.truecrimegarage.com/home/blog/jonathan-luna-part-1-572",
