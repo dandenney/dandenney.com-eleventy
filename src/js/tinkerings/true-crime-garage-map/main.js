@@ -12,6 +12,22 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Keith Mann Jr. /// 576 /// 577",
+      Release: "5/3/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/keith-mann-jr-576-577",
+      Earliest_Date: "5/10/1997",
+      Earliest_Year: "1997",
+      Notes: "5210 Tower Dr, Wichita Falls, TX 76310",
+    },
+    geometry: {
+      coordinates: [-98.57531, 33.853619],
+      type: "Point",
+    },
+    id: "104f724ea6723f3d2ff4671849b6f538",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Las Vegas Crime Stories /// Part 1 /// 574",
       Release: "4/26/2022",
       URL:
