@@ -12,6 +12,40 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Shannan Gilbert 911 Call /// 579 /// 580",
+      Release: "5/18/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/shannan-gilbert-911-call-579-580",
+      Earliest_Date: "5/1/2010",
+      Earliest_Year: "2010",
+      Notes:
+        "Shannan Gilbert's last known location\n\nThe dates and times for this one were hard to pick. Went with Shannan as she led to the other discoveries.",
+    },
+    geometry: {
+      coordinates: [-73.276783, 40.63847],
+      type: "Point",
+    },
+    id: "368186647e709842c6472c2672230b14",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Austin Colson ////// 578",
+      Release: "5/10/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/austin-colson-578",
+      Earliest_Date: "1/11/2018",
+      Earliest_Year: "2018",
+      Notes: "714 Beaver Meadow Rd Norwich, VT 05055",
+    },
+    geometry: {
+      coordinates: [-72.3362, 43.73505],
+      type: "Point",
+    },
+    id: "7531f3bc116ede09606565edcbf4ba0d",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Keith Mann Jr. /// 576 /// 577",
       Release: "5/3/2022",
       URL: "https://www.truecrimegarage.com/home/blog/keith-mann-jr-576-577",
