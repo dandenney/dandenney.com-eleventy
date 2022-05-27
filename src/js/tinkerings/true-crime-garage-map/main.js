@@ -12,6 +12,23 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "The McStay Family /// 581 /// 582",
+      Release: "5/24/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/the-mcstay-family-581-582",
+      Earliest_Date: "2/4/2010",
+      Earliest_Year: "2010",
+      Notes: "3473 Avocado Vista Ln, Fallbrook, CA 92028",
+    },
+    geometry: {
+      coordinates: [-117.14768, 33.32605],
+      type: "Point",
+    },
+    id: "b9846b346d0bd97a7e51ad370d0b316a",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "Shannan Gilbert 911 Call /// 579 /// 580",
       Release: "5/18/2022",
       URL:
