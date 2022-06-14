@@ -12,6 +12,39 @@ const generatedFeatures = [
   {
     type: "Feature",
     properties: {
+      Title: "Samuel Little /// The Killer of Women /// 3 Part Series",
+      Release: "6/7/2022",
+      URL:
+        "https://www.truecrimegarage.com/home/blog/samual-little-the-killer-of-women-3-part-series",
+      Earliest_Date: "12/31/1970",
+      Earliest_Year: "1970",
+      Notes: "Route 27, Miami",
+    },
+    geometry: {
+      coordinates: [-80.394856, 25.907878],
+      type: "Point",
+    },
+    id: "59a374e05145670e38670cc461410608",
+  },
+  {
+    type: "Feature",
+    properties: {
+      Title: "Asenath Dukat /// 583 /// 584",
+      Release: "5/31/2022",
+      URL: "https://www.truecrimegarage.com/home/blog/asenath-dukat-583-584",
+      Earliest_Date: "5/7/1980",
+      Earliest_Year: "1980",
+      Notes: "Canterbury Road & U.S. 33, Upper Arlington, Ohio",
+    },
+    geometry: {
+      coordinates: [-83.089441, 40.0133],
+      type: "Point",
+    },
+    id: "0ab835af77a992719f41f22b9b13f84c",
+  },
+  {
+    type: "Feature",
+    properties: {
       Title: "The McStay Family /// 581 /// 582",
       Release: "5/24/2022",
       URL:
