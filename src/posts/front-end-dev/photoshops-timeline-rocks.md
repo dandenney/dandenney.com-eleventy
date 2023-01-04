@@ -40,7 +40,7 @@ I got permission from [Justin](http://twitter.com/justinmezzell) to share the PS
 
 Timelines default to 5 seconds and you will likely want to change that. Making the timeline shorter is super intuitive: you just drag the draggable-looking item to the left and you now have a shorter timeline. If you want to make it longer, you would drag it to the right, right? Unfortunately not. I'm hoping I get corrected by someone with experience here but checking "help", Googling, and having a little "please save me" session with Justin led me to believe that the only way to extend the timeline is to individually extend the available time for each item, like so:
 
-![Photoshop CC Timeline](drag-all-the-things.gif)
+![Photoshop CC Timeline](/img/posts/front-end-dev/photoshops-timeline-rocks/drag-all-the-things.gif)
 
 <small>Note: that was not an inception GIF, I used [LICEcap](http://www.cockos.com/licecap) which is awesome for screener GIFs (but not very purdy).</small>
 
@@ -76,7 +76,7 @@ At the end of the timeline, I wanted to have the balloon go out of the image and
 
 ## Getting GIFfy With It
 
-![Photoshop CC Timeline](getting-giffy-with-it.gif)
+![Photoshop CC Timeline](/img/posts/front-end-dev/photoshops-timeline-rocks/getting-giffy-with-it.gif)
 
 Boom! We have ourselves one monstrously-sized GIF! This one is a bit egregious for the example, but I thought it'd be fun. If you want to play with it, I have the [PSD](https://www.dropbox.com/s/3wr5vp4um22wys4/PS-timeline-example.psd?dl=0) on Dropbox. The one I used only repeated once but I have this one looping just so you can see it in action.
 

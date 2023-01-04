@@ -6,13 +6,16 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7537438/6246012/css/fonts.css" media="print" onload="this.media='all'" />
-    <link rel="stylesheet" href="/styles/style.css" />
-
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <style>
+      body {
+        font-family: "Gotham A", "Gotham B";
+        font-style: normal;
+        font-weight: 400;
+      }
+    </style>
   </head>
   <body class="min-h-screen flex flex-col md">
-
-    {% include "header.njk" %}
 
     <main class="p-4 flex-grow">
       {{ content | safe }}
@@ -43,6 +46,5 @@
       quicklink.listen();
     </script>
 
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50f8d4196eb22a54"></script>
   </body>
 </html>
