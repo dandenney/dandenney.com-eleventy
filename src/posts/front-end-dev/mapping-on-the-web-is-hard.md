@@ -1,7 +1,6 @@
 ---
 path: "/posts/front-end-dev/mapping-on-the-web-is-hard-sorta"
-thumb: "/img/posts/front-end-dev/mapping-on-the-web-is-hard-sorta/thumb.jpg"
-thumb2x: "/img/posts/front-end-dev/mapping-on-the-web-is-hard-sorta/thumb@2x.jpg"
+thumb: posts/map-on-the-web.png
 title: Mapping On The Web Is Hard, Sorta
 summary: Sharing what I learned trying to build an interactive map
 date: "2020-03-08"

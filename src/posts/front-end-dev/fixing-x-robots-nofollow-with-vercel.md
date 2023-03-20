@@ -1,7 +1,6 @@
 ---
 path: "/posts/front-end-dev/fixing-x-robots-nofollow-with-vercel"
-thumb: "/img/posts/front-end-dev/fixing-x-robots-nofollow-with-vercel/thumb.png"
-thumb2x: "/img/posts/front-end-dev/fixing-x-robots-nofollow-with-vercel/thumb@2x.png"
+thumb: "posts/x-robots_nofollow.png"
 title: "Fixing x-robots nofollow with Vercel"
 summary: Fixing a an issue when proxying to Vercel 
 date: "2021-08-17"
