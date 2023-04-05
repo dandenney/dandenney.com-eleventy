@@ -3,6 +3,7 @@ path: "/posts/front-end-dev/mondays-rock"
 thumb: "posts/didnt-write-this-blog-post.png"
 thumbAlt: "an illustration of a robot playing with a toy human --v 5 --s 777 --ar 3:2"
 title: I Didn't Write This Blog Post
+titleGradient: "linear-gradient(35deg, #f68644, #af5a3d)"
 summary: The computers have taken over this website
 date: "2023-04-04"
 tags:
@@ -22,8 +23,6 @@ layout: layouts/post.njk
     }
   }
 </style>
-
-<img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1374,q_auto/v1673896360/posts/didnt-write-this-blog-post.png" width="672">
 
 > Write an intro to a blog post about how I used AI to write this blog post, in a sarcastic tone
 
