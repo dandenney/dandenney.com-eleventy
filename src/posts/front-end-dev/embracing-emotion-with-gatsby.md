@@ -1,5 +1,6 @@
 ---
 path: "/posts/front-end-dev/embracing-emotion-with-gatsby"
+thumb: "posts/emotion-gatsby.png"
 title: Embracing Emotion, with Gatsby
 summary: Crushing on Gatsby and trying to organize my Emotions
 date: "2019-04-17"

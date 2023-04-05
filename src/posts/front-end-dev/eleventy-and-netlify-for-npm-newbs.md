@@ -7,6 +7,7 @@ tags:
   - front-end-dev
 thumb: posts/eleventy-netlify-newb.jpg
 title: Eleventy and Netlify for NPM newbs like me
+titleGradient: "linear-gradient(to bottom, #75675a, #c2b595)"
 ---
 
 ## Backstory

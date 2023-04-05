@@ -6,22 +6,77 @@ eleventyNavigation:
   order: 1
 ---
 
-<section>
+<style>
+  .intro {
+    background: #f5f5f5;
+    padding: 2rem;
+  }
 
-  <h1 class="font-black mx-auto pb-4 text-center text-6xl md:text-9xl">Posts</h1>
+  .intro p {
+    line-height: 1.5;
+  }
 
-  <nav class="flex flex-wrap items-center justify-center pb-12 posts">
-    {% for post in collections.posts | reverse %}
-      {% if post.data.poster %}
-        <a class="duration-300 relative transition-transform md:m-4 hover:transform hover:scale-105" href="{{ post.url | url }}">
-          {{ post.data.poster | safe }}
-        </a>
-      {% else %}
-        <a class="link-post m-4" href="{{ post.url | url }}">
-        {{ post.data.title }}
-        </a>
-      {% endif %}
-    {% endfor %} 
-  </nav> 
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 0px;
+    padding: 1rem;
+  }
+
+  .posts-grid:hover .link-post:not(:hover) img {
+    filter: grayscale(1);
+  }
+
+  .posts-grid a:nth-of-type(odd) {
+    padding-top: 3rem;
+  }
+
+  .link-post {
+    text-decoration: none;
+    transition: all 0.2s linear;
+  }
+  
+  .link-post:hover {
+    transform: scale(1.05);
+  }
+
+  .link-title {
+    color: #b51f24;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.5rem 2rem 0 2rem;
+  }
+
+  .link-description {
+    color: #000000;
+    display: block;
+    padding: 0.5rem 2rem 2rem 2rem;
+  }
+
+  .link-post img {
+    transition: filter 0.5s ease-in;
+    max-width: 100%;
+  }
+</style>
+
+<section class="posts-grid">
+
+  <div class="intro">
+    <h1>Posts</h1>
+    <p>
+      Welcome to my blog, where I share my thoughts and experiences while being as self-effacing as possible on my own website. I hope that my musings will resonate with someone out there in the world wild web, so join me on this journey of self-discovery and mediocrity!
+    </p>
+  </div>
+
+  {% for post in collections.posts | reverse %}
+    <a class="link-post" href="{{ post.url | url }}">
+      <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_880,q_auto/v1673896360/{% if post.data.thumb %}{{ post.data.thumb }}{% else %}posts/slackin.png{% endif %}" alt="{% if post.data.thumb %}{{ post.data.thumbAlt }}{% else %}slacking on my imagin'{% endif %}" />
+      <span class="link-title">{{ post.data.title }}</span>
+      <span class="link-description">{{ post.data.summary }}</span>
+    </a>
+  {% endfor %} 
 
 </section>

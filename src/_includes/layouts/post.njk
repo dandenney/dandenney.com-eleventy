@@ -34,6 +34,14 @@ layout: layouts/base.njk
     font-size: clamp(2rem, 2rem + 4vw, 6rem);
   }
 
+  {% if titleGradient %}
+  .longform h1, .longform h2 {
+    background: {{ titleGradient }};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  {% endif %}
+
   .full-bleed,
   .full-to-half-bleed,
   .longform header {

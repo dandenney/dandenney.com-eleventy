@@ -1,7 +1,6 @@
 ---
 path: "/posts/front-end-dev/you-cant-make-other-love-css"
 thumb: "posts/love-css.png"
-thumb2x: ""
 title: "You Can't Make Others Love CSS"
 summary: Sharing my take on the utility CSS wars
 date: "2022-09-20"

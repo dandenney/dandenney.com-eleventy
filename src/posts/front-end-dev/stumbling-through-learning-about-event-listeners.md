@@ -1,5 +1,7 @@
 ---
 path: "/posts/front-end-dev/stumbling-through-learning-about-event-listeners"
+thumb: "posts/learning-event-listeners.png"
+thumbAlt: "An illustration of a student struggling to learn, with books and notes scattered around, in the style of a sketch, viewed from a close-up perspective --v 5 --ar 3:2"
 title: Stumbling Through Learning About Event Listeners
 summary: In which I think I figure something out but I'm wrong
 date: "2016-09-15"

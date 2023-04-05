@@ -1,5 +1,7 @@
 ---
 path: "/posts/front-end-dev/learning-javascript-problem-solving"
+thumb: "posts/javascript-problems.png"
+thumbAlt: "An illustration of two trains heading towards a crash, with a city skyline in the background, in the style of a comic book, viewed from a dynamic perspective --v 5 --ar 3:2"
 title: "I'm Learning How to Solve Problems with JavaScript"
 summary: Showing the solution to a brain teaser with JS
 date: "2016-08-08"

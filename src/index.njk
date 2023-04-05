@@ -6,6 +6,11 @@ title: "Custom collection list markup in Eleventy"
 ---
 
 <style>
+  .intro {
+    background: #f5f5f5;
+    padding: 2rem;
+  }
+
   .posts-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -45,7 +50,7 @@ title: "Custom collection list markup in Eleventy"
   }
 
   .link-title {
-    color: #000000;
+    color: #b51f24;
     display: block;
     font-size: 1.5rem;
     font-weight: 900;
@@ -66,7 +71,7 @@ title: "Custom collection list markup in Eleventy"
 
 <section class="posts-grid">
 
-  <article>
+  <article class="intro">
 
     {% include "header.njk" %}
 

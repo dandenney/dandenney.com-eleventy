@@ -1,6 +1,7 @@
 ---
 path: "/posts/front-end-dev/injecting-a-banner-populated-by-cookie-data"
 title: Injecting a banner populated with cookie data
+thumb: "posts/injecting-cookie-data.png"
 summary: Sharing how I made a banner for a promo
 date: "2019-09-18"
 codeHighlighting: true
