@@ -1,4 +1,6 @@
 ---
+linkColor: "#db405d"
+textColor: "#5a1468"
 path: "/posts/front-end-dev/you-cant-make-other-love-css"
 thumb: "posts/love-css.png"
 title: "You Can't Make Others Love CSS"

@@ -11,6 +11,9 @@ layout: layouts/base.njk
   }
 
   .longform {
+    {% if textColor %}
+    color: {{ textColor }};
+    {% endif %}
     line-height: 1.5;
   }
 
@@ -43,6 +46,22 @@ layout: layouts/base.njk
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
+  }
+  {% endif %}
+
+  {% if linkColor %}
+  .longform a {
+    background-image: linear-gradient(to bottom, transparent 90%, {{ linkColor }} 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: {{ linkColor }};
+    text-decoration: none;
+    transition: background-size .4s ease;
+  }
+
+  .longform a:hover {
+    background-size: 0% 100%;
+    cursor: pointer;
   }
   {% endif %}
 

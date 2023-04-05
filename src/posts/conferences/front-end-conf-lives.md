@@ -1,5 +1,7 @@
 ---
 path: "/posts/conferences/front-end-conf-lives"
+thumb: "posts/front-end-lives.png"
+thumbAlt: "A mesmerizing digital art piece depicting a lush, verdant garden coming back to life after a long, cold winter. The once barren landscape is now a riot of colors, with fresh leaves and blossoming flowers reaching up towards the sky. The scene is set at sunrise, with the first rays of sunlight peeking through the trees, casting a warm glow over the garden. The viewer is positioned at a bird's eye view, allowing for a panoramic view of the garden's transformation. The air is filled with the sound of chirping birds, buzzing bees, and rustling leaves, adding to the sense of renewal and rebirth. The image captures the beauty of the natural world awakening from its slumber, a powerful metaphor for the cyclical nature of life and the unstoppable force of renewal --v 5 --ar 3:2"
 title: "Front-End Conf Lives!"
 summary: The conference goes on, thanks to friends
 date: "2014-10-23"
