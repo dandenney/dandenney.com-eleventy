@@ -1,4 +1,6 @@
 ---
+thumb: "v1680747309/tinkerings/roulettingale-v2.png"
+thumbAlt: "Screenshot of a visualization of roulette bets"
 title: Roulettingale v2
 date: 2015-02-10
 summary: A deep dive into applying the Martingale betting system to roulette

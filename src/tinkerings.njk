@@ -6,14 +6,147 @@ eleventyNavigation:
   order: 1
 ---
 
-<section class="mx-auto sm:max-w-3xl">
+<style>
 
-  <h1 class="font-black pb-4 text-6xl md:text-9xl">Tinkerings</h1>
+  .intro-posts {
+    margin-bottom: 1.5rem;
+    padding-top: 2rem;
+  }
 
-  <nav class="flex flex-col items-start pb-12">
-    {% for tinkering in collections.tinkerings | reverse %}
-      <a class="link my-3 text-xl md:text-2xl" href="{{ tinkering.url | url }}">{{ tinkering.data.title }}</a>
-    {% endfor %} 
-  </nav> 
+  .intro-posts h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .intro-posts p {
+    line-height: 1.5;
+  }
+
+  .link-post {
+    text-decoration: none;
+    transition: all 0.2s linear;
+  }
+  
+  .link-post:hover {
+    transform: scale(1.05);
+  }
+
+  .link-title {
+    color: #b51f24;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.5rem 1rem 0 1rem;
+  }
+
+  .link-description {
+    color: #000000;
+    display: block;
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+
+  .link-post img {
+    transition: filter 0.5s ease-in;
+    max-width: 100%;
+  }
+
+
+  .tinkerings-grid {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .tinkerings-grid .link-post,
+  .tinkerings-grid .intro {
+    max-width: 343px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .tinkerings-grid {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      grid-column-gap: 2rem;
+      justify-content: center;
+    }
+
+    .tinkerings-grid .intro {
+      max-width: 100%;
+    }
+
+    .tinkerings-grid .link-post {
+      margin-top: 1rem;
+      max-width: calc(50% - 16px);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .tinkerings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 32px;
+      grid-row-gap: 0px;
+    }
+
+    .tinkerings-grid .link-post {
+      margin-top: 0;
+      max-width: unset;
+    }
+
+    .tinkerings-grid:hover .link-post:not(:hover) img {
+      filter: grayscale(1);
+    }
+
+    .tinkerings-grid article { grid-area: 1 / 1 / 3 / 2; }
+    .tinkerings-grid .link-post:nth-of-type(1) { grid-area: 1 / 2 / 2 / 3; }
+    .tinkerings-grid .link-post:nth-of-type(2) { grid-area: 1 / 3 / 2 / 4; }
+    .tinkerings-grid .link-post:nth-of-type(3) { grid-area: 2 / 2 / 3 / 3; }
+    .tinkerings-grid .link-post:nth-of-type(4) { grid-area: 2 / 3 / 3 / 4; }
+    .tinkerings-grid .link-post:nth-of-type(5) { grid-area: 3 / 1 / 4 / 2; }
+    .tinkerings-grid .link-post:nth-of-type(6) { grid-area: 3 / 2 / 4 / 3; }
+    .tinkerings-grid .link-post:nth-of-type(7) { grid-area: 3 / 3 / 4 / 4; }
+    .tinkerings-grid .link-post:nth-of-type(8) { grid-area: 4 / 1 / 5 / 2; }
+    .tinkerings-grid .link-post:nth-of-type(9) { grid-area: 4 / 2 / 5 / 3; }
+    .tinkerings-grid .link-post:nth-of-type(10) { grid-area: 4 / 3 / 5 / 4; }
+
+    .tinkerings-grid .link-post:nth-of-type(odd) {
+      padding-top: 3rem;
+    }
+
+    .link-title {
+      padding: 0.5rem 2rem 0 2rem;
+    }
+
+    .link-description {
+      padding: 0.5rem 2rem 2rem 2rem;
+    }
+  }
+
+</style>
+
+<section class="tinkerings-grid">
+
+  <section class="intro-posts">
+
+    <header class="flex flex-wrap items-center justify-center p-8 sm:justify-between">
+      <h1>Tinkerings</h1>
+      <p>
+        The projects are all scratching some itch, either technical or part of my interests. Each has some technical bit that I learned in order to build, but they're focused on things like my love for music and trying to beat number systems.
+      </p>
+    </header>
+
+  </section>
+
+  {% for tinkering in collections.tinkerings | reverse %}
+    <a class="link-post" href="{{ tinkering.url | url }}">
+      <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_880,q_auto/{% if tinkering.data.thumb %}{{ tinkering.data.thumb }}{% else %}posts/slackin.png{% endif %}" alt="{% if tinkering.data.thumb %}{{ tinkering.data.thumbAlt }}{% else %}slacking on my imagin'{% endif %}" />
+      <span class="link-title">{{ tinkering.data.title }}</span>
+      <span class="link-description">{{ tinkering.data.summary }}</span>
+    </a>
+  {% endfor %} 
 
 </section>

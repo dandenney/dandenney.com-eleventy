@@ -4,7 +4,7 @@ title: Spotify Wrapped 2019
 date: "2019-12-05"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 The Spotify Wrapped release days are my favorite part of the year. I love them so much and this year's was awesome. The 2 albums from Evan Bartels have made my year.

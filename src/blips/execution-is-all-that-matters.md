@@ -4,7 +4,7 @@ title: Execution is all that matters
 date: "2012-09-15"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 Working in the 'online world', it is hard to not have multiple ideas per day on things that you would like to create. More than anything else, what I have learned is that execution is all that matters.

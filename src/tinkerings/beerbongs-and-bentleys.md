@@ -1,6 +1,8 @@
 ---
 title: "Disruptive Album: beerbongs and bentleys"
 date: 2020-02-17
+thumb: "v1680747164/tinkerings/beerbongs-and-bentleys.png"
+thumbAlt: "Screenshot of a visualization for Beerbongs and Bentleys"
 summary: A celebration of the impact of the album on the Spotify charts
 layout: layouts/tinkering.njk
 tags:

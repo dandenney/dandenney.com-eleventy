@@ -1,8 +1,32 @@
-<footer class="bg-black flex flex-wrap items-center justify-center p-6">
+<style>
+  .site-footer {
+    background: #f5f5f5;
+    padding: 1rem;
+  }
+
+  .site-footer nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .site-footer .link {
+    color: #b51f24;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease-out;
+  }
+
+  .site-footer .link:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+<footer class="site-footer">
   <nav class="flex">
     <a class="link" href="/">Home</a>
-    <a class="link ml-4" href="/tinkerings">Tinkerings</a>
-    <a class="link ml-4" href="/blips">Blips</a>
-    <a class="link ml-4" href="/posts">Posts</a>
+    <a class="link" href="/tinkerings">Tinkerings</a>
+    <a class="link" href="/blips">Blips</a>
+    <a class="link" href="/posts">Posts</a>
   </nav>
 </footer>

@@ -4,7 +4,7 @@ title: I love Kippt
 date: "2012-09-15"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 I've been a Twitter addict for a few years now. The primary reason that I am addicted is that it is my main way of discovering things related to front-end work. Of course, I dig the social part of having tweetversations but the links are my main reason for going.

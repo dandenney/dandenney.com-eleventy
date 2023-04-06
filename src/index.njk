@@ -5,84 +5,38 @@ thumb: 'eleventy-netlify-newb.jpg'
 title: "Custom collection list markup in Eleventy"
 ---
 
-<style>
-  .intro {
-    background: #f5f5f5;
-    padding: 2rem;
-  }
-
-  .posts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 32px;
-    grid-row-gap: 0px;
-    padding: 1rem;
-  }
-
-  .posts-grid:hover .link-post:not(:hover) img {
-    filter: grayscale(1);
-  }
-
-  .posts-grid article { grid-area: 1 / 1 / 3 / 2; }
-  .posts-grid a:nth-of-type(1) { grid-area: 1 / 2 / 2 / 3; }
-  .posts-grid a:nth-of-type(2) { grid-area: 1 / 3 / 2 / 4; }
-  .posts-grid a:nth-of-type(3) { grid-area: 2 / 2 / 3 / 3; }
-  .posts-grid a:nth-of-type(4) { grid-area: 2 / 3 / 3 / 4; }
-  .posts-grid a:nth-of-type(5) { grid-area: 3 / 1 / 4 / 2; }
-  .posts-grid a:nth-of-type(6) { grid-area: 3 / 2 / 4 / 3; }
-  .posts-grid a:nth-of-type(7) { grid-area: 3 / 3 / 4 / 4; }
-  .posts-grid a:nth-of-type(8) { grid-area: 4 / 1 / 5 / 2; }
-  .posts-grid a:nth-of-type(9) { grid-area: 4 / 2 / 5 / 3; }
-  .posts-grid a:nth-of-type(10) { grid-area: 4 / 3 / 5 / 4; }
-
-  .posts-grid a:nth-of-type(odd) {
-    padding-top: 3rem;
-  }
-
-  .link-post {
-    text-decoration: none;
-    transition: all 0.2s linear;
-  }
-  
-  .link-post:hover {
-    transform: scale(1.05);
-  }
-
-  .link-title {
-    color: #b51f24;
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 900;
-    padding: 0.5rem 2rem 0 2rem;
-  }
-
-  .link-description {
-    color: #000000;
-    display: block;
-    padding: 0.5rem 2rem 2rem 2rem;
-  }
-
-  .link-post img {
-    transition: filter 0.5s ease-in;
-    max-width: 100%;
-  }
-</style>
+{% include "posts.njk" %}
 
 <section class="posts-grid">
 
-  <article class="intro">
+  <section class="intro">
 
-    {% include "header.njk" %}
+    <header class="flex flex-wrap items-center justify-center p-8 sm:justify-between">
+      <a class="intro-logo" href="/"><img alt="Illustration of Dan Denney, by Ricardo Gimenes" src="/img/dan-denney-circle.svg" width="100" /></a>
+      <h1 class="mt-4 mx-auto text-lg sm:max-w-2xl">I'm Dan Denney, a front-end dev at <a class="link" href="https://www.datacamp.com">DataCamp</a> and all-around fan of design and development.</h1>
 
-    <h1 class="mt-4 mx-auto text-lg sm:max-w-2xl">I'm Dan Denney, a front-end dev at <a class="link" href="https://www.datacamp.com">DataCamp</a> and all-around fan of design and development.</h1>
+      <ul class="nav-site">
+        <li>
+          <a class="header-nav-link" href="/posts">Posts</a>
+          <p>My attempt at blogging</p>
+        </li>
+        <li>
+          <a class="header-nav-link" href="/blips">Blips</a>
+          <p>Quick thoughts or shares</p>
+        </li>
+        <li>
+          <a class="header-nav-link" href="/tinkerings">Tinkerings</a>
+          <p>Projects for sharing and learning</p>
+        </li>
+      </ul>
+    </header>
 
     {% include "social.njk" %}
 
-  </article>
+  </section>
   
   {% set homePosts = collections.posts | reverse %}
-  {% for homePost in homePosts.slice(0, 13) %}
+  {% for homePost in homePosts.slice(0, 14) %}
     <a class="link-post" href="{{ homePost.url | url }}">
       <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_880,q_auto/v1673896360/{{ homePost.data.thumb }}" alt="" />
       <span class="link-title">{{ homePost.data.title }}</span>

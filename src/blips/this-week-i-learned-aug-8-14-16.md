@@ -4,7 +4,7 @@ title: This Week I Learned (Aug 8-14)
 date: 2016-08-14
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 Progressive Web Apps are my focus these days. I love the ideas behind them and they use all of the tech that I have been wanting to learn. On top of Jon Duckett's [Javascript Book](http://www.javascriptbook.com), these are the articles that I learned from this week.

@@ -1,0 +1,95 @@
+<style>
+.longform {
+    {% if textColor %}
+    color: {{ textColor }};
+    {% endif %}
+    line-height: 1.5;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .longform a {
+    color: #b51f24;
+  }
+
+  .longform h1, .longform h2, .longform h3, .longform h4, .longform h5 {
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+
+  .longform img {
+    max-width: 100%;
+  }
+
+  .longform-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80ch;
+  }
+
+  .longform h1 {
+    font-size: clamp(2rem, 2rem + 4vw, 6rem);
+  }
+
+  {% if titleGradient %}
+  .longform h1, .longform h2, .longform h3, .longform h4, .longform h5 {
+    background: {{ titleGradient }};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+  }
+  {% endif %}
+
+  {% if linkColor %}
+  .longform a {
+    background-image: linear-gradient(to bottom, transparent 90%, {{ linkColor }} 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: {{ linkColor }};
+    text-decoration: none;
+    transition: background-size .4s ease;
+  }
+
+  .longform a:hover {
+    background-size: 0% 100%;
+    cursor: pointer;
+  }
+  {% endif %}
+
+  .full-bleed,
+  .full-to-half-bleed,
+  .longform header {
+    margin-left: 50%;
+    max-width: 100rem;
+    transform: translateX(-50%);
+    width: 100vw;
+  }  
+
+  @media screen and (min-width: 1000px) {
+    .full-to-half-bleed,
+    .longform img.full-to-half-bleed {
+      max-width: 150%;
+      width: 150%;
+      margin-left: -25%;
+      margin-right: -25%;
+      transform: none;
+    }
+
+    .post-header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+
+    .post-header img {
+      max-width: 672px;
+      width: 50%;
+    }
+
+    .post-header h1 {
+      margin: 0;
+      padding: 0 2rem;
+    }
+  }
+</style>

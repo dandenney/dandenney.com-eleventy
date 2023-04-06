@@ -6,69 +6,35 @@ eleventyNavigation:
   order: 1
 ---
 
-<style>
-  .intro {
-    background: #f5f5f5;
-    padding: 2rem;
-  }
-
-  .intro p {
-    line-height: 1.5;
-  }
-
-  .posts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 32px;
-    grid-row-gap: 0px;
-    padding: 1rem;
-  }
-
-  .posts-grid:hover .link-post:not(:hover) img {
-    filter: grayscale(1);
-  }
-
-  .posts-grid a:nth-of-type(odd) {
-    padding-top: 3rem;
-  }
-
-  .link-post {
-    text-decoration: none;
-    transition: all 0.2s linear;
-  }
-  
-  .link-post:hover {
-    transform: scale(1.05);
-  }
-
-  .link-title {
-    color: #b51f24;
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 900;
-    padding: 0.5rem 2rem 0 2rem;
-  }
-
-  .link-description {
-    color: #000000;
-    display: block;
-    padding: 0.5rem 2rem 2rem 2rem;
-  }
-
-  .link-post img {
-    transition: filter 0.5s ease-in;
-    max-width: 100%;
-  }
-</style>
+{% include "posts.njk" %}
 
 <section class="posts-grid">
 
-  <div class="intro">
+  <div class="intro-posts">
     <h1>Posts</h1>
     <p>
       Welcome to my blog, where I share my thoughts and experiences while being as self-effacing as possible on my own website. I hope that my musings will resonate with someone out there in the world wild web, so join me on this journey of self-discovery and mediocrity!
     </p>
+
+    <strong>Bringing back the blog roll...</strong>
+    <nav class="blog-roll">
+      <a href="https://rachsmith.com">Rachel Smith</a>
+      <a href="https://chriscoyier.net">Chris Coyier</a>
+      <a href="https://daverupert.com">"Uncle" Dave Rupert</a>
+      <a href="https://css-irl.info">CSS IRL</a>
+      <a href="https://bitsofco.de">Ire Aderinokun</a>
+      <a href="https://stephaniewalter.design/blog">Stephanie Walter</a>
+      <a href="https://timkadlec.com/remembers">Tim Kadlec</a>
+      <a href="https://bradfrost.com/blog">Brad Frost</a>
+      <a href="https://moderncss.dev">Modern CSS Solutions</a>
+      <a href="https://tympanus.net/codrops">CoDrops</a>
+      <a href="https://www.raymondcamden.com">Raymond Camden</a>
+      <a href="https://ishadeed.com/articles">Ahmad Shadeed</a>
+      <a href="https://www.builder.io/blog">Builder</a>
+      <a href="https://www.zachleat.com/web">Zach Leat</a>
+      <a href="https://www.stefanjudis.com/blog">Stefan Judis</a>
+      <a href="https://web.dev/blog">Web.Dev</a>
+    </nav>
   </div>
 
   {% for post in collections.posts | reverse %}

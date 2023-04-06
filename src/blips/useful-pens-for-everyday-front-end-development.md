@@ -4,7 +4,7 @@ title: "Useful Pens for Everyday Front End Development"
 date: "2020-01-18"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 Awesome [CodePen collection](https://codepen.io/collection/nMgKxJ) from Sarah Drasner, that i want to keep bookmarked.

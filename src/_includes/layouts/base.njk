@@ -8,10 +8,19 @@
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7537438/6246012/css/fonts.css" media="print" onload="this.media='all'" />
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         font-family: "Gotham A", "Gotham B";
         font-style: normal;
         font-weight: 400;
+        margin: 0;
+      }
+
+      main {
+        min-height: calc(100vh - 80px);
       }
     </style>
   </head>

@@ -4,7 +4,7 @@ title: Redesign Day
 date: "2012-10-03"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 One small step for the web, one giant leap for responsive web design. I'm being dramatic, but yesterday was a big day for #RWD and the web in general. It was redesign launch day, with [Element](http://elementcreative.com) and [Paravel](http://paravelinc.com) both showing off their latest versions of their sites. As cool as they are, two web shops releasing responsive redesigns isn't that big of a deal.

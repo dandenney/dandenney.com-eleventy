@@ -4,7 +4,7 @@ title: "JavaScript Then, Now, and Later"
 date: "2022-05-05"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 There have been two outstanding takes on JS lately and I want to archive them here. I've struggled with the React-heavy implementations, despite working in and around them daily for the past 3 years. So, I'm greatly looking forward to the rise of the new frameworks or even a web component future. 

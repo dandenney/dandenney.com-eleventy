@@ -4,7 +4,7 @@ title: Cherry Picking from Frameworks
 date: "2012-11-27"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 If there is such a thing as front-end framework camps, I have been carrying the [Foundation](http://foundation.zurb.com) flag for a while. As a full framework, I prefer it over [Bootstrap](http://twitter.github.com/bootstrap). I prefer the code style and the use of Sass instead of Less, primarily. I also like that there's less in it and it is more tightly bundled.
