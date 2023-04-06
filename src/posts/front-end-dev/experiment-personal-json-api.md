@@ -1,13 +1,18 @@
 ---
-path: "/posts/front-end-dev/experiment-personal-json-api"
-title: Experiment - Personal JSON-based API
-summary: Trying out a way to access a personal bio as an API
 date: "2014-08-30"
-permalink: posts/front-end-dev/{{ title | slug }}/index.html
 codeHighlighting: true
+layout: layouts/post.njk
+linkColor: "#2c707c"
+path: "/posts/front-end-dev/experiment-personal-json-api"
+permalink: posts/front-end-dev/{{ title | slug }}/index.html
+summary: Trying out a way to access a personal bio as an API
 tags:
   - front-end-dev
-layout: layouts/post.njk
+textColor: "#2a3235"
+thumb: "posts/personal-json-api.png"
+thumbAlt: "An illustration of a person integrating electronic parts into their body, with circuit boards and wires visible beneath their skin, in the style of a cyberpunk graphic novel, viewed from a side perspective --v 5 --ar 3:2"
+title: Experiment - Personal JSON-based API
+titleGradient: "linear-gradient(to left, #d36b89, #8a455c)"
 ---
 
 The most important thing that I can say right now is that this is an experiment. I am sharing as I learn, so please don't consider this a tutorial. I prefer to share as I bumble through things because it might help other people in the same spot and experts usually offer good tips for improving.
@@ -26,24 +31,26 @@ I knew that I wanted to use [Firebase](https://www.firebase.com) to get started.
 
 Knowing that this will be a work in progress, I didn't spend much time planning out data. I know there were a few things that I would want to be able to display on the site, so I created a small JSON file with them.
 
-    {
-      "personal" : {
-        "firstName" : "Dan",
-        "lastName" : "Denney",
-        "dob" : "12/26/77"
-      },
-      "work" : {
-        "workTitle" : "Front-End Dev",
-        "workCompany" : "Code School"
-      },
-      "social" : {
-        "website" : "dandenney.com",
-        "twitter" : "dandenney",
-        "codepen" : "dandenney",
-        "github" : "dandenney",
-        "gplus" : "+DanDenneydd"
-      }
-    }
+```json
+{
+  "personal" : {
+    "firstName" : "Dan",
+    "lastName" : "Denney",
+    "dob" : "12/26/77"
+  },
+  "work" : {
+    "workTitle" : "Front-End Dev",
+    "workCompany" : "Code School"
+  },
+  "social" : {
+    "website" : "dandenney.com",
+    "twitter" : "dandenney",
+    "codepen" : "dandenney",
+    "github" : "dandenney",
+    "gplus" : "+DanDenneydd"
+  }
+}
+```
 
 Importing that to Firebase, I get a structure that looks like this. (The recentFinds came later, but I'll explain that next.)
 
@@ -59,71 +66,77 @@ The prior stuff was static (borinnnggg). What I'm interested in is writing to th
 
 One important thing to share is that I don't know how to structure JSON manually by memory, so I use this [JSON Formatter](http://jsonformatter.curiousconcept.com).
 
+```json
+{
+  "personal" : {
+    "firstName" : "Dan",
+    "lastName" : "Denney",
+    "dob" : "12/26/77"
+  },
+  "work" : {
+    "workTitle" : "Front-End Dev",
+    "workCompany" : "Code School"
+  },
+  "social" : {
+    "website" : "dandenney.com",
+    "twitter" : "dandenney",
+    "codepen" : "dandenney",
+    "github" : "dandenney",
+    "gplus" : "+DanDenneydd"
+  },
+  "recentFinds" : [
     {
-      "personal" : {
-        "firstName" : "Dan",
-        "lastName" : "Denney",
-        "dob" : "12/26/77"
-      },
-      "work" : {
-        "workTitle" : "Front-End Dev",
-        "workCompany" : "Code School"
-      },
-      "social" : {
-        "website" : "dandenney.com",
-        "twitter" : "dandenney",
-        "codepen" : "dandenney",
-        "github" : "dandenney",
-        "gplus" : "+DanDenneydd"
-      },
-      "recentFinds" : [
-        {
-          "title" : "perfBar",
-          "url" : "http://lafikl.github.io/perfBar",
-          "description" : "Simple way to collect and look at your website performance metrics quickly"
-        }
-      ]
+      "title" : "perfBar",
+      "url" : "http://lafikl.github.io/perfBar",
+      "description" : "Simple way to collect and look at your website performance metrics quickly"
     }
+  ]
+}
+```
 
 This is a static example, but it's only to get the structure into Firebase in the way that I want it. I don't understand their UI for creating JSON structures, so it's way easier to write what I want and import it.
 
 The Firebase JS is 28k and has functions that allow accessing and updating data. The following code is a combo of Firebase code and some quick and dirty Coffeescript that I made as a proof of concept.
 
-    # Create a global recentFinds reference
-    recentFindsref = new Firebase("https://dandenney.firebaseio.com/recentFinds")
+```javascript
+# Create a global recentFinds reference
+recentFindsref = new Firebase("https://dandenney.firebaseio.com/recentFinds")
 
-    # Send recentFind data to Firebase on click of #findSubmit
-    $("#findSubmit").click ->
+# Send recentFind data to Firebase on click of #findSubmit
+$("#findSubmit").click ->
 
-      # Get the data from the inputs
-      findTitle = $("#findTitle").val()
-      findUrl = $("#findUrl").val()
-      findDescription = $("#findDescription").val()
+  # Get the data from the inputs
+  findTitle = $("#findTitle").val()
+  findUrl = $("#findUrl").val()
+  findDescription = $("#findDescription").val()
 
-      # Update the recent finds list
-      recentFindsref.push({
-        title: findTitle
-        url: findUrl
-        description: findDescription
-      })
+  # Update the recent finds list
+  recentFindsref.push({
+    title: findTitle
+    url: findUrl
+    description: findDescription
+  })
+```
 
 I actually started by sending static information to make sure that `recentFindsref.push` worked, but the goal was to be able to send info from a form. I strayed with the event trigger because using a submit input or button causes a page refresh that I don't want.
 
-    <form>
-      <fieldset>
-        <label for="findTitle">Title</label>
-        <input id="findTitle" name="findTitle" type="text" />
-      </fieldset>
-      <fieldset>
-        <label for="findName">URL</label>
-        <input id="findUrl" name="findUrl" type="text" />
-      </fieldset>
-      <fieldset>
-        <label for="findDescription">Description</label>
-        <input id="findDescription" name="findDescription" type="text" />
-      </fieldset>
-      <p id="findSubmit" name="findSubmit">Add</p>
-    </form>
+```html
+<form>
+  <fieldset>
+    <label for="findTitle">Title</label>
+    <input id="findTitle" name="findTitle" type="text" />
+  </fieldset>
+  <fieldset>
+    <label for="findName">URL</label>
+    <input id="findUrl" name="findUrl" type="text" />
+  </fieldset>
+  <fieldset>
+    <label for="findDescription">Description</label>
+    <input id="findDescription" name="findDescription" type="text" />
+  </fieldset>
+  <p id="findSubmit" name="findSubmit">Add</p>
+</form>
+```
 
 Testing this out with a few entries shows that the data is being saved to my JSON and Firebase is assigning a unique ID for each one as well.
 
@@ -137,21 +150,23 @@ Testing this out with a few entries shows that the data is being saved to my JSO
 
 At this point, I had data stored in JSON and the ability to add more data to it. I wanted to be sure that I could then access and display that data in order to know that I would be able to use this in the way that I want to.
 
-    <ul id="recentFinds">
-      <!-- Firebase data from https://dandenney.firebaseio.com/recentFinds -->
-    </ul>
+```html
+<ul id="recentFinds">
+  <!-- Firebase data from https://dandenney.firebaseio.com/recentFinds -->
+</ul>
 
-    # Retrieve recentFind data from Firebase on page document ready
-    $ ->
-      recentFindsref.on 'child_added', (snapshot) ->
-        url = snapshot.val().url
-        title = snapshot.val().title
-        description = snapshot.val().description
+# Retrieve recentFind data from Firebase on page document ready
+$ ->
+  recentFindsref.on 'child_added', (snapshot) ->
+    url = snapshot.val().url
+    title = snapshot.val().title
+    description = snapshot.val().description
 
-        # Append an li to the ul#recentFinds for each item in recentFinds
-        $("#recentFinds").append(
-          "<li>" + "<h3>" +  "<a href='" + url + "'>" + title + "</a>" + "</h3>" + "<p>" + description + "</p>" +"</li>"
-        )
+    # Append an li to the ul#recentFinds for each item in recentFinds
+    $("#recentFinds").append(
+      "<li>" + "<h3>" +  "<a href='" + url + "'>" + title + "</a>" + "</h3>" + "<p>" + description + "</p>" +"</li>"
+    )
+```
 
 ## It Works!
 
