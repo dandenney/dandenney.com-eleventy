@@ -1,4 +1,6 @@
 ---
+backgroundFooter: "#7ed1b3"
+backgroundPost: "#fdf7e3"
 path: "/posts/front-end-dev/mondays-rock"
 thumb: "posts/didnt-write-this-blog-post.png"
 thumbAlt: "an illustration of a robot playing with a toy human --v 5 --s 777 --ar 3:2"

@@ -1,10 +1,11 @@
 ---
+backgroundPost: "#070c14"
 path: "/posts/front-end-dev/fixing-x-robots-nofollow-with-vercel"
 thumb: "posts/x-robots_nofollow.png"
-linkColor: "#d8080d"
-textColor: "#313b41"
+linkColor: "#f44a3c"
+textColor: "#e8fbdb"
 title: "Fixing x-robots nofollow with Vercel"
-titleGradient: "linear-gradient(to bottom, #759996, #3f555b)"
+titleGradient: "linear-gradient(to bottom, #aec8c5, #7b9396)"
 summary: Fixing a an issue when proxying to Vercel 
 date: "2021-08-17"
 codeHighlighting: true

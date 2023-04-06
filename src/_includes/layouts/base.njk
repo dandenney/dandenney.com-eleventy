@@ -13,14 +13,20 @@
       }
 
       body {
-        font-family: "Gotham A", "Gotham B";
+        display: flex;
+        flex-direction: column;
+        font-family: "Gotham A", "Gotham B", Arial Black, Arial, sans-serif;
         font-style: normal;
         font-weight: 400;
         margin: 0;
       }
 
       main {
-        min-height: calc(100vh - 80px);
+        flex-grow: 1;
+      }
+
+      .site-footer {
+        flex-shrink: 0;
       }
     </style>
   </head>
