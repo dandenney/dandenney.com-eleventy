@@ -38,7 +38,7 @@ title: "Custom collection list markup in Eleventy"
   {% set homePosts = collections.posts | reverse %}
   {% for homePost in homePosts.slice(0, 14) %}
     <a class="link-post" href="{{ homePost.url | url }}">
-      <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_880,q_auto/v1673896360/{{ homePost.data.thumb }}" alt="" />
+      <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ homePost.data.thumb }}" alt="{{homePost.data.thumbAlt}}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ homePost.data.thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_704,q_auto/v1673896360/{{ homePost.data.thumb }} 768w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/{{ homePost.data.thumb }} 1200w" />
       <span class="link-title">{{ homePost.data.title }}</span>
       <span class="link-description">{{ homePost.data.summary }}</span>
     </a>
