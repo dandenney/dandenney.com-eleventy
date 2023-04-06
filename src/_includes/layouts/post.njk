@@ -131,7 +131,7 @@ layout: layouts/base.njk
 <article class="longform longform-container">
   <header class="post-header">
     <h1>{{ title }}</h1>
-    <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1374,q_auto/v1673896360/{{ thumb }}" height="448" width="672">
+    <img height="448" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_375,q_auto/v1673896360/{{ thumb }}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_750,q_auto/v1673896360/{{ thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1000,q_auto/v1673896360/{{ thumb }} 500w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1344,q_auto/v1673896360/{{ thumb }} 672w," width="672">
   </header>
   {{ content | safe }}
 </article>
