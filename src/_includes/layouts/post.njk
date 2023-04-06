@@ -9,6 +9,18 @@ layout: layouts/base.njk
 {% include "longform.njk" %}
 
 <style>
+  {% if backgroundPost %}
+    main {
+      background: {{ backgroundPost}};
+    }
+  {% endif %}
+
+  {% if backgroundFooter %}
+    .site-footer {
+      background: {{ backgroundFooter}};
+    }
+  {% endif %}
+
   code[class*="language-"],
   pre[class*="language-"] {
     color: #ccc;
