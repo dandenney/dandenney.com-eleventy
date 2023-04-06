@@ -8,6 +8,10 @@ tags:
 layout: layouts/post.njk
 ---
 
+<style>
+ .post-header.no-img h1 { height: 0; overflow: hidden; visibility: hidden; }
+</style>
+
 ![](/img/posts/conferences/thank-you/thank-you.svg)
 
 ![](/img/posts/conferences/thank-you/matt-graham.jpg)

@@ -39,7 +39,11 @@ eleventyNavigation:
 
   {% for post in collections.posts | reverse %}
     <a class="link-post" href="{{ post.url | url }}">
-      <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ post.data.thumb }}" alt="{{post.data.thumbAlt}}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ post.data.thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_704,q_auto/v1673896360/{{ post.data.thumb }} 768w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/{{ post.data.thumb }} 1200w" alt="{% if post.data.thumb %}{{ post.data.thumbAlt }}{% else %}slacking on my imagin'{% endif %}" />
+      {% if post.data.thumb %}
+        <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ post.data.thumb }}" alt="{{post.data.thumbAlt}}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ post.data.thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_704,q_auto/v1673896360/{{ post.data.thumb }} 768w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/{{ post.data.thumb }} 1200w" />
+      {% else %}
+        <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/posts/slackin.png" alt="{{post.data.thumbAlt}}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/posts/slackin.png 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_704,q_auto/v1673896360/posts/slackin.png 768w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/posts/slackin.png 1200w" />
+      {% endif %}
       <span class="link-title">{{ post.data.title }}</span>
       <span class="link-description">{{ post.data.summary }}</span>
     </a>
