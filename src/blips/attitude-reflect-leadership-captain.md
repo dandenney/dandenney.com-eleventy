@@ -4,7 +4,7 @@ title: Attitude Reflect Leadership, Captain
 date: "2012-09-18"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 This weekend, Cherrie and I couldn't resist watching Remember the Titans when we came across it on TV. It's such a fantastic story. Anyhow, there is this one scene when the two future leaders square off about the issues with the team. Bertier says that Julius' "I'm gonna get mine" attitude is all wrong. Julius replies with "attitude reflect leadership, Captain".

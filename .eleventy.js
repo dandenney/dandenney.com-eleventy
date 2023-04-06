@@ -5,17 +5,6 @@ const CleanCSS = require("clean-css");
 module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 
-  // Use a tmp for live reload with tailwind
-  eleventyConfig.addWatchTarget("./_tmp/style.css");
-  eleventyConfig.addPassthroughCopy({
-    "./_tmp/style.css": "./styles/style.css",
-  });
-
-  // CSS Min for minifying inline CSS
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
-
   // Build images
   eleventyConfig.addPassthroughCopy("src/img");
 

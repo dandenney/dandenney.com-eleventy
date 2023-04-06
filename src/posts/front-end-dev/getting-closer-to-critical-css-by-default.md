@@ -1,6 +1,7 @@
 ---
 path: "/posts/front-end-dev/getting-closer-to-critical-css-by-default"
 title: Getting Closer To Critical CSS By Default
+thumb: "posts/critical-css.png"
 summary: How adopting CSS-In-JS tooling is improving performance
 date: "2019-10-20"
 codeHighlighting: true

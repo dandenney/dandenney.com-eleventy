@@ -1,29 +1,49 @@
 ---
 layout: layouts/base.njk
+summary: Trying something with using custom markup for each item in a collection list
+thumb: 'eleventy-netlify-newb.jpg'
+title: "Custom collection list markup in Eleventy"
 ---
 
-<section class="mx-auto sm:max-w-4xl">
+{% include "posts.njk" %}
 
-  <h1 class="font-black text-6xl md:text-9xl">I like big fonts and I cannot lie</h1>
+<section class="posts-grid">
 
-  <p class="mt-4 mx-auto text-lg sm:max-w-2xl">Other front-enders can't deny! When a site loads up with a big ol' font...</p>
+  <section class="intro">
 
-  <p class="mt-4 mx-auto text-lg sm:max-w-2xl">Anyways, welcome to my little slice of the internet. I'm Dan Denney, a front-end dev at <a class="link" href="https://www.datacamp.com">DataCamp</a> and all around fan design and dev.</p>
+    <header class="flex flex-wrap items-center justify-center p-8 sm:justify-between">
+      <a class="intro-logo" href="/"><img alt="Illustration of Dan Denney, by Ricardo Gimenes" src="/img/dan-denney-circle.svg" width="100" /></a>
+      <h1 class="mt-4 mx-auto text-lg sm:max-w-2xl">I'm Dan Denney, a front-end dev at <a class="link" href="https://www.datacamp.com">DataCamp</a> and all-around fan of design and development.</h1>
+
+      <ul class="nav-site">
+        <li>
+          <a class="header-nav-link" href="/posts">Posts</a>
+          <p>My attempt at blogging</p>
+        </li>
+        <li>
+          <a class="header-nav-link" href="/blips">Blips</a>
+          <p>Quick thoughts or shares</p>
+        </li>
+        <li>
+          <a class="header-nav-link" href="/tinkerings">Tinkerings</a>
+          <p>Projects for sharing and learning</p>
+        </li>
+      </ul>
+    </header>
+
+    {% include "social.njk" %}
+
+  </section>
+  
+  {% set homePosts = collections.posts | reverse %}
+  {% for homePost in homePosts.slice(0, 14) %}
+    <a class="link-post" href="{{ homePost.url | url }}">
+      <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_880,q_auto/v1673896360/{{ homePost.data.thumb }}" alt="" />
+      <span class="link-title">{{ homePost.data.title }}</span>
+      <span class="link-description">{{ homePost.data.summary }}</span>
+    </a>
+  {% endfor %} 
 
 </section>
 
-<section class="pt-32">
-
-  <h2 class="mb-8 mx-auto font-black text-5xl sm:max-w-4xl md:text-8xl">Recent Blog Posts</h2>
-
-  <nav class="flex flex-wrap items-center justify-center pb-12 posts">
-    {% set homePosts = collections.posts | reverse %}
-    {% for homePost in homePosts.slice(0, 3) %}
-      <a class="link-post m-4" href="{{ homePost.url | url }}">{{ homePost.data.title }}</a>
-    {% endfor %} 
-  </nav>
-
-</section>
-
-{% include "social.njk" %}
 

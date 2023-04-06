@@ -1,5 +1,7 @@
 ---
 path: "/posts/front-end-dev/pursuing-a-nanodegree"
+thumb: "posts/nanodegree.png"
+thumbAlt: "An illustration of a student completing a nanodegree program, with a laptop and coding books on a desk, in the style of a vector graphic design, viewed from a top-down perspective --v 5 --ar 3:2"
 title: Pursuing a Nanodegree (1 of ?)
 summary: Diving into learning JavaScript on Udacity
 date: "2016-06-26"

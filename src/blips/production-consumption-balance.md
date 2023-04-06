@@ -4,7 +4,7 @@ title: Production-Consumption Balance
 date: "2012-11-14"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 Some people struggle with a work/life balance. You'll see tons of articles on how people try to keep it in check. I'm lucky in that I have a wonderful wife and family that come up with plenty of things for me to do besides work. If it wasn't for them, I would probably 'work' way too much.

@@ -3,7 +3,7 @@ codeHighlighting: true
 date: "2020-12-13"
 layout: layouts/post.njk
 path: "/posts/front-end-dev/fighting-tooling-fatigue"
-poster: '<span class="absolute font-black left-32 rotate-6 text-yellow-800 text-3xl top-28 transform w-40" style="background: linear-gradient(#c1a587, #7a604b); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Fighting tooling fatigue</span><img alt="Hard drive wrapped in plastic" src="/img/posts/front-end-dev/fighting-tooling-fatigue/poster-bg-1x.jpg" srcset="/img/posts/front-end-dev/fighting-tooling-fatigue/poster-bg-1x.jpg, /img/posts/front-end-dev/fighting-tooling-fatigue/poster-bg-2x.jpg 2x" height="303" width="290" />'
+thumb: "posts/tooling-fatigue.png"
 summary: Failing deploys, build configurations, and plugins oh my
 tags:
   - front-end-dev

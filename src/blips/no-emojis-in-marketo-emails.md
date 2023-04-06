@@ -4,7 +4,7 @@ title: Don't use emojis in Marketo emails
 date: "2021-11-02"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 <style>.longform img { width: 470px; }</style>

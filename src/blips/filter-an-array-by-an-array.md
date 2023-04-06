@@ -4,7 +4,7 @@ title: Filter an array by an array
 date: "2019-12-04"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 I needed to do something that was out of the realm of the normal docs and examples today, and I got a bit stuck. I had a list of 15 items that I needed to filter down to 3 specific items. I tried a bunch of things, but then luckily, [Jared](https://twitter.com/jaredsilver) shared a solution.

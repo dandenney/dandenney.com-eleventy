@@ -1,8 +1,10 @@
 ---
+linkColor: "#db405d"
+textColor: "#5a1468"
 path: "/posts/front-end-dev/you-cant-make-other-love-css"
-thumb: ""
-thumb2x: ""
+thumb: "posts/love-css.png"
 title: "You Can't Make Others Love CSS"
+titleGradient: "radial-gradient(#e74565, #570505)"
 summary: Sharing my take on the utility CSS wars
 date: "2022-09-20"
 codeHighlighting: false

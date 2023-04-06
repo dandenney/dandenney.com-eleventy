@@ -1,7 +1,6 @@
 ---
 path: "/posts/front-end-dev/mapping-on-the-web-is-hard-sorta"
-thumb: "/img/posts/front-end-dev/mapping-on-the-web-is-hard-sorta/thumb.jpg"
-thumb2x: "/img/posts/front-end-dev/mapping-on-the-web-is-hard-sorta/thumb@2x.jpg"
+thumb: posts/map-on-the-web.png
 title: Mapping On The Web Is Hard, Sorta
 summary: Sharing what I learned trying to build an interactive map
 date: "2020-03-08"
@@ -93,6 +92,8 @@ GeoJSON is necessary here, but it’s pretty easy to write it on your own. The m
 
 I learned from the examples that you should add sources and layers after the map is loaded, so this wraps it.
 
+<div class="full-to-half-bleed">
+
 ```javascript
 map.on("load", function() {
   map.addSource("localBeerBars", {
@@ -140,6 +141,8 @@ map.on("load", function() {
   });
 ```
 
+</div>
+
 The points are now on the map, but you can’t see them.
 
 ### Style the dots
@@ -165,6 +168,8 @@ map.addLayer({
 ### Separate the data and layers
 
 In this scenario, I’d want to differentiate between the ones I have visited and the ones that I haven’t. So, we’ll remove the Top Hops item from the `localBeerBars` and add a `visitedBeerBars` source.
+
+<div class="full-to-half-bleed">
 
 ```javascript
 map.addSource("localBeerBars", {
@@ -228,6 +233,9 @@ map.addSource("visitedBeerBars", {
 });
 ```
 
+</div>
+
+
 Then, we'll add another layer style and apply it to `visitedBeerBars`
 
 ```javascript
@@ -249,6 +257,8 @@ From here, the options are limitless. However, to make this one at least usable,
 [Display a popup on hover ](https://docs.mapbox.com/mapbox-gl-js/example/popup-on-hover/) taught me that you could add an attribute to each item and use a loop to show a popup with a `mapboxgl.Popup` method. (It also taught me that you could use decimals for zoom, which is valuable.
 
 To make that work on this set, we'll need to add the `properties` and `description` attributes to the items. Viewing this as a "todo" map, we'll only add them to the unvisited bars.
+
+<div class="full-to-half-bleed">
 
 ```javascript
 features: [
@@ -295,6 +305,8 @@ features: [
   }
 ];
 ```
+
+</div>
 
 Finally, we'll listen for hover events and add the details to a popover. This is mostly copy-and-pasted from the examples.
 

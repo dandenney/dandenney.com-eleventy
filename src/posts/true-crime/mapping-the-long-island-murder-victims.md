@@ -1,7 +1,6 @@
 ---
 path: "/posts/true-crime/mapping-the-long-island-murder-victims"
-thumb: "/img/posts/true-crime/mapping-the-long-island-murder-victims/thumb.jpg"
-thumb2x: "/img/posts/true-crime/mapping-the-long-island-murder-victims/thumb@2x.jpg"
+thumb: posts/mapping-long-island-victims.png
 title: "Mapping the Long Island Murder Victims"
 summary: "A map of a series of unsolved murders in Long Island from the 1990s until the 2010s"
 date: "2020-03-07"
@@ -85,6 +84,12 @@ layout: layouts/post-custom.njk
     padding: 2rem;
   }
 
+  .longform-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80ch;
+  }
+
   @media screen and (min-width: 768px) {
     .details h3 {
       font-size: 24px;
@@ -100,11 +105,11 @@ layout: layouts/post-custom.njk
   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
 
-<header class="longform mx-auto sm:max-w-4xl">
+<header class="longform">
   <h1>Mapping the Long Island murder victims</h1>
 </header>
 
-<div class="longform mx-auto sm:max-w-2xl">
+<div class="longform longform-container">
 
 "The Long Island Serial Killer," aka "LISK," is a misnomer. The more that you look at Long Island from the early 90s until the 2010s, the worse it gets. [Joel Rifkin](https://en.wikipedia.org/wiki/Joel_Rifkin) lived in the Hempstead area and killed at least nine, but up to seventeen people from 1989 - 1993. [Robert Shulman](<https://en.wikipedia.org/wiki/Robert_Shulman_(serial_killer)>) killed at least five people from 1991 - 1996 while living in the Hicksville area.
 
@@ -289,7 +294,7 @@ The following is a timeline of events, with their locations, intending to show h
   </ol>
 </section>
 
-<div class="longform mt-16 mx-auto sm:max-w-2xl">
+<div class="longform longform-container">
 
 There are many more persons of interest and/or suspects in these cases. John Bittrolff is the only one included because he is the only one with any charges against him. To be clear, the Suffolk County District Attorney has said ["There is no evidentiary or investigative link between this case and Gilgo."](https://pix11.com/2017/09/12/convicted-killer-may-be-tied-to-gilgo-beach-murders-prosecutor)
 

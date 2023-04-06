@@ -2,8 +2,11 @@
 codeHighlighting: true
 date: "2020-12-16"
 layout: layouts/post.njk
+linkColor: "#1d8989"
+textColor: "#442624"
 path: "/posts/front-end-dev/custom-collection-list-markup-in-eleventy"
-poster: '<span class="absolute font-black left-20 text-red-700 text-2xl top-32 w-32">Custom collection list markup in Eleventy</span><img alt="Hard drive wrapped in plastic" src="/img/posts/front-end-dev/custom-collection-list-markup-in-eleventy/poster-bg-1x.jpg" srcset="/img/posts/front-end-dev/custom-collection-list-markup-in-eleventy/poster-bg-1x.jpg, /img/posts/front-end-dev/custom-collection-list-markup-in-eleventy/poster-bg-2x.jpg 2x" height="413" width="308" />'
+thumb: "posts/custom-eleventy-collections.png"
+titleGradient: "linear-gradient(to right, #562009, #f29f32)"
 summary: Trying something with using custom markup for each item in a collection list
 tags:
   - front-end-dev

@@ -4,7 +4,7 @@ title: Ideas
 date: "2012-10-01"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 I have too many ideas. I'm certainly not alone, it's an effect of being a part of this amazing time for the web. The problem is that having so many ideas and not executing is like carrying baggage. When I see things get released that are close to ideas that I have it is both frustrating and rewarding. I get frustrated that I didn't do it, but pleased that people that I consider much smarter than I am saw similar opportunities.

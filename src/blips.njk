@@ -6,13 +6,55 @@ eleventyNavigation:
   order: 1
 ---
 
-<section class="mx-auto sm:max-w-3xl">
+<style>
+  .blips header {
+    padding: 0 1rem;
+  }
 
-  <h1 class="font-black pb-4 text-6xl md:text-9xl">Blips</h1>
+  .blips nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 
-  <nav class="flex flex-col items-start pb-12">
+  .blips .link {
+    background-color: #f9f9f9;
+    border: 0.25rem solid #f5f5f5;
+    color: #b51f24;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease-out;
+    padding: 1rem;
+  }
+
+  .blips .link:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  .blips .link:hover {
+    transform: scale(1.1);
+  }
+
+  @media screen and (min-width: 768px) {
+    .blips .link {
+      padding: 2rem;
+    }
+  }
+
+</style>
+
+<section class="blips">
+
+  <header>
+    <h1>Blips</h1>
+    <p>Shorter than a blog post, longer than a tweet. This is where I share quick reactions or stash things I want to remember.</p>
+  </header>
+
+  <nav>
     {% for blip in collections.blips | reverse %}
-      <a class="link my-3 text-xl md:text-2xl" href="{{ blip.url | url }}">{{ blip.data.title }}</a>
+      <a class="link" href="{{ blip.url | url }}">{{ blip.data.title }}</a>
     {% endfor %} 
   </nav> 
 

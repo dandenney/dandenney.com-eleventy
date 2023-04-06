@@ -2,8 +2,8 @@
 date: "2020-08-16"
 layout: layouts/post.njk
 path: "/posts/front-end-dev/simple-side-nav-flexbox-vs-grid"
-poster: '<span class="absolute font-black left-28 rotate-3 text-gray-600 text-4xl top-32 transform w-40">Simple side nav: Flexbox vs. Grid</span><img alt="Hard drive wrapped in plastic" src="/img/posts/front-end-dev/simple-side-nav-flexbox-vs-grid/poster-bg-1x.jpg" srcset="/img/posts/front-end-dev/simple-side-nav-flexbox-vs-grid/poster-bg-1x.jpg, /img/posts/front-end-dev/simple-side-nav-flexbox-vs-grid/poster-bg-2x.jpg 2x" height="557" width="297" />'
 summary: A popular question with a pretty clear answer in this case
+thumb: posts/flexbox-vs-grid.png
 tags:
   - front-end-dev
 title: "Simple side nav: Flexbox vs. Grid"

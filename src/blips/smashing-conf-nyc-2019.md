@@ -4,7 +4,7 @@ title: Smashing Conf NYC 2019
 date: "2018-10-23T00:00:00.000Z"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 import TweetEmbed from 'react-tweet-embed'

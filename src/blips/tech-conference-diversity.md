@@ -4,7 +4,7 @@ title: Tech Conference Diversity
 date: "2013-01-06"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 The lack of gender diversity in tech conferences hit the tipping point last week. Another all-male lineup was announced and I'm guessing the speaker count being so high added the extra frustration.

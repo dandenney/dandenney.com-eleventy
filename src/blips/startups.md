@@ -4,7 +4,7 @@ title: Startups
 date: "2012-09-24"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 I read a fantastic post by Paul Graham tonight, [Startup = Growth](http://paulgraham.com/growth.html) in which he systematically ripped apart my thoughts on startups. If there is someone who can define what startups are about, it is Paul Graham.

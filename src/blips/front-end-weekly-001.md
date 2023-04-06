@@ -4,7 +4,7 @@ title: Front-End Weekly - No. 1
 date: "2013-11-01"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 I'm working on creating a weekly email, so I collected my fave things from the week and decided to share it since I'm not ready to launch yet. It will be a lot more fun looking in the email.

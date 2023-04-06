@@ -4,7 +4,7 @@ title: Bustle
 date: "2013-08-17"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 [Bustle.com](http://www.bustle.com) came out recently and created a bunch of itself: excited activity and movement. People are up in arms over the amount of money that was raised for the startup (\$6.5 million), the claims interpreted as saying that it's the first site for women, and the tech involved in the delivery of the content (primarly the JS templating of Ember).

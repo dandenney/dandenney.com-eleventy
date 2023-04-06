@@ -4,7 +4,7 @@ title: The ex unit is a thing that exists
 date: "2022-05-26"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 Today Andy Bell tweeted about creating a hero component and mentioned the `ex` unit. I hadn't heard of it and thought it was one of the newfangled additions to CSS. I was so surprised that the first result was a [Stack Overflow from 11 years ago](https://stackoverflow.com/questions/918612/what-is-the-value-of-the-css-ex-unit). 

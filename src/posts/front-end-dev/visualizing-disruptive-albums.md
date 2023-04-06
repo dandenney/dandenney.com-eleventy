@@ -1,7 +1,7 @@
 ---
 path: "/posts/front-end-dev/visualizing-disruptive-albums"
-thumb: "/img/posts/front-end-dev/visualizing-disruptive-albums/thumb.png"
-thumb2x: "/img/posts/front-end-dev/visualizing-disruptive-albums/thumb@2x.png"
+thumb: "posts/beerbongs-and-bentleys-album.png"
+thumbAlt: 'A photograph of a vinyl record of "beerbongs and bentleys" being played on a turntable, with a blurred background of an artistic loft, during evening with warm, dim lighting and shot with a macro lens using the Sony FE 90mm f/2.8 Macro G OSS --v 5 --ar 3:2'
 title: "Visualizing a Disruptive Album: beerbongs & bentleys"
 summary: Applying some of what I learned in Fullstack D3 to a passion project
 date: "2020-02-17"

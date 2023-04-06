@@ -4,7 +4,7 @@ title: Async Cloud Typography
 date: "2020-04-08"
 tags:
   - blips
-layout: layouts/post.njk
+layout: layouts/blip.njk
 ---
 
 The recent update to Lighthouse 6 tightened up a little more on requests, which reduced my overall score. I recently changed over to using fonts from [Hoefler & Co.](https://www.typography.com/webfonts), using Sentinel right here in these words. Unfortunately, the webfont option from typography.com is handled via a CSS file instead of JS, which means that you can't make the request `async` without a little trickery.

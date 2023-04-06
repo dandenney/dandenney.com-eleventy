@@ -9,6 +9,15 @@ layout: layouts/base.njk
 {% include "longform.njk" %}
 
 <style>
+  .full-bleed, .full-to-half-bleed, .longform .blip-header {
+    max-width: 60rem;
+  }
+
+  .blip-header h1 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
   code[class*="language-"],
   pre[class*="language-"] {
     color: #ccc;
@@ -129,9 +138,8 @@ layout: layouts/base.njk
 </style>
 
 <article class="longform longform-container">
-  <header class="post-header">
+  <header class="blip-header">
     <h1>{{ title }}</h1>
-    <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1374,q_auto/v1673896360/{{ thumb }}" height="448" width="672">
   </header>
   {{ content | safe }}
 </article>
