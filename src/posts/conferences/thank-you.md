@@ -1,15 +1,21 @@
 ---
-path: "/posts/conferences/thank-you"
-title: Thank You
-summary: People are amazing, thank you so much
+backgroundPost: "#fdf9ed"
+backgroundFooter: "#fdf9ed"
+colorLink: "#b8401d"
+colorText: "#2b190b"
 date: "2014-08-28"
+gradientTitle: "linear-gradient(45deg, #324d5e, #4e7581)"
+path: "/posts/conferences/thank-you"
+layout: layouts/post.njk
+summary: People are amazing, thank you so much
+thumb: "posts/thank-you.png"
+title: Thank You
 tags:
   - conferences
-layout: layouts/post.njk
 ---
 
 <style>
- .post-header.no-img h1 { height: 0; overflow: hidden; visibility: hidden; }
+ .post-header h1 { font-size: clamp(2rem, 2rem + 6vw, 8rem); }
 </style>
 
 ![](/img/posts/conferences/thank-you/thank-you.svg)

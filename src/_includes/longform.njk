@@ -1,7 +1,7 @@
 <style>
 .longform {
-    {% if textColor %}
-    color: {{ textColor }};
+    {% if colorText %}
+    color: {{ colorText }};
     {% endif %}
     line-height: 1.5;
     padding-left: 1rem;
@@ -9,7 +9,17 @@
   }
 
   .longform a {
+    background-image: linear-gradient(to bottom, transparent 90%, #b51f24 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     color: #b51f24;
+    text-decoration: none;
+    transition: background-size .4s ease;
+  }
+
+  .longform a:hover {
+    background-size: 0% 100%;
+    cursor: pointer;
   }
 
   .longform h1, .longform h2, .longform h3, .longform h4, .longform h5 {
@@ -33,28 +43,19 @@
     font-size: clamp(2rem, 2rem + 4vw, 6rem);
   }
 
-  {% if titleGradient %}
+  {% if gradientTitle %}
   .longform h1, .longform h2, .longform h3, .longform h4, .longform h5 {
-    background: {{ titleGradient }};
+    background: {{ gradientTitle }};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
   }
   {% endif %}
 
-  {% if linkColor %}
+  {% if colorLink %}
   .longform a {
-    background-image: linear-gradient(to bottom, transparent 90%, {{ linkColor }} 0);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    color: {{ linkColor }};
-    text-decoration: none;
-    transition: background-size .4s ease;
-  }
-
-  .longform a:hover {
-    background-size: 0% 100%;
-    cursor: pointer;
+    background-image: linear-gradient(to bottom, transparent 90%, {{ colorLink }} 0);
+    color: {{ colorLink }};
   }
   {% endif %}
 
@@ -72,7 +73,8 @@
     padding: 1rem;
   }
 
-  .post-header.no-img {
+  .post-header.no-img,
+  .longform.no-img {
     justify-content: center;
     padding: 2rem 1rem 0;
   }
@@ -101,6 +103,8 @@
     }
 
     .post-header img {
+      margin-left: 0;
+      margin-right: 0;
       max-width: 672px;
       width: 50%;
     }

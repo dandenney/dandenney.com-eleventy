@@ -1,14 +1,25 @@
 ---
-path: "/posts/general/i-forgot-about-dre"
-title: "I Forgot About Dre"
-summary: "Review of the awesome work behind the Beats app"
+backgroundPost: "#000000"
+backgroundFooter: "#000000"
+colorLink: "#F91CDB"
+colorText: "#ffffff"
 date: "2014-01-27"
+gradientTitle: "linear-gradient(to bottom, #b9162d, #b9162d)"
+layout: layouts/post.njk
+path: "/posts/general/i-forgot-about-dre"
+summary: "Review of the awesome work behind the Beats app"
+thumb: "posts/forgot-about-dre.jpg"
+thumgAlt: "Dre and the Beats logo"
+title: "I Forgot About Dre"
 tags:
   - general
-layout: layouts/post.njk
 ---
 
-![Beats ad with Dre](/img/posts/general/i-forgot-about-dre/dre-ad.jpg)
+<style>
+  .post-header h1 {
+    font-size: clamp(2rem, 2rem + 6vw, 8rem);
+  }
+</style>
 
 > Nowadays everybody wanna talk like they got something to say  
 > but nothin' comes out when they move they lips  

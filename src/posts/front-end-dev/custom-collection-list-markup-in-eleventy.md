@@ -1,15 +1,18 @@
 ---
+backgroundPost: "#12131a"
+backgroundFooter: "#12131a"
 codeHighlighting: true
+colorLink: "#1cecef"
+colorText: "#e3dabe"
 date: "2020-12-16"
+gradientTitle: "linear-gradient(to right, #8b471b, #f29f32)"
 layout: layouts/post.njk
-linkColor: "#1d8989"
-textColor: "#442624"
 path: "/posts/front-end-dev/custom-collection-list-markup-in-eleventy"
-thumb: "posts/custom-eleventy-collections.png"
-titleGradient: "linear-gradient(to right, #562009, #f29f32)"
 summary: Trying something with using custom markup for each item in a collection list
 tags:
   - front-end-dev
+thumb: "posts/custom-eleventy-collections.png"
+thumbAlt: "2d icons, 3d icons, grunge, ui, graphic design, high contrast, artstation --ar 3:2"
 title: "Custom collection list markup in Eleventy"
 ---
 

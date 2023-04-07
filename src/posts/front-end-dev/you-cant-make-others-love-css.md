@@ -1,12 +1,12 @@
 ---
 backgroundFooter: "#29202f"
 backgroundPost: "#0e1012"
-linkColor: "#adbd1b"
-textColor: "#a0a9e5"
+colorLink: "#adbd1b"
+colorText: "#a0a9e5"
 path: "/posts/front-end-dev/you-cant-make-other-love-css"
 thumb: "posts/love-css.png"
 title: "You Can't Make Others Love CSS"
-titleGradient: "radial-gradient(#e74565, #570505)"
+gradientTitle: "radial-gradient(#e74565, #570505)"
 summary: Sharing my take on the utility CSS wars
 date: "2022-09-20"
 codeHighlighting: false

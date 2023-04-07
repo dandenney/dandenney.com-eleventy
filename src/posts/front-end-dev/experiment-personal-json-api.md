@@ -1,18 +1,20 @@
 ---
-date: "2014-08-30"
+backgroundPost: "#0d0707"
+backgroundFooter: "#0d0707"
 codeHighlighting: true
+colorLink: "#7bcccd"
+colorText: "#f8f4f2"
+date: "2014-08-30"
+gradientTitle: "linear-gradient(to left, #d36b89, #8a455c)"
 layout: layouts/post.njk
-linkColor: "#2c707c"
 path: "/posts/front-end-dev/experiment-personal-json-api"
 permalink: posts/front-end-dev/{{ title | slug }}/index.html
 summary: Trying out a way to access a personal bio as an API
 tags:
   - front-end-dev
-textColor: "#2a3235"
 thumb: "posts/personal-json-api.png"
 thumbAlt: "An illustration of a person integrating electronic parts into their body, with circuit boards and wires visible beneath their skin, in the style of a cyberpunk graphic novel, viewed from a side perspective --v 5 --ar 3:2"
 title: Experiment - Personal JSON-based API
-titleGradient: "linear-gradient(to left, #d36b89, #8a455c)"
 ---
 
 The most important thing that I can say right now is that this is an experiment. I am sharing as I learn, so please don't consider this a tutorial. I prefer to share as I bumble through things because it might help other people in the same spot and experts usually offer good tips for improving.

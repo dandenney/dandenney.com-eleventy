@@ -1,12 +1,25 @@
 ---
-path: "/posts/conferences/front-end-conf-finales"
-title: Front-End Conf Finales
-summary: Our last two times of running the conf
+backgroundPost: "#000000"
+backgroundFooter: "#000000"
+colorLink: "#f2bd39"
+colorText: "#f6f5ed"
 date: "2014-06-09"
+gradientTitle: "linear-gradient(to right, #111111, #232020)"
+path: "/posts/conferences/front-end-conf-finales"
+layout: layouts/post.njk
+summary: Our last two times of running the conf
+thumb: "posts/two-finales.png"
+thumbAlt: "
+An illustration of a dramatic stage performance with a curtain closing, with a lone spotlight shining on the performers and a 'The End' sign displayed in the background, in the style of a dark and moody charcoal drawing, viewed from a side perspective --v 5 --ar 3:2"
+title: Front-End Conf Finales
 tags:
   - conferences
-layout: layouts/post.njk
 ---
+
+<style>
+ h1 { -webkit-text-stroke: 2px #796f63; }
+ h2, h3, h4, h5 { -webkit-text-stroke: 1px #796f63; }
+</style>
 
 ![](/img/posts/conferences/front-end-conf-finales/dan-cherrie-stage.svg)
 

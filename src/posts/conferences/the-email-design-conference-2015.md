@@ -1,13 +1,18 @@
 ---
+backgroundPost: "#0d0707"
+backgroundFooter: "#0d0707"
+colorLink: "#ea9a83"
+colorText: "#f8f4f2"
+date: "2015-08-29"
+gradientTitle: "linear-gradient(20deg, #6fbbee, #9e9dd1, #ea9a83)"
+layout: layouts/post.njk
 path: "/posts/conferences/the-email-design-conference-2015"
+summary: A recap from attending this awesome event
+tags:
+  - conferences
 thumb: "posts/email-design-conference.png"
 thumbAlt: "A professional conference in a spacious hall with high ceilings and large windows letting in ample natural light. The hall is filled with rows of chairs, facing a stage with a podium and a screen. The stage is adorned with elegant decorations and banners with the logos of various companies and organizations sponsoring the event. On the stage, a speaker is delivering an engaging talk, holding a microphone and using a laser pointer to highlight key points on the projected slides. The audience members, dressed in casual attire, are taking notes on their tablets and laptops, engaged and attentive. The atmosphere is serious yet vibrant, with a sense of shared enthusiasm and intellectual curiosity permeating the space. The composition emphasizes the grandeur of the hall, with the rows of chairs converging towards the stage, creating a sense of focus and direction. The color palette is subdued, with shades of blue, gray, and black predominating, lending an air of professionalism and sophistication. The image is shot with a Canon EOS R6 camera, using a Canon EF 24-70mm f/2.8L II USM lens at 50mm, ISO 400, f/4.0, 1/125s, --v 5 --ar 3:2"
 title: The Email Design Conference 2015
-summary: A recap from attending this awesome event
-date: "2015-08-29"
-tags:
-  - conferences
-layout: layouts/post.njk
 ---
 
 <iframe src="https://player.vimeo.com/video/137720165?color=b51f24&amp;byline=0" width="700" height="394" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>

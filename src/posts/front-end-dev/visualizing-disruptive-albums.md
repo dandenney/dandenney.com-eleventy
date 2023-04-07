@@ -1,15 +1,26 @@
 ---
+backgroundPost: "#000107"
+backgroundFooter: "#000107"
+codeHighlighting: true
+colorLink: "#e7433c"
+colorText: "#f8f4f2"
+date: "2020-02-17"
+gradientTitle: "radial-gradient(#f1daa4, #e4a051)"
+layout: layouts/post.njk
 path: "/posts/front-end-dev/visualizing-disruptive-albums"
+summary: Applying some of what I learned in Fullstack D3 to a passion project
 thumb: "posts/beerbongs-and-bentleys-album.png"
 thumbAlt: 'A photograph of a vinyl record of "beerbongs and bentleys" being played on a turntable, with a blurred background of an artistic loft, during evening with warm, dim lighting and shot with a macro lens using the Sony FE 90mm f/2.8 Macro G OSS --v 5 --ar 3:2'
 title: "Visualizing a Disruptive Album: beerbongs & bentleys"
-summary: Applying some of what I learned in Fullstack D3 to a passion project
-date: "2020-02-17"
-codeHighlighting: true
 tags:
   - front-end-dev
-layout: layouts/post.njk
 ---
+
+<style>
+ .longform h1 {
+  font-size: clamp(2rem, 2rem + 4vw, 4.5rem)
+ }
+</style>
 
 I recently read [Fullstack D3](https://www.newline.co/fullstack-d3) and wanted to put some of what I learned into action. If you haven't read it yet and want to learn D3, I'd skip this post and go order it. Seriously, it's so good.
 
@@ -115,18 +126,22 @@ The book covers histograms, but not basic bar charts, so I applied the basics of
     fill: transparent;
   }
 
+  .wrapper {
+    color: #f1daa4;
+  }
+
   .wrapper text {
-    color: #424242;
-    font-family: "Sentinel A", "Sentinel B";
+    color: #f1daa4;
+    font-family: "Gotham A", "Gotham B";
   }
 
   .wrapper rect {
-    fill: #424242;
+    fill: #f1daa4;
   }
 
   rect.top20-bg,
   rect.top20-biebs-bg {
-    fill: #f5f5f5;
+    fill: #000107;
   }
 
   .tick text {

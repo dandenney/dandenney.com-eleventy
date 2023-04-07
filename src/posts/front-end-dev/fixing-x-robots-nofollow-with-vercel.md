@@ -1,17 +1,18 @@
 ---
 backgroundPost: "#070c14"
-path: "/posts/front-end-dev/fixing-x-robots-nofollow-with-vercel"
-thumb: "posts/x-robots_nofollow.png"
-linkColor: "#f44a3c"
-textColor: "#e8fbdb"
-title: "Fixing x-robots nofollow with Vercel"
-titleGradient: "linear-gradient(to bottom, #aec8c5, #7b9396)"
-summary: Fixing a an issue when proxying to Vercel 
-date: "2021-08-17"
+backgroundFooter: "#070c14"
 codeHighlighting: true
+colorLink: "#f44a3c"
+colorText: "#e8fbdb"
+date: "2021-08-17"
+gradientTitle: "linear-gradient(to bottom, #aec8c5, #7b9396)"
+layout: layouts/post.njk
+path: "/posts/front-end-dev/fixing-x-robots-nofollow-with-vercel"
+summary: Fixing a an issue when proxying to Vercel 
 tags:
   - front-end-dev
-layout: layouts/post.njk
+thumb: "posts/x-robots_nofollow.png"
+title: "Fixing x-robots nofollow with Vercel"
 ---
 
 A few months ago, I made a technical decision that has cost a web project months of Google indexing. So, I'm writing this as a way to confess my sin and hopefully help anyone else avoid this issue.

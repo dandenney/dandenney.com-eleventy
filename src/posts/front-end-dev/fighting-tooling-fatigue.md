@@ -1,12 +1,18 @@
 ---
+backgroundPost: "#010a10"
+backgroundFooter: "#010a10"
 codeHighlighting: true
+colorLink: "#f8c4a2"
+colorText: "#caeff2"
 date: "2020-12-13"
+gradientTitle: "radial-gradient(#90e3f2, #2b8aa0)"
 layout: layouts/post.njk
 path: "/posts/front-end-dev/fighting-tooling-fatigue"
-thumb: "posts/tooling-fatigue.png"
 summary: Failing deploys, build configurations, and plugins oh my
 tags:
   - front-end-dev
+thumb: "posts/tooling-fatigue.png"
+thumbAlt: "A person fatigued while being attacked by code robots in a cinematic style with glorious lighting --ar 3:2 --v 5"
 title: "Fighting Tooling Fatigue"
 ---
 

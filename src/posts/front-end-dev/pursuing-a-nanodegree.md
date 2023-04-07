@@ -1,13 +1,18 @@
 ---
+backgroundPost: "#f091a8"
+backgroundFooter: "#fbadad"
+colorLink: "#ffffff"
+colorText: "#241c47"
+date: "2016-06-26"
+gradientTitle: "linear-gradient(135deg, #612a64, #bf3394)"
+layout: layouts/post.njk
 path: "/posts/front-end-dev/pursuing-a-nanodegree"
+summary: Diving into learning JavaScript on Udacity
+tags:
+  - front-end-dev
 thumb: "posts/nanodegree.png"
 thumbAlt: "An illustration of a student completing a nanodegree program, with a laptop and coding books on a desk, in the style of a vector graphic design, viewed from a top-down perspective --v 5 --ar 3:2"
 title: Pursuing a Nanodegree (1 of ?)
-summary: Diving into learning JavaScript on Udacity
-date: "2016-06-26"
-tags:
-  - front-end-dev
-layout: layouts/post.njk
 ---
 
 I've been wanting to learn functional JavaScript for a while. I've stocked up on some books, we've released some great [JavaScript courses at Code School](https://codeschool.com/paths/javascript), we have a team account at [Front-end Masters](https://frontendmasters.com), and I grabbed Wes Bos' [React for Beginners](https://reactforbeginners.com). Basically, I have all the things.

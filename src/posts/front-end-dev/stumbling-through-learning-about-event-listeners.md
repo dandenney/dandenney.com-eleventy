@@ -1,4 +1,9 @@
 ---
+backgroundPost: "#494448"
+backgroundFooter: "#191518"
+colorLink: "#f7f74e"
+colorText: "#fefefc"
+gradientTitle: "linear-gradient(45deg, #e2ded9, #cfcac3)"
 path: "/posts/front-end-dev/stumbling-through-learning-about-event-listeners"
 thumb: "posts/learning-event-listeners.png"
 thumbAlt: "An illustration of a student struggling to learn, with books and notes scattered around, in the style of a sketch, viewed from a close-up perspective --v 5 --ar 3:2"
