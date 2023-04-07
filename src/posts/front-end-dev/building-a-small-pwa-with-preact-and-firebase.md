@@ -1,4 +1,9 @@
 ---
+backgroundPost: "#e3ebef"
+backgroundFooter: "#e3ebef"
+colorLink: "#2f7877"
+colorText: "#1f364a"
+gradientTitle: "linear-gradient(to bottom, #466f87, #1f364a)"
 path: "/posts/front-end-dev/building-a-small-pwa-with-preact-and-firebase"
 thumb: "posts/preact-pwa.png"
 thumbAlt: "An illustration of a mobile fitness app, displaying a user completing a workout routine, with a gym in the background, in the style of a minimalist design, viewed from a top-down perspective --v 5 --ar 3:2"

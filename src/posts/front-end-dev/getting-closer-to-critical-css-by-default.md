@@ -1,13 +1,18 @@
 ---
-path: "/posts/front-end-dev/getting-closer-to-critical-css-by-default"
-title: Getting Closer To Critical CSS By Default
-thumb: "posts/critical-css.png"
-summary: How adopting CSS-In-JS tooling is improving performance
-date: "2019-10-20"
+backgroundPost: "#fdfaeb"
+backgroundFooter: "#0d0707"
 codeHighlighting: true
+colorLink: "#c34f0e"
+colorText: "#423231"
+date: "2019-10-20"
+gradientTitle: "linear-gradient(to bottom, #aab670, #485823)"
+layout: layouts/post.njk
+path: "/posts/front-end-dev/getting-closer-to-critical-css-by-default"
+summary: How adopting CSS-In-JS tooling is improving performance
+thumb: "posts/critical-css.png"
+title: Getting Closer To Critical CSS By Default
 tags:
   - front-end-dev
-layout: layouts/post.njk
 ---
 
 A few years back, the concept of [Critical CSS](https://www.smashingmagazine.com/2015/08/understanding-critical-css/) was introduced, and I’ve been aspiring to it ever since. (Read: I’ve never successfully implemented in an existing work production project). I love the principle of only shipping the necessary CSS to a visitor, but even with generators and tooling, I fell short of it in the SCSS-based Rails apps that I’ve worked in.

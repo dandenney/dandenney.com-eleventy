@@ -1,13 +1,18 @@
 ---
+backgroundPost: "#fff"
+backgroundFooter: "#fff"
+colorLink: "#0e687e"
+colorText: "#603e2e"
+date: "2014-10-07"
+gradientTitle: "linear-gradient(to right, #cd5c36, #ef8f69)"
+layout: layouts/post.njk
 path: "/posts/general/give-back"
+summary: "Supporting an awesome project in our community"
 thumb: "posts/give-back.png"
 thumbAlt: "A vibrant digital art piece depicting a community coming together to give back, with volunteers of all ages and backgrounds working together to support those in need. The scene is set in a bustling city, with people handing out food and supplies to those who are less fortunate. The composition is rich in detail, showcasing the diversity and unity of the volunteers, as well as the recipients of their kindness. The color palette is warm and inviting, and the lighting is soft and diffused, evoking a sense of hope and compassion. The viewer is immersed in the scene, with eye-level perspective drawing them into the heart of the action. This artwork serves as a powerful reminder of the importance of giving back and the positive impact it can have on our communities --v 5 --ar 3:2"
 title: "Give Back"
-summary: "Supporting an awesome project in our community"
-date: "2014-10-07"
 tags:
   - general
-layout: layouts/post.njk
 ---
 
 ![](/img/posts/general/give-back/give-back.jpg)  

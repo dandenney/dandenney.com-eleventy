@@ -1,11 +1,18 @@
 ---
-path: "/posts/conferences/no-sleep-til-portland"
-title: No Sleep til Portland
-summary: Building up to running our first event in Portland
+backgroundPost: "#0d0707"
+backgroundFooter: "#0d0707"
+colorLink: "#EB59A6"
+colorText: "#f8f4f2"
 date: "2014-07-21"
+gradientTitle: "linear-gradient(to bottom, #3eaabe, #102f54)"
+layout: layouts/post.njk
+path: "/posts/conferences/no-sleep-til-portland"
+summary: Building up to running our first event in Portland
+thumb: "posts/no-sleep.png"
+thumbAlt: "An illustration of a person driving through the night on a deserted highway with Portland in the background, with a graffiti-style font overlay reading 'No Sleep Till Brooklyn', in the style of a digital art, viewed from a front perspective --v 5 --ar 3:2"
+title: No Sleep til Portland
 tags:
   - conferences
-layout: layouts/post.njk
 ---
 
 Ok, we will sleep. [Carl Smith](http://twitter.com/carlsmith) made it clear how important sleep is during his awesome talk in St. Pete. It's more like "Portland or Bust", but [Nathan Yoder](http://twitter.com/nathanyoder) just claimed that recently as he moved there.

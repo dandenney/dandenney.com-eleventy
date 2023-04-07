@@ -1,20 +1,23 @@
 ---
-path: "/posts/conferences/front-end-conf-lives"
-thumb: "posts/front-end-lives.png"
-thumbAlt: "A mesmerizing digital art piece depicting a lush, verdant garden coming back to life after a long, cold winter. The once barren landscape is now a riot of colors, with fresh leaves and blossoming flowers reaching up towards the sky. The scene is set at sunrise, with the first rays of sunlight peeking through the trees, casting a warm glow over the garden. The viewer is positioned at a bird's eye view, allowing for a panoramic view of the garden's transformation. The air is filled with the sound of chirping birds, buzzing bees, and rustling leaves, adding to the sense of renewal and rebirth. The image captures the beauty of the natural world awakening from its slumber, a powerful metaphor for the cyclical nature of life and the unstoppable force of renewal --v 5 --ar 3:2"
-title: "Front-End Conf Lives!"
-summary: The conference goes on, thanks to friends
+backgroundPost: "#0d0707"
+backgroundFooter: "#0d0707"
+colorLink: "#FE3036"
+colorText: "#f2f2f2"
 date: "2014-10-23"
+gradientTitle: "linear-gradient(to bottom, #efefef, #bbbbbb)"
+layout: layouts/post.njk
+path: "/posts/conferences/front-end-conf-lives"
+summary: The conference goes on, thanks to friends
 tags:
   - conferences
-layout: layouts/post.njk
+thumb: "posts/fedc-lives.jpg"
+thumbAlt: "A mesmerizing digital art piece depicting a lush, verdant garden coming back to life after a long, cold winter. The once barren landscape is now a riot of colors, with fresh leaves and blossoming flowers reaching up towards the sky. The scene is set at sunrise, with the first rays of sunlight peeking through the trees, casting a warm glow over the garden. The viewer is positioned at a bird's eye view, allowing for a panoramic view of the garden's transformation. The air is filled with the sound of chirping birds, buzzing bees, and rustling leaves, adding to the sense of renewal and rebirth. The image captures the beauty of the natural world awakening from its slumber, a powerful metaphor for the cyclical nature of life and the unstoppable force of renewal --v 5 --ar 3:2"
+title: "Front-End Conf Lives!"
 ---
 
 ![](/img/posts/conferences/front-end-conf-lives/plan-comes-together.jpg)
 
 The decision to stop running Front-End Conf was a very tough one and the reaction of the people both in St. Petersburg and Portland made it even more hard. Luckily, I knew it was going to be tough and I decided to call out a few of my friends. The awesome crew from [Unmatched Style](http://unmatchedstyle.com/), who run [ConvergeSE](http://convergese.com/), [ConvergeFL](http://convergefl.com/), [ConvergeRVA](http://convergerva.com/), and the [Breaking Development confs](https://bdconf.com/) (amongst other things) came up on stage to give me a gift. I returned the favor by calling them out on the possibility of running a conf in St. Pete because that's the kind of thing friends can get away with. We've been chatting since and they're officially taking over!
-
-![](/img/posts/conferences/front-end-conf-lives/converge-crew.jpg)
 
 ## The Best Possible Outcome
 

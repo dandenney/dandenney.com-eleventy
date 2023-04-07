@@ -1,12 +1,12 @@
 ---
 backgroundFooter: "#979696"
 backgroundPost: "#6d6b6b"
-linkColor: "#7affff"
-textColor: "#fefeeb"
+colorLink: "#7affff"
+colorText: "#fefeeb"
 path: "/posts/front-end-dev/prop-data-preferences"
 thumb: posts/prop-preferences.png
 title: Prop Data Preferences
-titleGradient: "linear-gradient(to right, #d9a07f, #f5cdaa)"
+gradientTitle: "linear-gradient(to right, #d9a07f, #f5cdaa)"
 summary: What's the "best practice" for passing down data
 date: "2020-01-18"
 codeHighlighting: true

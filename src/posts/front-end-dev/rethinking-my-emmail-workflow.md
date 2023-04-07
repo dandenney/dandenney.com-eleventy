@@ -1,13 +1,18 @@
 ---
+backgroundPost: "#e86b31"
+backgroundFooter: "#0d0707"
+colorLink: "#000002"
+colorText: "#ffffff"
+date: "2016-06-30"
+gradientTitle: "linear-gradient(to right, #000002, #000002)"
+layout: layouts/post.njk
 path: "/posts/front-end-dev/rethinking-my-emmail-workflow"
+summary: Changing from all local dev to using Builder
+tags:
+  - front-end-dev
 thumb: "posts/rethinking.png"
 thumbAlt: "An illustration of a person lost in thought, with thought bubbles and symbols representing ideas surrounding them, in the style of Basquiat, viewed from a close-up perspective --v 5 --ar 3:2"
 title: Rethinking My eMMail Workflow
-summary: Changing from all local dev to using Builder
-date: "2016-06-30"
-tags:
-  - front-end-dev
-layout: layouts/post.njk
 ---
 
 In 2015, I was lucky enough to get to share [The Organized Chaos of Email](https://speakerdeck.com/dandenney/the-organized-chaos-of-email-creation) Creation at [The Email Design Conference](https://litmus.com/conference). While I was on stage talking about an offline workflow, people from the Litmus team were in the lobby demoing a game-changer: live client previews built into [Builder](https://litmus.com/email-builder).

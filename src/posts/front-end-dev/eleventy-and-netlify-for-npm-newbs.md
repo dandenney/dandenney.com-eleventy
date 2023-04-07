@@ -1,13 +1,17 @@
 ---
+backgroundPost: "#f5ecc6"
+backgroundFooter: "#cac09f"
 codeHighlighting: true
+colorLink: "#257f7b"
+colorText: "#453332"
 date: "2020-12-15"
+gradientTitle: "linear-gradient(to bottom, #817f58, #555646)"
 layout: layouts/post.njk
 summary: Sharing some basics of configuration that were new to me
 tags:
   - front-end-dev
 thumb: posts/eleventy-netlify-newb.jpg
 title: Eleventy and Netlify for NPM newbs like me
-titleGradient: "linear-gradient(to bottom, #75675a, #c2b595)"
 ---
 
 ## Backstory

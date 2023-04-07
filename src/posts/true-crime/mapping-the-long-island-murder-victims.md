@@ -84,10 +84,9 @@ layout: layouts/post-custom.njk
     padding: 2rem;
   }
 
-  .longform-container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80ch;
+  h1 {
+    margin-top: 0;
+    text-align: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -105,7 +104,7 @@ layout: layouts/post-custom.njk
   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
 
-<header class="longform">
+<header class="longform no-img">
   <h1>Mapping the Long Island murder victims</h1>
 </header>
 

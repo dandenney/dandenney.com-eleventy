@@ -1,4 +1,9 @@
 ---
+backgroundPost: "#0f0903"
+backgroundFooter: "#0f0903"
+colorLink: "#c99e72"
+colorText: "#f8f4f2"
+gradientTitle: "linear-gradient(135deg, #bda07c, #744c28)"
 path: "/posts/front-end-dev/injecting-a-banner-populated-by-cookie-data"
 title: Injecting a banner populated with cookie data
 thumb: "posts/injecting-cookie-data.png"

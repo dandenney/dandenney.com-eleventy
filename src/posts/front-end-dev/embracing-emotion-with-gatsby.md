@@ -1,4 +1,9 @@
 ---
+backgroundPost: "#070a16"
+backgroundFooter: "#070a16"
+colorLink: "#ffffff"
+colorText: "#faefe2"
+gradientTitle: "radial-gradient(#f0e1c0, #7c614d)"
 path: "/posts/front-end-dev/embracing-emotion-with-gatsby"
 thumb: "posts/emotion-gatsby.png"
 title: Embracing Emotion, with Gatsby
@@ -9,6 +14,12 @@ tags:
   - front-end-dev
 layout: layouts/post.njk
 ---
+
+<style>
+  h1 {
+    -webkit-text-stroke: 2px #fbf1e2;
+  }
+</style>
 
 While the title is about the CSS-in-JS package named [Emotion](https://emotion.sh/docs/introduction), I will say that I haven't been this excited about front-end development for quite a while. I'm all-in on the JAMstack, building in [Gatsby](https://www.gatsbyjs.org) daily at work and I just revamped my site with it as well. It's by far the fastest and most technically advanced version that I've ever made and I hardly did a thing besides format markdown. The beneits come from the people behind the project, so I get to keep learning the fundamentals of ES6, JSX, and React.
 

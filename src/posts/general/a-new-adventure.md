@@ -1,4 +1,9 @@
 ---
+backgroundPost: "#000000"
+backgroundFooter: "#000000"
+colorLink: "#6ae4ea"
+colorText: "#f8f4f2"
+gradientTitle: "linear-gradient(to right, #d9d159, #a0dad4, #d6527a, #61d2d9)"
 path: "/posts/general/a-new-adventure"
 thumb: "posts/a-new-adventure.png"
 thumbAlt: "a digital artwork that celebrates the adventure and excitement of data science using a graphic tablet and a vibrant, colorful palette that reflects the dynamic and ever-changing nature of the field. Use a composition that incorporates elements of technology and futuristic design, and incorporate references to data visualization and analysis to highlight the importance of data-driven decision making. Use lighting to create a sense of depth and perspective that emphasizes the vast potential of data science --v 5 --ar 3:2"

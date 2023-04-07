@@ -1,4 +1,9 @@
 ---
+backgroundPost: "#000105"
+backgroundFooter: "#000105"
+colorLink: "#ba9e80"
+colorText: "#ecfdf7"
+gradientTitle: "radial-gradient(circle, rgba(255,167,163,1) 0%, rgba(231,55,81,1) 25%, rgba(152,33,45,1) 75%, rgba(175,29,48,1) 100%)"
 path: "/posts/front-end-dev/til-executing-local-ruby"
 thumb: "posts/local-ruby.png"
 thumbAlt: "a person holiding a magical ruby, fantasy, cinematic lighting, --s 777 --v 5 --ar 3:2"
@@ -10,6 +15,10 @@ tags:
   - front-end-dev
 layout: layouts/post.njk
 ---
+
+<style>
+  h1, h2, h3, h4, h5 { display: inline-block; }
+</style>
 
 IA Writer says this is a 5:47 minute read and Hemingway App says I'm ugly and I can't write good. Read at your own peril.
 

@@ -1,4 +1,9 @@
 ---
+backgroundPost: "#13163e"
+backgroundFooter: "#13163e"
+colorLink: "#29f7e3"
+colorText: "#fdf5ff"
+gradientTitle: "linear-gradient(to right, #fdb2fa, #955ea6)"
 path: "/posts/front-end-dev/reducing-html-email-code"
 thumb: "posts/reducing-email-code.png"
 thumbAlt: "An illustration of a programmer coding a HTML email, with code snippets and email template visible in the background, in the style of a flat design, viewed from a bird's eye perspective --v 5 --ar 3:2"
