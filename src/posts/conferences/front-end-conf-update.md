@@ -1,14 +1,19 @@
 ---
-path: "/posts/conferences/front-end-conf-update"
-title: Front-End Conf Update
-summary: Updates about this and future events
+backgroundPost: "#253b67"
+backgroundFooter: "#131e35"
+colorLink: "#ba9e80"
+colorText: "#f8f4f2"
 date: "2014-01-19"
+gradientTitle: "linear-gradient(45deg, #5b9395, #719893, #ffa87a, #fdcda8)"
+layout: layouts/post.njk
+path: "/posts/conferences/front-end-conf-update"
+summary: Updates about this and future events
+thumb: "posts/front-end-update.png"
+thumbAlt: "An illustration of an airplane soaring through the clouds with a beautiful sunset in the background, in the style of a classic airline advertisement, viewed from a top-down perspective --v 5 --ar 3:2"
+title: Front-End Conf Update
 tags:
   - conferences
-layout: layouts/post.njk
 ---
-
-![plane](/img/posts/conferences/front-end-conf-update/plane.svg)
 
 We have been holding back on releasing news for this year's events because of some big changes in our non-conf lives. Cherrie has a career change in the works which is a fantastic thing for us, but is really scary for me as she really runs the events. My focus has always been on picking the speakers and updating the site.
 

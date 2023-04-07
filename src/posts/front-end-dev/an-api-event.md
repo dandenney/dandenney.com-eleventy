@@ -1,11 +1,18 @@
 ---
+backgroundPost: "#2b1526"
+backgroundFooter: "#2b1526"
+colorLink: "#ba9e80"
+colorText: "#f8f4f2"
+date: "2014-01-23"
+gradientTitle: "linear-gradient(to bottom, #4b89bf, #adabbf)"
+layout: layouts/post.njk
 path: "/posts/front-end-dev/an-api-event"
+thumb: "posts/api-event.png"
+thumbAlt: "An illustration of a person standing in front of a giant API puzzle, with each piece coming to life and fitting together seamlessly, in the style of an action-packed adventure movie poster, viewed from a dynamic perspective --v 5 --ar 3:2"
 title: An API Event?
 summary: Testing the waters for an event I'd like to run
-date: "2014-01-23"
 tags:
   - front-end-dev
-layout: layouts/post.njk
 ---
 
 ## I want to learn more about APIs
