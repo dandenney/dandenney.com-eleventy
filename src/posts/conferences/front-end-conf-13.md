@@ -1,14 +1,15 @@
 ---
-path: "/posts/conferences/front-end-conf-13"
-title: "Front-End Conf '13"
-summary: A recap of from running the 2013 event
 date: "2013-07-18"
+gradientTitle: "linear-gradient(to bottom, #84151a, #b51f24)"
+path: "/posts/conferences/front-end-conf-13"
+layout: layouts/post.njk
+summary: A recap of from running the 2013 event
 tags:
   - conferences
-layout: layouts/post.njk
+thumb: "posts/front-end-13"
+thumbAlt: "Photo booth shot of people from the conference"
+title: "Front-End Conf 2013"
 ---
-
-![Front-End Conf photo booth](/img/posts/conferences/front-end-conf-13/131.jpg)
 
 We recently wrapped up Front-End Conf 13 and it was awesome. We can't thank everyone enough for all that they do to make it such a good time. While it's a very busy few days, they are filled with these wonderful moments. I can't even explain how awesome it is to meet people attending their first event and see the excitement on their face or to hear the stories of people's paths over the past year. It is truly inspiring.
 

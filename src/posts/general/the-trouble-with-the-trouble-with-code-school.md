@@ -1,11 +1,18 @@
 ---
-path: "/posts/general/the-trouble-with-the-trouble-with-code-school"
-title: 'The Trouble with "The Trouble with Code School"'
-summary: "A reply to a post about online learning"
+backgroundPost: "#343132"
+backgroundFooter: "#343132"
+colorLink: "#c5d496"
+colorText: "#f8f4f2"
 date: "2013-04-30"
+gradientTitle: "linear-gradient(120deg, #6d9a81, #c5d496, #406d62)"
+layout: layouts/post.njk
+path: "/posts/general/the-trouble-with-the-trouble-with-code-school"
+summary: "A reply to a post about online learning"
 tags:
   - general
-layout: layouts/post.njk
+thumb: "posts/trouble-with.png"
+thumbAlt: "An illustration of a group of friends starting trouble by sneaking into an abandoned building, equipped with flashlights and climbing gear, in the style of a suspenseful adventure story, viewed from a low-angle perspective --v 5 --ar 3:2"
+title: 'The Trouble with "The Trouble with Code School"'
 ---
 
 Zach Wentz was recently invited to Medium, and for his first post, he wrote ["The Trouble with Code School"](http://medium.com/i-m-h-o/56ed7faaad58). (Actually he wrote CodeSchool, but I wanted to fix that.) In it, he accurately describes a flaw in online education platforms in that they do not teach every bit of technology leading up to the scoped piece of technology that they describe.
