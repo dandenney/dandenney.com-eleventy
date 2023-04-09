@@ -1,11 +1,18 @@
 ---
-path: "/posts/front-end-dev/mixture-and-firebase-and-public-apis"
-title: Mixture and Firebase and Public APIs
-summary: Playing with a cool tool
+backgroundPost: "#1c2025"
+backgroundFooter: "#0d0707"
+colorLink: "#f16a1c"
+colorText: "#ffe47a"
 date: "2013-04-07"
+gradientTitle: "linear-gradient(135deg, #60323f, #de6c3a)"
+layout: layouts/post.njk
+path: "/posts/front-end-dev/mixture-and-firebase-and-public-apis"
+summary: Playing with a cool tool
 tags:
   - front-end-dev
-layout: layouts/post.njk
+thumb: "posts/mixture-firebase.png"
+thumbAlt: "An illustration of a mad scientist experimenting with a mixture of fire and various chemicals, in the style of a sci-fi movie poster, viewed from a side-facing perspective --v 5 --ar 3:2"
+title: Mixture and Firebase and Public APIs
 ---
 
 ### I'm learning how to work with APIs and how to share via video
