@@ -1,14 +1,19 @@
 ---
-path: "/posts/front-end-dev/playing-with-data-uris"
-title: Playing With Data URIs
-summary: Sharing some benefits of using data URIs for images
+backgroundPost: "#0d0707"
+backgroundFooter: "#0d0707"
+colorLink: "#c4b377"
+colorText: "#fbe9c4"
 date: "2013-03-21"
+gradientTitle: "linear-gradient(to bottom, #a48364, #7c543a)"
+layout: layouts/post.njk
+path: "/posts/front-end-dev/playing-with-data-uris"
+summary: Sharing some benefits of using data URIs for images
 tags:
   - front-end-dev
-layout: layouts/post.njk
+thumb: "posts/data-uris.png"
+thumbAlt: "An illustration of a dense forest being condensed into a small glass jar, with miniature trees and wildlife inside, viewed from a side perspective, in the style of a whimsical painting --v 5 --ar 3:2"
+title: Playing With Data URIs
 ---
-
-![](/img/posts/front-end-dev/playing-with-data-uris/grossness.jpg)
 
 Following up on [my post yesterday,](/posts/front-end-dev/going-live-with-number-five) I thought I should quickly play with data URIs to see what they can do for performance. This is strictly sharing my learning and testing, not an explanation of how data URIs work.
 

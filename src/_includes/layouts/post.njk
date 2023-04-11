@@ -148,4 +148,7 @@ layout: layouts/base.njk
     {% endif %}
   </header>
   {{ content | safe }}
+  {% if strapiSeries %}
+    {% include "src/_includes/strapi-series-toc.njk" %}
+  {% endif %}
 </article>
