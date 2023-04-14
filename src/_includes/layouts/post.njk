@@ -9,17 +9,11 @@ layout: layouts/base.njk
 {% include "longform.njk" %}
 
 <style>
-  {% if backgroundPost %}
-    main {
-      background: {{ backgroundPost}};
-    }
-  {% endif %}
-
-  {% if backgroundFooter %}
-    .site-footer {
-      background: {{ backgroundFooter}};
-    }
-  {% endif %}
+  :root {
+    {% if backgroundPost %}
+      --color-background: {{ backgroundPost}};
+    {% endif %}
+  }
 
   code[class*="language-"],
   pre[class*="language-"] {
@@ -144,7 +138,7 @@ layout: layouts/base.njk
   <header class="post-header {% if not thumb %}no-img{% endif %}">
     <h1>{{ title }}</h1>
     {% if thumb %}
-      <img height="448" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_375,q_auto/v1673896360/{{ thumb }}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_750,q_auto/v1673896360/{{ thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1000,q_auto/v1673896360/{{ thumb }} 500w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1344,q_auto/v1673896360/{{ thumb }} 672w," width="672">
+      <img alt="{{ thumbAlt }}" height="448" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_375,q_auto/v1673896360/{{ thumb }}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_750,q_auto/v1673896360/{{ thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1000,q_auto/v1673896360/{{ thumb }} 500w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1344,q_auto/v1673896360/{{ thumb }} 672w," width="672">
     {% endif %}
   </header>
   {{ content | safe }}

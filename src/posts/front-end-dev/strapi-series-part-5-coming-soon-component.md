@@ -56,7 +56,7 @@ This component will be seen somewhat as a practice component. Part of this is be
 
 ## Coming Soon, Lirrally
 
-<img class="full-to-half-bleed" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-launch-component-screenshot.png" alt="Screenshot of a component for email notifcation of launch" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-launch-component-screenshot.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_2304,q_auto/v1681092603/posts/strapi-launch-component-screenshot.png 768w" />
+<img alt="Screenshot of a component for email notifcation of launch" class="full-to-half-bleed" height="424" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-launch-component-screenshot.png" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-launch-component-screenshot.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_2304,q_auto/v1681092603/posts/strapi-launch-component-screenshot.png 768w" width="1144" />
 
 The icons are to point out specific items that I know will go into Strapi. While technically this component could be reused if we had a newsletter in the future, I'm not going add style options to this. Fonts, colors, and shapes will all be handled by the code in the component, but the content will be editable. We need to allow for changes in case we're not getting the number of signups to hit our OKR!
 
@@ -126,15 +126,15 @@ For this component, we want use a Single Type in Strapi. From their docs, "Singl
 
 There's only four fields that we want for this one and I used some generic names for them: title, text, inputLabel, and buttonText. We first create the single type and then a the inputs individually. In thinking about this component, I figured we wouldn't want default text for the title and text, so I made them required. Here's a screenshot with an idea of the Strapi settings.
 
-<img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-screenshots-data.png" alt="Screenshot of a Strapi's UI for adding a single collection and fields" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-screenshots-data.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1536,q_auto/v1681092603/posts/strapi-screenshots-data.png 768w" />
+<img alt="Screenshot of a Strapi's UI for adding a single collection and fields" height="1276" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-screenshots-data.png" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-screenshots-data.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1536,q_auto/v1681092603/posts/strapi-screenshots-data.png 768w" width="762" />
 
 Strapi automatically adds items to the REST API, but you have to give permissions in order to use it. Here's an example of allowing "find". 
 
-<img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-permissions-api.png" alt="Screenshot of a Strapi's UI for adding permissions" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-permissions-api.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1536,q_auto/v1681092603/posts/strapi-permissions-api.png 768w" />
+<img alt="Screenshot of a Strapi's UI for adding permissions" height="476" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-permissions-api.png" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-permissions-api.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1536,q_auto/v1681092603/posts/strapi-permissions-api.png 768w" width="762"  />
 
 With all of that set up, adding content to the item outputs it in the API. Here's examples from the ChatGPT suggestions and seeing the data in API route.
 
-<img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-initial-api-data.png" alt="Screenshot of a Strapi's UI for content and the code output in the API" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-initial-api-data.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1536,q_auto/v1681092603/posts/strapi-initial-api-data.png 768w" />
+<img alt="Screenshot of a Strapi's UI for content and the code output in the API"  height="498" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-initial-api-data.png" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-initial-api-data.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1536,q_auto/v1681092603/posts/strapi-initial-api-data.png 768w" width="762" />
 
 ## Requesting the Data
 
@@ -211,7 +211,7 @@ The "happy path" styles can be the last part for this one and when we'll get to 
 
 Here's a preview of the styles. I don't love the mobile version, but I'm not sure I'd want to make the text much smaller. Maybe I would for this component only, with this specifc text, but we'll figure that out in Storybook in the next post. Here's some screens of it for now.
 
-<img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-happy-path-coming-soon.png" alt="Screenshot of a Coming Soon component styled by Tailwind" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-happy-path-coming-soon.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1536,q_auto/v1681092603/posts/strapi-happy-path-coming-soon.png 768w" />
+<img height="260" alt="Screenshot of a Coming Soon component styled by Tailwind" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-happy-path-coming-soon.png" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1681092603/posts/strapi-happy-path-coming-soon.png 718w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1536,q_auto/v1681092603/posts/strapi-happy-path-coming-soon.png 768w" width="762" />
 
 
 

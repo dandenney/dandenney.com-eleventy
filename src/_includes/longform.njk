@@ -1,8 +1,13 @@
 <style>
-.longform {
+  :root {
     {% if colorText %}
-    color: {{ colorText }};
+      --color-text: {{ colorText }};
     {% endif %}
+  }
+
+
+
+  .longform {
     line-height: 1.5;
     padding-left: 1rem;
     padding-right: 1rem;
