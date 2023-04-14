@@ -9,7 +9,9 @@ tags:
   - tinkerings
 ---
 
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7537438/6246012/css/fonts.css" media="print" onload="this.media='all'" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
 html {
@@ -22,9 +24,13 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #f0eeeb;
-  font-family: Gotham A, Gotham B, Verdana;
+  font-family: 'Montserrat', Verdana;
   font-size: 1.25rem;
   line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 900;
 }
 
 #map {
@@ -195,7 +201,7 @@ svg {
 .mapboxgl-popup-content {
   background: #2a262a !important;
   color: #ffffff;
-  font-family: Gotham A, Gotham B, Verdana;
+  font-family: 'Montserrat', Verdana;
   font-size: 1rem;
   padding: 1rem !important;
 }

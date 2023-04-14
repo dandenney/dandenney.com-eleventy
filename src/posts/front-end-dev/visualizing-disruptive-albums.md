@@ -132,7 +132,7 @@ The book covers histograms, but not basic bar charts, so I applied the basics of
 
   .wrapper text {
     color: #f1daa4;
-    font-family: "Gotham A", "Gotham B";
+    font-family: 'Montserrat', sans-serif;
   }
 
   .wrapper rect {

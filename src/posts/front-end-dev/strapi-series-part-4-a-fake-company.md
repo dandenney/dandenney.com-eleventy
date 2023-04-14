@@ -53,29 +53,40 @@ It went on a long rant about the role and task, but I really just wanted to fram
 Write a slogan for the company, our company name is BandCamp
 ```
 
-"Discover the Musician Within - Join BandCamp Today!" 
+<figure>
+  <blockquote>
+    <p>"Discover the Musician Within - Join BandCamp Today!"</p>
+  </blockquote>
+  <figcaption>— ChatGPT</figcaption>
+</figure>
 
-Works for me! I'm going to try to not get too hung up on these things as the real goal will be to try several items for each component, to test flexibility. 
+Works for me! I'm going to try to not get too hung up on these things as the real goal will be to try several items for each component, to test flexibility.
 
 ```
 Create a headline, single line of text, and CTA text for a page asking people to sign up to get informed when we launch
 ```
 
-Headline: "Be the First to Know: Join the BandCamp Launch List Today!"
-
-Single line of text: "Sign up to get notified when BandCamp's music theory courses go live and take your skills to the next level."
-
-CTA text: "Join the Launch List" or "Sign Up Now"
+<figure>
+  <blockquote>
+    <p>Headline: "Be the First to Know: Join the BandCamp Launch List Today!"</p>
+    <p>Single line of text: "Sign up to get notified when BandCamp's music theory courses go live and take your skills to the next level."</p>
+    <p>CTA text: "Join the Launch List" or "Sign Up Now"</p>
+  </blockquote>
+  <figcaption>— ChatGPT</figcaption>
+</figure>
 
 ```
 Rewrite those, with some mentions of music 
 ```
 
-Headline: "Join the Music Revolution: Be the First to Know When BandCamp Launches!"
-
-Single line of text: "Never miss a beat! Sign up to receive updates on BandCamp's music theory courses and elevate your musical skills."
-
-CTA text: "Join the Music Movement" or "Stay Tuned for Launch"
+<figure>
+  <blockquote>
+    <p>Headline: "Join the Music Revolution: Be the First to Know When BandCamp Launches!"</p>
+    <p>Single line of text: "Never miss a beat! Sign up to receive updates on BandCamp's music theory courses and elevate your musical skills."</p>
+    <p>CTA text: "Join the Music Movement" or "Stay Tuned for Launch"</p>
+  </blockquote>
+  <figcaption>— ChatGPT</figcaption>
+</figure>
 
 ## No Battle Plan Survives Contact With the Enemy
 

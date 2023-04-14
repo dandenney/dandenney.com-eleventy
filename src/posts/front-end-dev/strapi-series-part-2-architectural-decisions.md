@@ -17,8 +17,12 @@ title: "Strapi Series, Part 2: Architectural Decisions"
 
 Calling this an architecture decision record (ADR) may be a stretch, but for the sake of the project there are some decisions that I'm making that I want to document.
 
-> An architecture decision record (ADR) is a document that captures an important architectural decision made along with its context and consequences.
-[Source](https://github.com/joelparkerhenderson/architecture-decision-record#what-is-an-architecture-decision-record)
+<figure>
+  <blockquote>
+    <p>An architecture decision record (ADR) is a document that captures an important architectural decision made along with its context and consequences.</p>
+  </blockquote>
+  <figcaption>— <a href="https://github.com/joelparkerhenderson/architecture-decision-record#what-is-an-architecture-decision-record">Joel Parker Henderson</a></figcaption>
+</figure>
 
 ## CMS
 

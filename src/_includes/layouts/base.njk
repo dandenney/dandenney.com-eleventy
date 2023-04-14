@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7537438/6246012/css/fonts.css" media="print" onload="this.media='all'" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <style>
       * {
@@ -15,7 +17,7 @@
       body {
         display: flex;
         flex-direction: column;
-        font-family: "Gotham A", "Gotham B", Arial Black, Arial, sans-serif;
+        font-family: 'Montserrat', Arial Black, Arial, sans-serif;
         font-style: normal;
         font-weight: 400;
         margin: 0;
