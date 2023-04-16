@@ -8,6 +8,7 @@ colorText: "#ffffdf"
 date: "2023-04-10"
 gradientTitle: "linear-gradient(to bottom, #87d0a5, #51bca2)"
 layout: layouts/post.njk
+socialImageFilename: "og-strap-series-part-5-a-coming-soon-component.png"
 strapiSeries: true
 summary: Nerding out over design and AI
 tags:

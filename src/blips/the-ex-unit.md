@@ -9,11 +9,11 @@ layout: layouts/blip.njk
 
 Today Andy Bell tweeted about creating a hero component and mentioned the `ex` unit. I hadn't heard of it and thought it was one of the newfangled additions to CSS. I was so surprised that the first result was a [Stack Overflow from 11 years ago](https://stackoverflow.com/questions/918612/what-is-the-value-of-the-css-ex-unit). 
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I love how back in the day this component would have been a right pain in the arse, but modern CSS makes it an absolute doddle, thanks to aspect-ratio, flexbox and ex units <a href="https://t.co/IzFOYY0Soz">pic.twitter.com/IzFOYY0Soz</a></p>&mdash; Andy Bell (@hankchizljaw) <a href="https://twitter.com/hankchizljaw/status/1529816909524283392?ref_src=twsrc%5Etfw">May 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<figure><blockquote class="twitter-tweet"><p lang="en" dir="ltr">I love how back in the day this component would have been a right pain in the arse, but modern CSS makes it an absolute doddle, thanks to aspect-ratio, flexbox and ex units <a href="https://t.co/IzFOYY0Soz">pic.twitter.com/IzFOYY0Soz</a></p></blockquote><figcaption>&mdash; Andy Bell (@hankchizljaw) <a href="https://twitter.com/hankchizljaw/status/1529816909524283392?ref_src=twsrc%5Etfw">May 26, 2022</a></figcaption></figure><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p class="mb-0 mt-6">The <code>ex</code> unit on MDN:</p>
 
-> Represents the [x-height](https://en.wikipedia.org/wiki/X-height) of the element's [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font). On fonts with the "x" letter, this is generally the height of lowercase letters in the font; 1ex ≈ 0.5em in many fonts.
+<figure><blockquote><p>Represents the <a href="https://en.wikipedia.org/wiki/X-height">x-height</a> of the element's <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">font</a>. On fonts with the "x" letter, this is generally the height of lowercase letters in the font; 1ex ≈ 0.5em in many fonts.</p></blockquote><figcaption>MDN</figcaption></figure>
 
 Thankfully, he also [shared a gist](https://gist.github.com/hankchizljaw/6e1c18818038b941b9cba9f3c821b8c9) with some CSS for me to kick the tires on very quickly.
 

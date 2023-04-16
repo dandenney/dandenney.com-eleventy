@@ -6,6 +6,7 @@ colorText: "#fefcea"
 date: "2023-04-09"
 gradientTitle: "linear-gradient(to top, #955235, #ee763b)"
 layout: layouts/post.njk
+socialImageFilename: "og-strapi-series-part-3-repo-setup.png"
 strapiSeries: true
 summary: Cloning, yarning, and command lining
 tags:

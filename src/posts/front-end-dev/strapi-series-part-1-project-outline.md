@@ -7,6 +7,7 @@ date: "2023-04-09"
 gradientTitle: "linear-gradient(to bottom, #a2a7a7, #545d5c)"
 layout: layouts/post.njk
 path: "/posts/front-end-dev/mondays-rock"
+socialImageFilename: "og-strapi-series-part-1-project-outline.png"
 strapiSeries: true
 summary: An overview of what I hope to create
 tags:
