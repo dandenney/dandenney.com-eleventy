@@ -1,6 +1,7 @@
 ---
 backgroundFooter: "#f2ede9"
 backgroundPost: "#f2ede9"
+colorInlineCode: "#f2ede9"
 colorLink: "#956552"
 colorText: "#3c3a39"
 date: "2023-04-10"
@@ -14,14 +15,6 @@ thumb: "posts/strapi-series-fake.png"
 thumbAlt: "An illustration of an outline of a web project, with a person sketching the wireframe on a whiteboard, in the style of a technical drawing, viewed from a top-down perspective, with a computer and a notebook in the background. --v 5 --ar 3:2"
 title: "Strapi Series, Part 4: A Fake Company"
 ---
-
-<style>
-  pre {
-    background: #e0d4c4;
-    padding: 0.5rem;
-    white-space: normal;
-  }
-</style>
 
 This part will show my nerdy sense of humor. Just to be sure, I know that there is a real company named BandCamp and they do music sales. I'm mainly keeping the name because it's a play on DataCamp and music is my life force. I'm keeping it mostly trimmed down to the designs and not putting it in titles, so hopefully I get to keep it. My inner teenager also snickers occasionally as I hear "one time, at band camp" in my head. 
 
@@ -43,15 +36,19 @@ This means that I won't have specific design files like a Figma to outline what 
 
 This is a chance to grow my skills with prompting and to learn how good ChatGPT can be at it (with my skills considered). 
 
-```
+<div class="chatgpt-prompt">
+
+```markup
 You are the head of marketing for an online education company that teaches people music theory 
 ```
 
 It went on a long rant about the role and task, but I really just wanted to frame it for the content.
 
-```
+```markup
 Write a slogan for the company, our company name is BandCamp
 ```
+
+</div>
 
 <figure>
   <blockquote>
@@ -62,7 +59,9 @@ Write a slogan for the company, our company name is BandCamp
 
 Works for me! I'm going to try to not get too hung up on these things as the real goal will be to try several items for each component, to test flexibility.
 
-```
+<div class="chatgpt-prompt">
+
+```markup
 Create a headline, single line of text, and CTA text for a page asking people to sign up to get informed when we launch
 ```
 
@@ -75,9 +74,11 @@ Create a headline, single line of text, and CTA text for a page asking people to
   <figcaption>— ChatGPT</figcaption>
 </figure>
 
-```
+```markup
 Rewrite those, with some mentions of music 
 ```
+
+</div>
 
 <figure>
   <blockquote>

@@ -5,8 +5,6 @@
     {% endif %}
   }
 
-
-
   .longform {
     line-height: 1.5;
     padding-left: 1rem;
@@ -63,6 +61,20 @@
     margin-right: auto;
     max-width: 60ch;
     padding-bottom: 2rem;
+  }
+
+  .longform p code,
+  .longform :not(pre) > code[class*="language-"],
+  .longform pre[class*="language-"] {
+    background: {% if backgroundCode %}{{backgroundCode}}{% else %}#2d2d2d{% endif %};
+  }
+
+  .longform p code,
+  .longform .chatgpt-prompt code {
+    border-radius: 0.25rem;
+    color: {% if colorInlineCode %}{{colorInlineCode}}{% else %}currentColor{% endif %};
+    display: inline-block;
+    padding: 0.125rem 0.25rem;
   }
 
   .longform figure {   
@@ -152,6 +164,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .longform .chatgpt-prompt code[class*="language-"], 
+  .longform .chatgpt-prompt pre[class*="language-"] {
+    white-space: normal;
   }
 
   @media screen and (min-width: 1000px) {

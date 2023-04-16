@@ -1,6 +1,8 @@
 ---
+backgroundCode: "#251336"
 backgroundFooter: "#140a1d"
 backgroundPost: "#2d1743"
+colorInlineCode: "#ffffdf"
 colorLink: "#fa7090"
 colorText: "#ffffdf"
 date: "2023-04-10"
@@ -93,7 +95,13 @@ The icons are to point out specific items that I know will go into Strapi. While
 
 ### ChatGPT Break
 
-`When using the CMS strapi, what are good field names for a heading and a paragraph`
+<div class="chatgpt-prompt">
+
+```markdown
+When using the CMS strapi, what are good field names for a heading and a paragraph
+```
+
+</div>
 
 <div class="full-to-half-bleed">
   <figure>
@@ -140,6 +148,8 @@ With all of that set up, adding content to the item outputs it in the API. Here'
 
 Soooo normally I would have written out an example of directly querying the data, but I thought it was worth using ChatGPT like the Strapi docs and asking "write a function for getting Strapi data from the REST API in Next.js". It gave a good response that I've seen in the docs and in videos, just I'm just going to start there, with some minor changes. It offered up...
 
+<div class="full-to-half-bleed">
+
 ```jsx
 import axios from 'axios';
 
@@ -152,6 +162,8 @@ export async function getStrapiData(endpoint) {
   }
 }
 ```
+
+</div>
 
 Before creating that, I needed to install Axios and add the local URL for Strapi to my `.env`. ChatGPT also handed me the deets for importing the data with `getStaticProps`, so I copied that since I normally would copy and paste from another component. I've yet to type that enough times to commit it to memory, despite building hundreds of pages in Next. Also, CoPilot automates the imports. AI is making me faster, but mainly for not having to go copy/paste or move to google searches for docs. 
 

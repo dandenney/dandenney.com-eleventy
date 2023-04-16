@@ -1,6 +1,8 @@
 ---
+backgroundCode: "#344e5b"
 backgroundPost: "#e3ebef"
 backgroundFooter: "#e3ebef"
+colorInlineCode: "#e3ebef"
 colorLink: "#2f7877"
 colorText: "#1f364a"
 gradientTitle: "linear-gradient(to bottom, #466f87, #1f364a)"
