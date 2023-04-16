@@ -144,6 +144,7 @@
   .full-to-half-bleed,
   .longform header {
     margin-left: 50%;
+    overflow: hidden;
     max-width: 100rem;
     transform: translateX(-50%);
     width: 100vw;
@@ -173,7 +174,8 @@
 
   @media screen and (min-width: 1000px) {
     .full-to-half-bleed,
-    .longform img.full-to-half-bleed {
+    .longform img.full-to-half-bleed,
+    .normal-to-half-bleed {
       max-width: 150%;
       width: 150%;
       margin-left: -25%;

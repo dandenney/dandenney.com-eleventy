@@ -15,6 +15,23 @@ layout: layouts/base.njk
     {% endif %}
   }
 
+  main {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  footer {
+    background: #fff;
+    bottom: 0;
+    display: grid;
+    left: 0;
+    padding: 2rem 1rem;
+    place-items: center;
+    position: sticky;
+    width: 100%;
+  }
+
   code[class*="language-"],
   pre[class*="language-"] {
     color: #ccc;

@@ -103,7 +103,7 @@ When using the CMS strapi, what are good field names for a heading and a paragra
 
 </div>
 
-<div class="full-to-half-bleed">
+<div class="normal-to-half-bleed">
   <figure>
     <blockquote>
       <p>
