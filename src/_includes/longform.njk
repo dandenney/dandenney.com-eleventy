@@ -1,8 +1,11 @@
 <style>
-.longform {
+  :root {
     {% if colorText %}
-    color: {{ colorText }};
+      --color-text: {{ colorText }};
     {% endif %}
+  }
+
+  .longform {
     line-height: 1.5;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -23,8 +26,29 @@
   }
 
   .longform h1, .longform h2, .longform h3, .longform h4, .longform h5 {
+    font-weight: 900;
     line-height: 1.2;
     margin-bottom: 0;
+  }
+
+  .longform h2, .longform h3, .longform h4, .longform h5 {
+    margin-top: 3rem;
+  }
+
+  .longform h1 + p, .longform h2 + p, .longform h3 + p, .longform h4 + p, .longform h5 + p {
+    margin-top: 0.75rem;
+  }
+
+  .longform h2 + img, .longform h3 + img, .longform h4 + img, .longform h5 + img {
+    margin-top: 1.5rem;
+  }
+
+  .longform h1 {
+    font-size: clamp(2rem, 2rem + 4vw, 6rem);
+  }
+
+  .longform strong {
+    font-weight: 700;
   }
 
   .longform img {
@@ -35,12 +59,69 @@
   .longform-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 80ch;
+    max-width: 60ch;
     padding-bottom: 2rem;
   }
 
-  .longform h1 {
-    font-size: clamp(2rem, 2rem + 4vw, 6rem);
+  .longform p code,
+  .longform :not(pre) > code[class*="language-"],
+  .longform pre[class*="language-"] {
+    background: {% if backgroundCode %}{{backgroundCode}}{% else %}#2d2d2d{% endif %};
+  }
+
+  .longform p code,
+  .longform .chatgpt-prompt code {
+    border-radius: 0.25rem;
+    color: {% if colorInlineCode %}{{colorInlineCode}}{% else %}currentColor{% endif %};
+    display: inline-block;
+    padding: 0.125rem 0.25rem;
+  }
+
+  .longform figure {   
+    margin: 2rem 0 3rem; 
+  }
+
+  .longform .full-to-half-bleed .figure {
+    padding: 0 1rem;
+  }
+
+  .longform figure blockquote {
+    background: linear-gradient({{backgroundPost}}, {{backgroundPost}}) padding-box, {% if gradientTitle %}{{gradientTitle}}{% else %}#111{% endif %} border-box;
+    border: solid 2px transparent;
+    border-radius: 0.5rem;
+    font-size: 1.125em;
+    margin: 0;
+    padding: 0.75rem 2rem;
+    position: relative;
+  }
+
+  .longform figure blockquote::before {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    border: 0.375rem solid {% if backgroundPost %}{{backgroundPost}}{% else %}#fff{% endif %};
+    bottom: -0.1875rem;
+    left: 4rem;
+    z-index: 2;
+  }
+
+  .longform figure blockquote::after {
+    background: linear-gradient({{backgroundPost}}, {{backgroundPost}}) padding-box, {% if gradientTitle %}{{gradientTitle}}{% else %}#111{% endif %} border-box;
+    border: 2px solid transparent;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0 3.125rem 0 0;
+    bottom: -3.875rem;
+    content: "";
+    height: 3.75rem;
+    left: 3.125rem;
+    position: absolute;
+    width: 3.75rem;
+    z-index: 3;
+  }
+
+  .longform figure figcaption {
+    margin: 1rem 0 0 10rem;
   }
 
   {% if gradientTitle %}
@@ -63,6 +144,7 @@
   .full-to-half-bleed,
   .longform header {
     margin-left: 50%;
+    overflow: hidden;
     max-width: 100rem;
     transform: translateX(-50%);
     width: 100vw;
@@ -85,9 +167,15 @@
     margin-right: auto;
   }
 
+  .longform .chatgpt-prompt code[class*="language-"], 
+  .longform .chatgpt-prompt pre[class*="language-"] {
+    white-space: normal;
+  }
+
   @media screen and (min-width: 1000px) {
     .full-to-half-bleed,
-    .longform img.full-to-half-bleed {
+    .longform img.full-to-half-bleed,
+    .normal-to-half-bleed {
       max-width: 150%;
       width: 150%;
       margin-left: -25%;

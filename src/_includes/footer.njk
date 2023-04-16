@@ -1,11 +1,13 @@
 <style>
   .site-footer {
-    padding: 1rem;
+    color: #111;
+    padding: 1rem 1rem 0;
   }
 
   .site-footer nav {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
   }
 
   .site-footer .link {
@@ -19,6 +21,22 @@
   .site-footer .link:hover {
     transform: scale(1.1);
   }
+
+  .site-footer .dan {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    .site-footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .site-footer nav {
+      margin-bottom: 0;
+    }
+  }
 </style>
 
 <footer class="site-footer">
@@ -28,4 +46,8 @@
     <a class="link" href="/blips">Blips</a>
     <a class="link" href="/posts">Posts</a>
   </nav>
+  <div class="dan">
+    <img alt="Illustration of Dan by Ricardo Gimenes" src="/img/dan-social-eb.svg" width="150" />
+    <p>Thank you for checking out my site!</p>
+  </div>
 </footer>
