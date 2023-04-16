@@ -11,6 +11,9 @@ module.exports = function(eleventyConfig) {
   // Build JS
   eleventyConfig.addPassthroughCopy("src/js");
 
+  // Retype
+  eleventyConfig.addPassthroughCopy("src/front-end/.retype");
+
   // Add posts collection
   eleventyConfig.addCollection("posts", (collection) => {
     return collection.getFilteredByGlob("./src/posts/**/*.md");
