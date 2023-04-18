@@ -1,6 +1,5 @@
 ---
 backgroundCode: "#251336"
-backgroundFooter: "#140a1d"
 backgroundPost: "#2d1743"
 colorInlineCode: "#ffffdf"
 colorLink: "#fa7090"

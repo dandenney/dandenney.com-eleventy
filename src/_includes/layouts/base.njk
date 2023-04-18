@@ -10,8 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     {% if socialImageFilename %}
+      <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="https://www.dandenney.com/img/posts/social-share/{{socialImageFilename}}">
       <meta property="og:image" content="https://www.dandenney.com/img/posts/social-share/{{socialImageFilename}}">
+      <meta property="og:image:alt" content="Description of the social share image">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="628">
     {% endif %}
     <style>
       :root {
