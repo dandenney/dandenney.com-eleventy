@@ -1,7 +1,7 @@
 ---
+backgroundCode: "#2d2d2d"
 backgroundFooter: "#f2ede9"
 backgroundPost: "#f2ede9"
-colorInlineCode: "#f2ede9"
 colorLink: "#956552"
 colorText: "#3c3a39"
 date: "2023-04-10"
