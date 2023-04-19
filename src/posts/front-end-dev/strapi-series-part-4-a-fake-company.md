@@ -10,7 +10,7 @@ gradientTitle: "linear-gradient(to bottom, #919777, #70765a)"
 layout: layouts/post.njk
 socialImageFilename: "og-strapi-series-part-4-a-fake-company.png"
 strapiSeries: true
-summary: Nerding out over design and AI
+summary: Creating some details to make the project fun 
 tags:
   - front-end-dev
 thumb: "posts/strapi-series-fake.png"

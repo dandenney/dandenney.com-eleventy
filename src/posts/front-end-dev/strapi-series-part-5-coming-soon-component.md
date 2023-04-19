@@ -10,7 +10,7 @@ gradientTitle: "linear-gradient(to bottom, #87d0a5, #51bca2)"
 layout: layouts/post.njk
 socialImageFilename: "og-strap-series-part-5-a-coming-soon-component.png"
 strapiSeries: true
-summary: Nerding out over design and AI
+summary: Hooking Strapi up to a component for collecting emails
 tags:
   - front-end-dev
 thumb: "posts/strapi-email-launch.png"

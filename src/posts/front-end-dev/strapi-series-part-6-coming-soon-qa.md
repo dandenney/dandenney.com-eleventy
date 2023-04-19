@@ -9,7 +9,7 @@ gradientTitle: "linear-gradient(45deg, #5adaff, #39b4f0)"
 layout: layouts/post.njk
 socialImageFilename: "og-strap-series-part-6-coming-soon-qa.png"
 strapiSeries: true
-summary: Nerding out over design and AI
+summary: Adding TypeScript and Storybook to verify and see data
 tags:
   - front-end-dev
 thumb: "posts/strapi-coming-soon-qa.png"
