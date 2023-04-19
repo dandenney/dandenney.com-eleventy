@@ -1,6 +1,7 @@
 ---
 backgroundFooter: "#fff"
 backgroundPost: "#fff"
+canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-2-architectural-decisions"
 colorLink: "#627884"
 colorText: "#111"
 date: "2023-04-09"

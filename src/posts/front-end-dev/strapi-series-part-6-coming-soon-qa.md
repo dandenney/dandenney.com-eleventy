@@ -1,6 +1,7 @@
 ---
 backgroundCode: "#1b1316"
 backgroundPost: "#050810"
+canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-6-coming-soon-qa"
 colorLink: "#f8e850"
 colorText: "#f3f5f8"
 date: "2023-04-17"

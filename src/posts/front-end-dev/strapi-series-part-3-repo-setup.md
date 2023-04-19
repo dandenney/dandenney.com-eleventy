@@ -1,6 +1,7 @@
 ---
 backgroundFooter: "#010101"
 backgroundPost: "#010101"
+canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-3-repo-setup"
 colorLink: "#fdd259"
 colorText: "#fefcea"
 date: "2023-04-09"

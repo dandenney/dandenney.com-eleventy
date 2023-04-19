@@ -1,4 +1,5 @@
 ---
+backgroundCode: "#101b2d"
 backgroundPost: "#070c14"
 backgroundFooter: "#070c14"
 codeHighlighting: true

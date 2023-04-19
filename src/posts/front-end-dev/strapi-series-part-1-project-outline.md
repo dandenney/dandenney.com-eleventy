@@ -1,6 +1,7 @@
 ---
 backgroundFooter: "#fefefe"
 backgroundPost: "#fefefe"
+canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-1-project-outline"
 colorLink: "#1aacf2"
 colorText: "#565a60"
 date: "2023-04-09"

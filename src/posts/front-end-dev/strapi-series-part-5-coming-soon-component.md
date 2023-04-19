@@ -1,6 +1,7 @@
 ---
 backgroundCode: "#251336"
 backgroundPost: "#2d1743"
+canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-5-coming-soon-component"
 colorInlineCode: "#ffffdf"
 colorLink: "#fa7090"
 colorText: "#ffffdf"

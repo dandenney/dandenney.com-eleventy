@@ -2,6 +2,7 @@
 backgroundCode: "#2d2d2d"
 backgroundFooter: "#f2ede9"
 backgroundPost: "#f2ede9"
+canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-4-a-fake-company"
 colorLink: "#956552"
 colorText: "#3c3a39"
 date: "2023-04-10"

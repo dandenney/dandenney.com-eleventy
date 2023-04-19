@@ -4,19 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <meta name="og:title" content="{{ renderData.title or title or metadata.title }}">
+    <meta name="Description" content="{{ renderData.description or description or metadata.description or summary }}">
+    <meta name="og:description" content="{{ renderData.description or description or metadata.description or summary }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+    {% if canonical %}
+      <link rel="canonical" href="{{ canonical }}" />
+      <meta name="og:url" content="{{ canonical }}">
+    {% endif %}
     {% if socialImageFilename %}
       <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:description" content="{{ renderData.description or description or metadata.description or summary }}">
       <meta name="twitter:image" content="https://www.dandenney.com/img/posts/social-share/{{socialImageFilename}}">
+      <meta name="twitter:site" content="@dandenney">
+      <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}">
       <meta property="og:image" content="https://www.dandenney.com/img/posts/social-share/{{socialImageFilename}}">
       <meta property="og:image:alt" content="Description of the social share image">
       <meta property="og:image:type" content="image/png">
       <meta property="og:image:width" content="1200">
       <meta property="og:image:height" content="628">
+    {% endif %}
+    {% if layout === 'layouts/post.njk' %}
+      <meta name="og:type" content="article">
     {% endif %}
     <style>
       :root {
