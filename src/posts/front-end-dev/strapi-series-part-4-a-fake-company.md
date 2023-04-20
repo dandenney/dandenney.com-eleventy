@@ -8,7 +8,7 @@ colorText: "#3c3a39"
 date: "2023-04-10"
 gradientTitle: "linear-gradient(to bottom, #919777, #70765a)"
 layout: layouts/post.njk
-socialImageFilename: "og-strapi-series-part-4-a-fake-company.png"
+socialImageFilename: "og-strapi-series-part-4-a-fake-company.jpg"
 strapiSeries: true
 summary: Creating some details to make the project fun 
 tags:

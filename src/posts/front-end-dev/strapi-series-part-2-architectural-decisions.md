@@ -7,7 +7,7 @@ colorText: "#111"
 date: "2023-04-09"
 gradientTitle: "linear-gradient(45deg, #8299a8, #555b53)"
 layout: layouts/post.njk
-socialImageFilename: "og-strapi-series-part-2-architectural-decisions.png"
+socialImageFilename: "og-strapi-series-part-2-architectural-decisions.jpg"
 strapiSeries: true
 summary: Basic decisions around the tech stack
 tags:

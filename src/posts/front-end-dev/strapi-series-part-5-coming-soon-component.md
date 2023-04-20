@@ -8,7 +8,7 @@ colorText: "#ffffdf"
 date: "2023-04-10"
 gradientTitle: "linear-gradient(to bottom, #87d0a5, #51bca2)"
 layout: layouts/post.njk
-socialImageFilename: "og-strap-series-part-5-a-coming-soon-component.png"
+socialImageFilename: "og-strap-series-part-5-a-coming-soon-component.jpg"
 strapiSeries: true
 summary: Hooking Strapi up to a component for collecting emails
 tags:
