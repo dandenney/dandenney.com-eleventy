@@ -29,14 +29,16 @@
   }
 
   .intro a,
-  .blog-roll a {
+  .blog-roll a,
+  .intro-logo img {
     color: #b51f24;
     font-weight: bold;
     text-decoration: none;
     transition: transform 0.3s ease-out;
   }
 
-  .intro a:hover,
+  .intro a:hover:not(.intro-logo),
+  .intro-logo:hover img,
   .blog-roll a:hover {
     transform: scale(1.1);
   }
@@ -101,6 +103,7 @@
   }
 
   .link-post img {
+    height: auto;
     transition: filter 0.5s ease-in;
     max-width: 100%;
     width: 100%;
