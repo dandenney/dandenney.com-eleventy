@@ -1,11 +1,18 @@
 ---
-title: "Strapi Series, Part 8: Font Sizes and Colors"
-summary: Identifying patterns and planning for implementation
-date: "2023-04-20"
+backgroundCode: "#3a323f"
+backgroundPost: "#120713"
 codeHighlighting: true
+colorLink: "#26dcc5"
+colorText: "#f4eae2"
+date: "2023-04-20"
+gradientTitle: "linear-gradient(to bottom, #fe9d4c, #f76d4e, #fd5ebf)"
+layout: layouts/post.njk
+summary: Identifying patterns and planning for implementation
 tags:
   - front-end-dev
-layout: layouts/post.njk
+thumb: "posts/strapi-colors-shapes.png"
+thumbAlt: "abstract shapes and colors, with letters, postpunk 80s retro --v 5 --ar 3:2"
+title: "Strapi Series, Part 8: Font Sizes and Colors"
 ---
 
 <style>
@@ -14,12 +21,15 @@ layout: layouts/post.njk
   }
 
   th, td {
+    color: #f493b6;
     font-size: 0.875rem;
+    font-weight: bold;
     padding: 0.5rem;
     text-align: left;
   }
   tr:nth-child(odd) td {
-    background: var(--color-accent);
+    background: #201b23;
+    color: #fe9d4c;
   }
 
   @media screen and (min-width: 480px) {
