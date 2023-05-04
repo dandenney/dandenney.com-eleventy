@@ -7,6 +7,7 @@ colorText: "#f4eae2"
 date: "2023-04-20"
 gradientTitle: "linear-gradient(to bottom, #fe9d4c, #f76d4e, #fd5ebf)"
 layout: layouts/post.njk
+strapiSeries: true
 summary: Identifying patterns and planning for implementation
 tags:
   - front-end-dev
