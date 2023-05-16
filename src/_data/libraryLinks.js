@@ -18,12 +18,15 @@ module.exports = async () => {
         },
       }
     );
+
+    console.log(results);
     const trimmedResults = results.map((result) => {
       const { properties } = result;
-      const { Title, URL, Notes } = properties;
+      const { Title, URL, Notes, Tags } = properties;
       return {
         created: result.created_time,
         notes: Notes.rich_text[0]?.text.content,
+        tag: Tags.multi_select[0]?.name === "video" ? "Watched" : "Read",
         title: Title.title[0]?.plain_text,
         url: URL.url,
       };

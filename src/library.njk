@@ -10,17 +10,16 @@ title: "Library"
   }
   .notes {
     display: block;
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
   }
   .meta {
     color: #888;
     display: flex;
     font-size: 0.75rem;
-    margin-top: 0.25rem;
+    margin-top: 0.75rem;
   }
   .library-links {
     display: grid;
-    gap: 1.5rem;
     flex-wrap: wrap;
     list-style: none;
     padding: 0 1rem;
@@ -40,16 +39,21 @@ title: "Library"
     cursor: pointer;
   }
   .library-links li {
+    border-top: 0.125rem solid var(--color-accent);
     margin-top: 1rem;
+    padding: 1.5rem;
   }
+  
   @media screen and (min-width: 768px) {
     .library-links {
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content;
+      justify-items: start;
     }
   }
   @media screen and (min-width: 1000px) {
     .library-links {
-      gap: 3rem;
+      gap:  0 2rem;
       grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -70,7 +74,7 @@ title: "Library"
             <span class="notes">{{ link.notes }}</span>
           {% endif %}
         <span class="meta">
-          <span>{{ link.created_time | formatDate('MMM DD YYYY') }}</span>
+          {{ link.tag }}, {{ link.created_time | formatDate('MMM DD YYYY') }}
         </span>
       </li>
     {% endfor %}
