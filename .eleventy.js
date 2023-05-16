@@ -1,6 +1,6 @@
 const htmlmin = require("html-minifier");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const CleanCSS = require("clean-css");
+const dayjs = require("dayjs");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -9,7 +9,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");
 
   // Build icon
-  eleventyConfig.addPassthroughCopy({ "src/img/favicon": "/" });
+  eleventyConfig.addPassthroughCopy({
+    "src/img/favicon": "/",
+  });
 
   // Build JS
   eleventyConfig.addPassthroughCopy("src/js");
@@ -33,6 +35,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("version", function() {
     return String(Date.now());
   });
+
+  /** Formats a date using dayjs's conventions.
+   * Docs: https://day.js.org/docs/en/display/format
+   */
+  const formatDate = (date, format) => dayjs(date).format(format);
+  eleventyConfig.addFilter("formatDate", formatDate);
 
   // Syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);

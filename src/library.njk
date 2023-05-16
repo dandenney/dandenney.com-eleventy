@@ -1,0 +1,83 @@
+---
+layout: layouts/base.njk
+summary: Links of things I've read and watched
+title: "Library"
+---
+
+<style>
+  header {
+    padding: 0 1rem;
+  }
+  .notes {
+    display: block;
+    margin-top: 0.25rem;
+  }
+  .meta {
+    color: #888;
+    display: flex;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+  .library-links {
+    display: grid;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 1rem;
+  }
+  .library-links a {
+    background-image: linear-gradient(to bottom, transparent 90%, #b51f24 0);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    color: var(--color-action);
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-size .4s ease;
+  }
+  .library-links a:hover {
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+  .library-links li {
+    margin-top: 1rem;
+  }
+  @media screen and (min-width: 768px) {
+    .library-links {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .library-links {
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  }
+</style>
+
+<header>
+  <h1>Library</h1>
+  <p>Links of things I've read and watched.</p>
+</header>
+
+{% if libraryLinks.length %}
+  <ul class="library-links">
+    {% for link in libraryLinks %}
+      <li>
+        <a href="{{ link.url }}">{{ link.title }}</a>
+        {%if link.notes %}
+            <span class="notes">{{ link.notes }}</span>
+          {% endif %}
+        <span class="meta">
+          <span>{{ link.created_time | formatDate('MMM DD YYYY') }}</span>
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No links to show.</p>
+{% endif %}
+
+
+
