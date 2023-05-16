@@ -19,7 +19,6 @@ module.exports = async () => {
       }
     );
 
-    console.log(results);
     const trimmedResults = results.map((result) => {
       const { properties } = result;
       const { Title, URL, Notes, Tags } = properties;
