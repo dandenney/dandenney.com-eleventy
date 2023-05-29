@@ -6,7 +6,7 @@ tags:
 layout: layouts/blip.njk
 ---
 
-I subscribe to [Cassidoo['s newsletter](https://cassidoo.co/newsletter/), and in it, she offers up a coding challenge. Lately, I've been using it as a way to experiment with ChatGPT. Just to be sure, I do not submit these for credit. It's just a way to learn how to approach it both from the code and the prompting.
+I subscribe to [Cassidoo's newsletter](https://cassidoo.co/newsletter/), and in it, she offers up a coding challenge. Lately, I've been using it as a way to experiment with ChatGPT. Just to be sure, I do not submit these for credit. It's just a way to learn how to approach it both from the code and the prompting.
 
 <figure>
   <blockquote>
