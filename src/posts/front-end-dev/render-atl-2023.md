@@ -5,7 +5,7 @@ colorLink: "#ff80e0"
 colorText: "#ffffff"
 date: "2023-06-03"
 layout: layouts/post.njk
-socialImageFilename: "render-atl-2023.jpg"
+socialImageFilename: "og-render-atl-2023.jpg"
 summary: Recap of an awesome experience
 tags:
   - conferences
