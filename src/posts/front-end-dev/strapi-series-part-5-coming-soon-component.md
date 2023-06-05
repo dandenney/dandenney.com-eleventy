@@ -2,6 +2,7 @@
 backgroundCode: "#251336"
 backgroundPost: "#2d1743"
 canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-5-coming-soon-component"
+codeHighlighting: true
 colorInlineCode: "#ffffdf"
 colorLink: "#fa7090"
 colorText: "#ffffdf"
@@ -96,29 +97,28 @@ The icons are to point out specific items that I know will go into Strapi. While
 
 ### ChatGPT Break
 
-<div class="chatgpt-prompt">
+<figure>
+  <blockquote>
+    <p>
+      When using the CMS strapi, what are good field names for a heading and a paragraph
+    </p>
+  </blockquote>
+  <figcaption>— Me</figcaption>
+</figure>
 
-```markdown
-When using the CMS strapi, what are good field names for a heading and a paragraph
-```
-
-</div>
-
-<div class="normal-to-half-bleed">
-  <figure>
-    <blockquote>
-      <p>
-        When using Strapi as a CMS, field names for a heading and a paragraph may depend on the specific needs of your project and how you want to structure your content. However, here are some general suggestions:
-      </p><p>
-        Heading: "Title", "Heading", "Subtitle", "Heading Text", "Headline", "Main Title"
-        Paragraph: "Content", "Body", "Text", "Description", "Main Text", "Copy"
-      </p><p>
-        Ultimately, the choice of field names will depend on the context of your content and the structure of your website or application. It's also a good practice to choose clear and descriptive field names to make it easier for other team members to understand the purpose of each field.
-      </p>
-    </blockquote>
-    <figcaption>— ChatGPT</figcaption>
-  </figure>
-</div>
+<figure class="chatgpt">
+  <blockquote>
+    <p>
+      When using Strapi as a CMS, field names for a heading and a paragraph may depend on the specific needs of your project and how you want to structure your content. However, here are some general suggestions:
+    </p><p>
+      Heading: "Title", "Heading", "Subtitle", "Heading Text", "Headline", "Main Title"
+      Paragraph: "Content", "Body", "Text", "Description", "Main Text", "Copy"
+    </p><p>
+      Ultimately, the choice of field names will depend on the context of your content and the structure of your website or application. It's also a good practice to choose clear and descriptive field names to make it easier for other team members to understand the purpose of each field.
+    </p>
+  </blockquote>
+  <figcaption>— ChatGPT</figcaption>
+</figure>
 
 That's it! All of the styles will go into the component, as will the form itself. There won't be a light/dark toggle for this one, but there will be for all of the things for the actual product. For this version, I'm not going to make the form work, but I think that would be a good idea for a future one. We'll need an account creation form, so I'll save it for that. 
 

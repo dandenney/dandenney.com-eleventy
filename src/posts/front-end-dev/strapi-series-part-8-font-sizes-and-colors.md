@@ -22,15 +22,13 @@ title: "Strapi Series, Part 8: Font Sizes and Colors"
   }
 
   th, td {
-    color: #f493b6;
     font-size: 0.875rem;
     font-weight: bold;
     padding: 0.5rem;
     text-align: left;
   }
   tr:nth-child(odd) td {
-    background: #201b23;
-    color: #fe9d4c;
+    background: #f5f5f5;
   }
 
   @media screen and (min-width: 480px) {

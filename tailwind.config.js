@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/index.njk"],
+  content: [
+    "./src/*.{njk,md}",
+    "./src/**/*.{njk,md}",
+    "./src/__includes/*.{njk,md}",
+    "./src/__includes/**/*.{njk,md}",
+  ],
   mode: "jit",
   theme: {
     fontFamily: {

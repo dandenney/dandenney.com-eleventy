@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "eleventy --input=src --output=_site --serve & postcss src/css/tailwind.css --o _tmp/tailwind.css --watch",
-    "build": "eleventy --input=src --output=_site --serve & postcss src/css/tailwind.css --o _tmp/tailwind.css"
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
