@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.btn-link {
+  @apply rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white transition-colors transition-transform shadow-sm hover:bg-red-800 hover:scale-105 focus-visible:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700;
+}
+
 /* Bleed Options */
 
 .full-bleed,
