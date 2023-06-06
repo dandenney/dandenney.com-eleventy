@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Links */
+
+.longform a,
+.has-links a {
+  @apply bg-no-repeat font-semibold no-underline text-red-700;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 90%,
+    #b91c1c 0
+  ); /* red-700 */
+  background-size: 100% 100%;
+  transition: background-size 0.4s ease;
+}
+
+.longform a:active,
+.has-links a:active,
+.longform a:focus,
+.has-links a:focus,
+.longform a:hover,
+.has-links a:hover {
+  background-size: 0% 100%;
+  cursor: pointer;
+}
+
 /* Bleed Options */
 
 .full-bleed,
