@@ -8,67 +8,9 @@ layout: layouts/base.njk
   </style>
 {% endif %}
 
-<style>
-  .longform {
-    line-height: 1.75;
-  }
+{% include "header.njk" %}
 
-  .longform h1,
-  .longform h2,
-  .longform h3,
-  .longform h4,
-  .longform h5 {
-    background: linear-gradient(180deg, #334155, #020617); /* slate-700 slate-900 */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-  }
-
-  .longform h2,
-  .longform h3,
-  .longform h4,
-  .longform h5 {
-    margin-bottom: 1rem;
-    margin-top: 3rem;
-  }
-
-  .longform p:not(h2 + p, h3 + p, blockquote p:first-of-type),
-  pre,
-  dl,
-  * img,
-  blockquote {
-    margin-top: 1.5rem;
-  }
-
-  .longform h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-
-  .longform blockquote {
-    background: #f8fafc; /* slate-50 */
-    border: 1px solid #e2e8f0; /* slate-300 */
-    border-left: 0.25rem solid #cbd5e1; /* slate-300 */
-    border-radius: 0.25rem;
-    padding: 1rem;
-  }
-
-  .longform figcaption {
-    font-size: 0.75rem;
-    margin-top: 0.25rem;
-  }
-
-  .longform .chatgpt blockquote {
-    border-color: #c084fc; /* purple-400 */
-  }
-
-  .longform .chatgpt figcaption {
-    color: #6b21a8; /* purple-800 */
-  }
-</style>
-
-<article class="longform max-w-2xl	mx-auto">
+<article class="longform max-w-2xl mx-auto">
   <header>
     <h1 class="full-to-half-bleed max-w-2xl py-8 text-4xl font-black tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 lg:text-8xl xl:col-auto">
       {{ title }}

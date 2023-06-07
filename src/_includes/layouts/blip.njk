@@ -6,9 +6,14 @@ layout: layouts/base.njk
   {% include "prism.css" %}
 {% endset %}
 
-<article class="longform longform-container">
-  <header class="blip-header">
-    <h1>{{ title }}</h1>
+{% include "header.njk" %}
+
+<article class="longform max-w-2xl mx-auto">
+  <header>
+    <h1 class="full-to-half-bleed max-w-2xl py-8 text-4xl font-black tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 lg:text-8xl xl:col-auto">
+      {{ title }}
+    </h1>
   </header>
+
   {{ content | safe }}
 </article>
