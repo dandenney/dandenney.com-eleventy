@@ -1,10 +1,10 @@
 ---
-path: "/blips/async-cloud-typography"
-title: Async Cloud Typography
 date: "2020-04-08"
+layout: layouts/blip.njk
+summary: Tips to try to speed it up 
 tags:
   - blips
-layout: layouts/blip.njk
+title: Async Cloud Typography
 ---
 
 The recent update to Lighthouse 6 tightened up a little more on requests, which reduced my overall score. I recently changed over to using fonts from [Hoefler & Co.](https://www.typography.com/webfonts), using Sentinel right here in these words. Unfortunately, the webfont option from typography.com is handled via a CSS file instead of JS, which means that you can't make the request `async` without a little trickery.

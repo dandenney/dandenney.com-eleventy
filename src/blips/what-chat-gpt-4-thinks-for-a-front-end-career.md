@@ -1,9 +1,10 @@
 ---
-title: What ChatGPT 4 "Thinks" for a Front-end Career
 date: "2023-05-27"
+summary: Testing ChatGPT's knowledge of my career
+title: What ChatGPT 4 "Thinks" for a Front-end Career
+layout: layouts/blip.njk
 tags:
   - blips
-layout: layouts/blip.njk
 ---
 
 I grabbed this prompt from one of the newsletters I subscribe to and thought I should see what it would do for a front-end engineer. I think it's pretty close, though maybe a little dated, which makes sense, given the cutoff date for info. 

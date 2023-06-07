@@ -1,9 +1,10 @@
 ---
-title: Filter an Array by Keyboard Rows
 date: "2023-05-29"
+title: Filter an Array by Keyboard Rows
+layout: layouts/blip.njk
+summary: Using ChatGPT for JS problems
 tags:
   - blips
-layout: layouts/blip.njk
 ---
 
 I subscribe to [Cassidoo's newsletter](https://cassidoo.co/newsletter/), and in it, she offers up a coding challenge. Lately, I've been using it as a way to experiment with ChatGPT. Just to be sure, I do not submit these for credit. It's just a way to learn how to approach it both from the code and the prompting.

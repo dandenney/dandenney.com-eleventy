@@ -5,46 +5,90 @@ eleventyNavigation:
   key: Posts
   order: 1
 ---
+<section class="relative isolate overflow-hidden bg-white pb-16">
 
-<section class="posts-grid">
+  {% include "header.njk" %}
 
-  <div class="intro-posts">
-    <h1>Posts</h1>
-    <p>
-      Welcome to my blog, where I share my thoughts and experiences while being as self-effacing as possible on my own website. I hope that my musings will resonate with someone out there in the world wild web, so join me on this journey of self-discovery and mediocrity!
-    </p>
-
-    <strong>Bringing back the blog roll...</strong>
-    <nav class="blog-roll">
-      <a href="https://rachsmith.com">Rachel Smith</a>
-      <a href="https://chriscoyier.net">Chris Coyier</a>
-      <a href="https://daverupert.com">"Uncle" Dave Rupert</a>
-      <a href="https://css-irl.info">CSS IRL</a>
-      <a href="https://bitsofco.de">Ire Aderinokun</a>
-      <a href="https://stephaniewalter.design/blog">Stephanie Walter</a>
-      <a href="https://timkadlec.com/remembers">Tim Kadlec</a>
-      <a href="https://bradfrost.com/blog">Brad Frost</a>
-      <a href="https://moderncss.dev">Modern CSS Solutions</a>
-      <a href="https://tympanus.net/codrops">CoDrops</a>
-      <a href="https://www.raymondcamden.com">Raymond Camden</a>
-      <a href="https://ishadeed.com/articles">Ahmad Shadeed</a>
-      <a href="https://www.builder.io/blog">Builder</a>
-      <a href="https://www.zachleat.com/web">Zach Leat</a>
-      <a href="https://www.stefanjudis.com/blog">Stefan Judis</a>
-      <a href="https://web.dev/blog">Web.Dev</a>
-    </nav>
+  <div class="mx-auto max-w-7xl pt-16 px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <p class="text-lg font-semibold leading-8 tracking-tight text-slate-400">The Ol' Blog</p>
+      <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Posts, aka Blog Posts</h1>
+      <p class="has-links mt-4 text-xl leading-8 text-gray-700">Below is a <a href="#list">list of posts</a> that I really wanted to share or that I felt compelled to write because I didn't find it when I was looking. It seems that I'm up to <strong class="font-semibold">{{ collections.posts.length }}</strong> that have survived refactors and redesigns since 2012.</p>
+    </div>
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-8 lg:max-w-none lg:grid-cols-12">
+      <div class="relative lg:order-last lg:col-span-5">
+        <svg class="absolute -top-[40rem] left-1 -z-10 h-[64rem] w-[175.5rem] -translate-x-1/2 stroke-gray-900/10 [mask-image:radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)]" aria-hidden="true">
+          <defs>
+            <pattern id="e87443c8-56e4-4c20-9111-55b82fa704e3" width="200" height="200" patternUnits="userSpaceOnUse">
+              <path d="M0.5 0V200M200 0.5L0 0.499983" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" stroke-width="0" fill="url(#e87443c8-56e4-4c20-9111-55b82fa704e3)" />
+        </svg>
+        <figure class="border-l border-slate-500 mt-8 pl-8">
+          <blockquote class="text-xl font-semibold leading-8 tracking-tight text-gray-900">
+            <p>“Write the article you wish you found when you googled something.”</p>
+          </blockquote>
+          <figcaption class="mt-8 flex gap-x-4">
+            <img src="/img/chris-coyier.jpg" alt="Chris Coyier" class="mt-1 h-10 w-10 flex-none rounded-full bg-gray-50">
+            <div class="has-links text-sm leading-6">
+              <div class="font-semibold text-gray-900">Chris Coyier</div>
+              <a class="text-gray-600" href="https://twitter.com/chriscoyier/status/925102888610775041">@chriscoyier</a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="max-w-xl text-base leading-7 text-gray-700 lg:col-span-7">
+        <p>While I'm glad you have the interest in checking out my blog, I want to help bring back this old tradition of sharing links to other people's blogs, via a blog roll. The decline of a single place, like Twitter, where lots of web folks share their links makes it even more important to have ways of finding great blogs.</p>
+        <nav class="has-links flex flex-wrap gap-x-4 mt-6">
+          <a class="mt-2" href="https://rachsmith.com">Rachel Smith</a>
+          <a class="mt-2" href="https://chriscoyier.net">Chris Coyier</a>
+          <a class="mt-2" href="https://daverupert.com">"Uncle" Dave Rupert</a>
+          <a class="mt-2" href="https://css-irl.info">CSS IRL</a>
+          <a class="mt-2" href="https://bitsofco.de">Ire Aderinokun</a>
+          <a class="mt-2" href="https://stephaniewalter.design/blog">Stephanie Walter</a>
+          <a class="mt-2" href="https://timkadlec.com/remembers">Tim Kadlec</a>
+          <a class="mt-2" href="https://bradfrost.com/blog">Brad Frost</a>
+          <a class="mt-2" href="https://moderncss.dev">Modern CSS Solutions</a>
+          <a class="mt-2" href="https://tympanus.net/codrops">CoDrops</a>
+          <a class="mt-2" href="https://www.raymondcamden.com">Raymond Camden</a>
+          <a class="mt-2" href="https://ishadeed.com/articles">Ahmad Shadeed</a>
+          <a class="mt-2" href="https://www.builder.io/blog">Builder</a>
+          <a class="mt-2" href="https://www.zachleat.com/web">Zach Leat</a>
+          <a class="mt-2" href="https://www.stefanjudis.com/blog">Stefan Judis</a>
+          <a class="mt-2" href="https://web.dev/blog">Web.Dev</a>
+        </nav>
+      </div>
+    </div>
   </div>
+</section>
 
-  {% for post in collections.posts | reverse %}
-    <a class="link-post" href="{{ post.url | url }}">
-      {% if post.data.thumb %}
-        <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ post.data.thumb }}" alt="{{post.data.thumbAlt}}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ post.data.thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_704,q_auto/v1673896360/{{ post.data.thumb }} 768w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/{{ post.data.thumb }} 1200w" />
-      {% else %}
-        <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/posts/slackin.png" alt="{{post.data.thumbAlt}}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/posts/slackin.png 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_704,q_auto/v1673896360/posts/slackin.png 768w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/posts/slackin.png 1200w" />
-      {% endif %}
-      <span class="link-title">{{ post.data.title }}</span>
-      <span class="link-description">{{ post.data.summary }}</span>
-    </a>
-  {% endfor %} 
 
+<section id="list">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+
+      {% for post in collections.posts | reverse %}
+        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded bg-gray-900 px-8 pb-8 pt-40 transition-transform sm:pt-24 lg:pt-40 hover:scale-105">
+          <a class="link-post" href="{{ post.url | url }}">
+            {% if post.data.thumb %}
+              <img class="absolute inset-0 -z-10 h-full w-full object-cover" loading="lazy" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ post.data.thumb }}" alt="{{post.data.thumbAlt}}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/{{ post.data.thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_704,q_auto/v1673896360/{{ post.data.thumb }} 768w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/{{ post.data.thumb }} 1200w" />
+            {% else %}
+              <img class="absolute inset-0 -z-10 h-full w-full object-cover" loading="lazy" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/posts/slackin.png" alt="{{post.data.thumbAlt}}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_686,q_auto/v1673896360/posts/slackin.png 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_704,q_auto/v1673896360/posts/slackin.png 768w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/posts/slackin.png 1200w" />
+            {% endif %}
+            <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+            <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+            <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+              <a href="{{ post.url | url }}">
+                <span class="absolute inset-0"></span>
+                {{ post.data.title }}
+              </a>
+            </h3>
+            <p class="text-white">{{ post.data.summary }}</p>
+          </a>
+        </article>
+      {% endfor %} 
+
+    </div>
+  </div>
 </section>

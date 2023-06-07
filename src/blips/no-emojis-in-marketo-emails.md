@@ -1,10 +1,10 @@
 ---
-path: "/blips/no-emojis-in-marketo-emails"
-title: Don't use emojis in Marketo emails
 date: "2021-11-02"
+layout: layouts/blip.njk
+summary: Weird glitch, hoping this helps anyone else
+title: Don't use emojis in Marketo emails
 tags:
   - blips
-layout: layouts/blip.njk
 ---
 
 <style>.longform img { width: 470px; }</style>

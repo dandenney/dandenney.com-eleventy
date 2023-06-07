@@ -1,9 +1,10 @@
 ---
-title: Outputting Notion API Data in Eleventy
 date: "2023-05-15"
+layout: layouts/blip.njk
+summary: Quick notes on the data
+title: Outputting Notion API Data in Eleventy
 tags:
   - blips
-layout: layouts/blip.njk
 ---
 
 I've wanted to horde a collection of links to the things that I read and watch forever. I've used a bunch of services over the years but recently decided that Notion would be a great spot for them. I can interact with the database in Notion itself and share the links on the web as a form of curation.

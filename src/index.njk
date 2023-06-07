@@ -35,7 +35,7 @@ title: "Custom collection list markup in Eleventy"
       {% set homePosts = collections.posts | reverse %}
       {% for homePost in homePosts.slice(0, 6) %}
         <article class="relative isolate flex flex-col justify-end overflow-hidden rounded bg-gray-900 px-8 pb-8 pt-40 transition-transform sm:pt-24 lg:pt-40 hover:scale-105">
-          <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/{{ homePost.data.thumb }}" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+          <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_896,q_auto/v1673896360/{{ homePost.data.thumb }}" alt="{{ homepost.data.thumbAlt }}" class="absolute inset-0 -z-10 h-full w-full object-cover">
           <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
           <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
           <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
