@@ -104,11 +104,15 @@ layout: layouts/post-custom.njk
   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 </style>
 
-<header class="longform no-img">
-  <h1>Mapping the Long Island murder victims</h1>
+<div class="bg-white relative z-10">
+
+<header class="longform max-w-2xl mx-auto px-8 md:px-0">
+   <h1 class="full-to-half-bleed max-w-2xl px-8 py-8 text-4xl font-black tracking-tight text-gray-900 sm:text-6xl md:px-0 lg:col-span-2 lg:text-8xl xl:col-auto">
+      {{ title }}
+    </h1>
 </header>
 
-<div class="longform longform-container">
+<div class="longform max-w-2xl mx-auto pb-16 px-8">
 
 "The Long Island Serial Killer," aka "LISK," is a misnomer. The more that you look at Long Island from the early 90s until the 2010s, the worse it gets. [Joel Rifkin](https://en.wikipedia.org/wiki/Joel_Rifkin) lived in the Hempstead area and killed at least nine, but up to seventeen people from 1989 - 1993. [Robert Shulman](<https://en.wikipedia.org/wiki/Robert_Shulman_(serial_killer)>) killed at least five people from 1991 - 1996 while living in the Hicksville area.
 
@@ -131,7 +135,7 @@ The following is a timeline of events, with their locations, intending to show h
     <div id="map"></div>
   </figure>
 
-  <ol class="story">
+<ol class="relative z-10 story">
     <li class="step" data-step="1">
       <div class="details">
         <h3>This part of the story begins on November 1, 1993</h3>
@@ -293,7 +297,7 @@ The following is a timeline of events, with their locations, intending to show h
   </ol>
 </section>
 
-<div class="longform longform-container">
+<div class="longform max-w-2xl mx-auto pb-16 px-8">
 
 There are many more persons of interest and/or suspects in these cases. John Bittrolff is the only one included because he is the only one with any charges against him. To be clear, the Suffolk County District Attorney has said ["There is no evidentiary or investigative link between this case and Gilgo."](https://pix11.com/2017/09/12/convicted-killer-may-be-tied-to-gilgo-beach-murders-prosecutor)
 
@@ -308,6 +312,8 @@ The patterns changed, which only leads to questions. Was there one killer who es
 If you'd like more information around the involved cases, I have compiled more details and links about [The Gilgo Four](https://www.truecrimeresearchers.com/cases/the-gilgo-four), the [Long Island Victims](https://www.truecrimeresearchers.com/cases/long-island-victims), and [Shannan Gilbert](https://www.truecrimeresearchers.com/cases/shannan-gilbert).
 
 If you have any information about these victims, please share on the [Gilgo News tip site](https://www.gilgonews.com/SubmitATip).
+
+</div>
 
 </div>
 
