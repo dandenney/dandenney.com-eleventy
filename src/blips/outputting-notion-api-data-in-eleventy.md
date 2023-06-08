@@ -1,4 +1,5 @@
 ---
+codeHighlighting: true
 date: "2023-05-15"
 layout: layouts/blip.njk
 summary: Quick notes on the data

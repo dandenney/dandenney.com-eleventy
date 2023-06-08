@@ -1,4 +1,5 @@
 ---
+codeHighlighting: true
 date: "2022-05-26"
 layout: layouts/blip.njk
 summary: Another neat thing I learned from Andy

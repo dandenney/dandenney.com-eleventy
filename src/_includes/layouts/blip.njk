@@ -6,14 +6,22 @@ layout: layouts/base.njk
   {% include "prism.css" %}
 {% endset %}
 
+{% if codeHighlighting %}
+  <style>
+    {% include "prism.css" %}
+  </style>
+{% endif %}
+
 {% include "header.njk" %}
 
-<article class="longform max-w-2xl mx-auto">
-  <header>
-    <h1 class="full-to-half-bleed max-w-2xl py-8 text-4xl font-black tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 lg:text-8xl xl:col-auto">
+<article class="bg-white relative z-10">
+  <header class="longform max-w-2xl mx-auto px-8 md:px-0">
+    <h1 class="full-to-half-bleed max-w-2xl px-8 py-8 text-4xl font-black tracking-tight text-gray-900 sm:text-6xl md:px-0 lg:col-span-2 lg:text-8xl xl:col-auto">
       {{ title }}
     </h1>
   </header>
 
-  {{ content | safe }}
+  <div class="longform max-w-2xl mx-auto pb-16 px-8 md:px-0">
+    {{ content | safe }}
+  </div>
 </article>

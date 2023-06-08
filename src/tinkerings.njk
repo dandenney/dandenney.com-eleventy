@@ -8,24 +8,22 @@ eleventyNavigation:
 
 {% include "header.njk" %}
 
-<div class="bg-white py-24 sm:py-32">
+<section class="bg-white pb-24 pt-16 relative shadow z-10 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-4xl">
+      <p class="text-lg font-semibold leading-8 tracking-tight text-slate-400">This Used To Be My Playground</p>
       <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Tinkerings</h1>
       <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
         The projects are all scratching some itch, either technical or part of my interests. Each has some technical bit that I learned in order to build, but they're focused on things like my love for music and trying to beat number systems.
       </p>
       <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
         {% for tinkering in collections.tinkerings | reverse %}
-          <article class="relative isolate flex flex-col gap-8 lg:flex-row">
-            <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+          <article class="relative isolate flex flex-col gap-8 lg:flex-row lg:items-center">
+            <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-48 lg:shrink-0">
               <img src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_880,q_auto/{% if tinkering.data.thumb %}{{ tinkering.data.thumb }}{% else %}posts/slackin.png{% endif %}" alt="{% if tinkering.data.thumb %}{{ tinkering.data.thumbAlt }}{% else %}slacking on my imagin'{% endif %}" class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover" />
               <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
             </div>
             <div>
-              <div class="flex items-center gap-x-4 text-xs">
-                <time datetime="2020-03-16" class="text-gray-500">{{ tinkering.data.date | formatDate('MMM DD YYYY') }}</time>
-              </div>
               <div class="group relative max-w-xl">
                 <h3 class="has-links mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                   <a href={{ tinkering.url }}>
@@ -33,7 +31,7 @@ eleventyNavigation:
                     {{ tinkering.data.title }}
                   </a>
                 </h3>
-                <p class="mt-5 text-sm leading-6 text-gray-600">
+                <p class="mt-2 text-sm leading-6 text-gray-600">
                   {{ tinkering.data.summary }}
                 </p>
               </div>
@@ -43,4 +41,4 @@ eleventyNavigation:
       </div>
     </div>
   </div>
-</div>
+</section>

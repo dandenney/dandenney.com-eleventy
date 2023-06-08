@@ -1,4 +1,5 @@
 ---
+codeHighlighting: true
 date: "2021-11-02"
 layout: layouts/blip.njk
 summary: Weird glitch, hoping this helps anyone else
