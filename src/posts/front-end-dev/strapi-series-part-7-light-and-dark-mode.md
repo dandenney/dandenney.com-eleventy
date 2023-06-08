@@ -2,6 +2,7 @@
 backgroundCode: "#1b191d"
 backgroundPost: "#090b08"
 canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-7-light-and-dark-mode"
+codeHighlighting: true
 colorLink: "#f9de88"
 colorText: "#f9fbfa"
 date: "2023-04-19"
@@ -34,7 +35,7 @@ The script handles the user preference mode bits as well as disabling transition
 <div class="full-to-half-bleed">
 
 ```javascript
-const modeScript = `
+const modeScript = 
   let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
 
   updateMode()
@@ -67,10 +68,12 @@ const modeScript = `
     disableTransitionsTemporarily()
     updateMode()
   }
-`
 ```
 
+
 </div>
+
+**I had to kill the ` that wrapped the code above because it broke the highlighting.**
 
 The toggle has the SVG solution I mentioned:
 

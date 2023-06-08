@@ -1,10 +1,11 @@
 ---
-path: "/blips/the-ex-unit"
-title: The ex unit is a thing that exists
+codeHighlighting: true
 date: "2022-05-26"
+layout: layouts/blip.njk
+summary: Another neat thing I learned from Andy
+title: The ex unit is a thing that exists
 tags:
   - blips
-layout: layouts/blip.njk
 ---
 
 Today Andy Bell tweeted about creating a hero component and mentioned the `ex` unit. I hadn't heard of it and thought it was one of the newfangled additions to CSS. I was so surprised that the first result was a [Stack Overflow from 11 years ago](https://stackoverflow.com/questions/918612/what-is-the-value-of-the-css-ex-unit). 

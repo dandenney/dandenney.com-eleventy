@@ -1,5 +1,4 @@
 ---
-backgroundCode: "#34180c"
 backgroundPost: "#050100"
 codeHighlighting: true
 colorLink: "#fcdf80"
@@ -69,6 +68,8 @@ export async function getPageLinks() {
 
 If this data was going into a lot of pages, I'd maybe have to think about how to handle that. However, this data will only go into the index page for now. We can wonder about the potential blog part later. Either way, I'm aiming for static builds so it should only affect build times. The page now looks like this:
 
+<div class="full-to-half-bleed">
+
 ```jsx
 import Head from 'next/head'
 import { getPageLinks } from '@/sources/getPageLinks'
@@ -97,6 +98,8 @@ export async function getStaticProps() {
   }
 }
 ```
+
+</div>
 
 Here's a [PR for those changes](https://github.com/dandenney/strapi-series-marketing/pull/6) and in the next post, I'll refactor the components to pass the data in a way I recently learned.
 

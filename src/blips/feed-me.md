@@ -1,10 +1,10 @@
 ---
-path: "/blips/feed-me"
-title: Feed Me
 date: "2020-03-30"
+layout: layouts/blip.njk
+summary: I missed RSS and grabbed Feedly
 tags:
   - blips
-layout: layouts/blip.njk
+title: Feed Me
 ---
 
 I've [done this before](/blips/i-missed-rss/), but I'm back on Feedly. Louis Lazaris shared an OPML and his huge list of front-end related RSS feeds. I'm diving back in, to try to curb my social media addiction during this pandemic. I'm hoping that I'll reach for this feed and learn a bunch instead of constantly reading Twitter while everyone freaks out.

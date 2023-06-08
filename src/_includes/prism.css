@@ -7,10 +7,12 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  */
 
 code[class*="language-"],
-pre[class*="language-"] {
+pre[class*="language-"],
+p code {
   color: #ccc;
   background: none;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -29,6 +31,16 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
+p code,
+dd code {
+  background: #f1f5f9; /* slate-100 */
+  border-radius: 0.25rem;
+  color: #020617; /* slate-900 */
+  font-size: 0.875rem;
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+}
+
 /* Code blocks */
 pre[class*="language-"] {
   border-radius: 4px;
@@ -38,7 +50,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #2d2d2d;
+  background: #191c22;
 }
 
 /* Inline code */

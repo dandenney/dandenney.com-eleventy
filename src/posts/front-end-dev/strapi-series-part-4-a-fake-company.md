@@ -3,6 +3,7 @@ backgroundCode: "#2d2d2d"
 backgroundFooter: "#f2ede9"
 backgroundPost: "#f2ede9"
 canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-4-a-fake-company"
+codeHighlighting: true
 colorLink: "#956552"
 colorText: "#3c3a39"
 date: "2023-04-10"
@@ -38,21 +39,27 @@ This means that I won't have specific design files like a Figma to outline what 
 
 This is a chance to grow my skills with prompting and to learn how good ChatGPT can be at it (with my skills considered). 
 
-<div class="chatgpt-prompt">
-
-```markup
-You are the head of marketing for an online education company that teaches people music theory 
-```
+<figure>
+  <blockquote>
+    <p>
+      You are the head of marketing for an online education company that teaches people music theory 
+    </p>
+  </blockquote>
+  <figcaption>— Me</figcaption>
+</figure>
 
 It went on a long rant about the role and task, but I really just wanted to frame it for the content.
 
-```markup
-Write a slogan for the company, our company name is BandCamp
-```
-
-</div>
-
 <figure>
+  <blockquote>
+    <p>
+      Write a slogan for the company, our company name is BandCamp
+    </p>
+  </blockquote>
+  <figcaption>— Me</figcaption>
+</figure>
+
+<figure class="chatgpt">
   <blockquote>
     <p>"Discover the Musician Within - Join BandCamp Today!"</p>
   </blockquote>
@@ -61,13 +68,16 @@ Write a slogan for the company, our company name is BandCamp
 
 Works for me! I'm going to try to not get too hung up on these things as the real goal will be to try several items for each component, to test flexibility.
 
-<div class="chatgpt-prompt">
-
-```markup
-Create a headline, single line of text, and CTA text for a page asking people to sign up to get informed when we launch
-```
-
 <figure>
+  <blockquote>
+    <p>
+      Create a headline, single line of text, and CTA text for a page asking people to sign up to get informed when we launch
+    </p>
+  </blockquote>
+  <figcaption>— Me</figcaption>
+</figure>
+
+<figure class="chatgpt">
   <blockquote>
     <p>Headline: "Be the First to Know: Join the BandCamp Launch List Today!"</p>
     <p>Single line of text: "Sign up to get notified when BandCamp's music theory courses go live and take your skills to the next level."</p>
@@ -76,13 +86,16 @@ Create a headline, single line of text, and CTA text for a page asking people to
   <figcaption>— ChatGPT</figcaption>
 </figure>
 
-```markup
-Rewrite those, with some mentions of music 
-```
-
-</div>
-
 <figure>
+  <blockquote>
+    <p>
+      Rewrite those, with some mentions of music
+    </p>
+  </blockquote>
+  <figcaption>— Me</figcaption>
+</figure>
+
+<figure class="chatgpt">
   <blockquote>
     <p>Headline: "Join the Music Revolution: Be the First to Know When BandCamp Launches!"</p>
     <p>Single line of text: "Never miss a beat! Sign up to receive updates on BandCamp's music theory courses and elevate your musical skills."</p>

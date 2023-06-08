@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll */
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Longform */
+
+.longform {
+  line-height: 1.75;
+}
+
+.longform h1,
+.longform h2,
+.longform h3,
+.longform h4,
+.longform h5 {
+  background: linear-gradient(
+    180deg,
+    #334155,
+    #020617
+  ); /* slate-700 slate-900 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  text-wrap: balance;
+}
+
+.longform h2,
+.longform h3,
+.longform h4,
+.longform h5 {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.longform p:not(h2 + p, h3 + p, blockquote p:first-of-type),
+.longform pre,
+.longform dl,
+.longform * + img,
+.longform blockquote {
+  margin-top: 1.5rem;
+}
+
+.longform h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.longform h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.longform blockquote {
+  background: #f8fafc; /* slate-50 */
+  border: 1px solid #e2e8f0; /* slate-300 */
+  border-left: 0.25rem solid #cbd5e1; /* slate-300 */
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.longform figcaption {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.longform .chatgpt blockquote {
+  border-color: #c084fc; /* purple-400 */
+}
+
+.longform .chatgpt figcaption {
+  color: #6b21a8; /* purple-800 */
+}
+
+/* Links */
+
+.longform a,
+.has-links a {
+  @apply bg-no-repeat font-semibold no-underline text-red-700;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 90%,
+    #b91c1c 0
+  ); /* red-700 */
+  background-size: 100% 100%;
+  transition: background-size 0.4s ease;
+}
+
+.longform a:active,
+.has-links a:active,
+.longform a:focus,
+.has-links a:focus,
+.longform a:hover,
+.has-links a:hover {
+  background-size: 0% 100%;
+  cursor: pointer;
+}
+
+.btn-link {
+  @apply rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white transition-colors transition-transform shadow-sm hover:bg-red-800 hover:scale-105 focus-visible:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700;
+}
+
+/* Bleed Options */
+
+.full-bleed,
+.full-to-half-bleed {
+  margin-left: 50%;
+  overflow: hidden;
+  max-width: 100rem;
+  transform: translateX(-50%);
+  width: 100vw;
+}
+
+@media screen and (min-width: 1000px) {
+  .full-to-half-bleed,
+  .normal-to-half-bleed {
+    max-width: 150%;
+    width: 150%;
+    margin-left: -25%;
+    margin-right: -25%;
+    transform: none;
+  }
+}

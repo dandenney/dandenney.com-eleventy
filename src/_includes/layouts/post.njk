@@ -2,165 +2,29 @@
 layout: layouts/base.njk
 ---
 
-{% set css %}
-  {% include "prism.css" %}
-{% endset %}
+{% if codeHighlighting %}
+  <style>
+    {% include "prism.css" %}
+  </style>
+{% endif %}
 
-{% include "longform.njk" %}
+{% include "header.njk" %}
 
-<style>
-  :root {
-    {% if backgroundPost %}
-      --color-background: {{ backgroundPost}};
-    {% endif %}
-  }
-
-  main {
-    overflow-x: hidden;
-    min-height: 100vh;
-    position: relative;
-    z-index: 1;
-  }
-
-  footer {
-    background: #fff;
-    bottom: 0;
-    display: grid;
-    left: 0;
-    padding: 2rem 1rem;
-    place-items: center;
-    position: sticky;
-    width: 100%;
-  }
-
-  code[class*="language-"],
-  pre[class*="language-"] {
-    color: #ccc;
-    background: none;
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    font-size: 1em;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.5;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-  }
-
-  /* Code blocks */
-  pre[class*="language-"] {
-    border-radius: 4px;
-    padding: 1em;
-    overflow: auto;
-  }
-
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
-    background: #2d2d2d;
-  }
-
-  /* Inline code */
-  :not(pre) > code[class*="language-"] {
-    padding: 0.1em;
-    border-radius: 0.3em;
-    white-space: normal;
-  }
-
-  .token.comment,
-  .token.block-comment,
-  .token.prolog,
-  .token.doctype,
-  .token.cdata {
-    color: #999;
-  }
-
-  .token.punctuation {
-    color: #ccc;
-  }
-
-  .token.tag,
-  .token.attr-name,
-  .token.namespace,
-  .token.deleted {
-    color: #e2777a;
-  }
-
-  .token.function-name {
-    color: #6196cc;
-  }
-
-  .token.boolean,
-  .token.number,
-  .token.function {
-    color: #f08d49;
-  }
-
-  .token.property,
-  .token.class-name,
-  .token.constant,
-  .token.symbol {
-    color: #f8c555;
-  }
-
-  .token.selector,
-  .token.important,
-  .token.atrule,
-  .token.keyword,
-  .token.builtin {
-    color: #cc99cd;
-  }
-
-  .token.string,
-  .token.char,
-  .token.attr-value,
-  .token.regex,
-  .token.variable {
-    color: #7ec699;
-  }
-
-  .token.operator,
-  .token.entity,
-  .token.url {
-    color: #67cdcc;
-  }
-
-  .token.important,
-  .token.bold {
-    font-weight: bold;
-  }
-  .token.italic {
-    font-style: italic;
-  }
-
-  .token.entity {
-    cursor: help;
-  }
-
-  .token.inserted {
-    color: green;
-  }
-
-</style>
-
-<article class="longform longform-container">
-  <header class="post-header {% if not thumb %}no-img{% endif %}">
-    <h1>{{ title }}</h1>
+<article class="bg-white relative z-10 ">
+  <header class="longform max-w-2xl mx-auto pb-16 px-8 md:px-0">
+    <h1 class="full-to-half-bleed max-w-2xl px-8 py-8 text-4xl font-black tracking-tight text-gray-900 sm:text-6xl md:px-0 lg:col-span-2 lg:text-8xl xl:col-auto">
+      {{ title }}
+    </h1>
     {% if thumb %}
-      <img alt="{{ thumbAlt }}" height="448" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_375,q_auto/v1673896360/{{ thumb }}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_750,q_auto/v1673896360/{{ thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1000,q_auto/v1673896360/{{ thumb }} 500w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1344,q_auto/v1673896360/{{ thumb }} 672w," width="762">
+      <img alt="{{ thumbAlt }}" class="block full-to-half-bleed" height="592" src="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_375,q_auto/v1673896360/{{ thumb }}" srcset="https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_750,q_auto/v1673896360/{{ thumb }} 375w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1000,q_auto/v1673896360/{{ thumb }} 500w, https://res.cloudinary.com/dtlow08pj/image/upload/f_auto,c_limit,w_1344,q_auto/v1673896360/{{ thumb }} 672w," width="1008">
     {% endif %}
   </header>
 
-  {{ content | safe }}
-  {% if strapiSeries %}
-    {% include "src/_includes/strapi-series-toc.njk" %}
-  {% endif %}
+  <div class="longform max-w-2xl mx-auto pb-16 px-8 md:px-0">
+    {{ content | safe }}
+
+    {% if strapiSeries %}
+      {% include "src/_includes/strapi-series-toc.njk" %}
+    {% endif %}
+  </div>
 </article>

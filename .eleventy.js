@@ -13,6 +13,11 @@ module.exports = function(eleventyConfig) {
     "src/img/favicon": "/",
   });
 
+  eleventyConfig.addWatchTarget("./_tmp/tailwind.css");
+  eleventyConfig.addPassthroughCopy({
+    "./_tmp/tailwind.css": "./css/tailwind.css",
+  });
+
   // Build JS
   eleventyConfig.addPassthroughCopy("src/js");
 

@@ -2,6 +2,7 @@
 backgroundCode: "#1b1316"
 backgroundPost: "#050810"
 canonical: "https://www.dandenney.com/posts/front-end-dev/strapi-series-part-6-coming-soon-qa"
+codeHighlighting: true
 colorLink: "#f8e850"
 colorText: "#f3f5f8"
 date: "2023-04-17"
@@ -80,7 +81,7 @@ Most of that is set in the `_document.jsx` file, the exception being the `js-foc
 <html lang="en">
 ```
 
-I didn't ask the right questoin for ChatGPT to help here, it wanted to add classes within the component. Google searches won on this one, but again I don't really understand what they're saying here.
+I didn't ask the right question for ChatGPT to help here, it wanted to add classes within the component. Google searches won on this one, but again I don't really understand what they're saying here.
 
 Unfortunately, [the docs](https://storybook.js.org/docs/react/configure/story-rendering#adding-to-body) are a little weird here again. They say "You can accomplish this by creating a file called preview-body.html inside your .storybook directory and adding tags like this:"
 

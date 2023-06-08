@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="{{ '/css/tailwind.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -34,45 +35,10 @@
     {% if layout === 'layouts/post.njk' %}
       <meta name="og:type" content="article">
     {% endif %}
-    <style>
-      :root {
-        --color-background: #fff;
-        --color-action: #b51f24;
-        --color-action-hover: #b51f24;
-        --color-accent: #f5f5f5;
-        --color-text: #111;
-        --font-weight-black: 900;
-        --font-weight-bold: 700;
-        --font-weight-regular: 400;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        color: var(--color-text);
-        display: flex;
-        flex-direction: column;
-        font-family: 'Montserrat', Arial Black, Arial, sans-serif;
-        font-style: normal;
-        font-weight: var(--font-weight-regular);
-        margin: 0;
-      }
-
-      main {
-        background: var(--color-background);
-        flex-grow: 1;
-      }
-
-      .site-footer {
-        flex-shrink: 0;
-      }
-    </style>
   </head>
-  <body class="min-h-screen flex flex-col md">
+  <body>
 
-    <main class="p-4 flex-grow">
+    <main class="relative shadow  z-10">
       {{ content | safe }}
     </main>
 

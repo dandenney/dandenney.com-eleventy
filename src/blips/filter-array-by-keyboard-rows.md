@@ -1,9 +1,11 @@
 ---
-title: Filter an Array by Keyboard Rows
+codeHighlighting: true
 date: "2023-05-29"
+title: Filter an Array by Keyboard Rows
+layout: layouts/blip.njk
+summary: Using ChatGPT for JS problems
 tags:
   - blips
-layout: layouts/blip.njk
 ---
 
 I subscribe to [Cassidoo's newsletter](https://cassidoo.co/newsletter/), and in it, she offers up a coding challenge. Lately, I've been using it as a way to experiment with ChatGPT. Just to be sure, I do not submit these for credit. It's just a way to learn how to approach it both from the code and the prompting.
@@ -11,7 +13,7 @@ I subscribe to [Cassidoo's newsletter](https://cassidoo.co/newsletter/), and in 
 <figure>
   <blockquote>
     <p>
-      Given an array of words, return the words that can be typed using letters of only one row on a keyboard. For bonus points, include the option for a user to pick the type of keyboard they are using (ANSI, ISO, etc), and/or give options for how many/which rows are allowed!</p><pre class='language-js'><code class="language-js">oneRow(['candy', 'fart', 'pop', 'Zelda', 'flag', 'typewriter'])
+      Given an array of words, return the words that can be typed using letters of only one row on a keyboard. For bonus points, include the option for a user to pick the type of keyboard they are using (ANSI, ISO, etc), and/or give options for how many/which rows are allowed!</p><pre class="language-js"><code class="language-js">oneRow(['candy', 'fart', 'pop', 'Zelda', 'flag', 'typewriter'])
 ['pop', 'flag', 'typewriter']
 </code></pre>
   </blockquote>
