@@ -23,14 +23,13 @@
 
 <script>
   const lightModeToggle = document.querySelector('.toggle');
-  const toggleElement = document.documentElement.classList.toggle('dark');
   lightModeToggle.addEventListener('click', () => {
     document.documentElement.classList.toggle('dark');
+
+    if (document.documentElement.classList.contains('dark')) {
+      localStorage.theme = 'dark'
+    } else {
+      localStorage.theme = 'light'
+    }
   });
-
-  // Whenever the user explicitly chooses light mode
-  localStorage.theme = 'light'
-
-  // Whenever the user explicitly chooses dark mode
-  localStorage.theme = 'dark'
 </script>
