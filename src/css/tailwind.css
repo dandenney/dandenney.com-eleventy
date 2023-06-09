@@ -32,6 +32,21 @@
   text-wrap: balance;
 }
 
+.dark .longform h1,
+.dark .longform h2,
+.dark .longform h3,
+.dark .longform h4,
+.dark .longform h5 {
+  background: linear-gradient(
+    180deg,
+    #f1f5f9,
+    #cbd5e1
+  ); /* slate-700 slate-900 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
 .longform h2,
 .longform h3,
 .longform h4,
@@ -68,6 +83,14 @@
   padding: 1rem;
 }
 
+.dark .longform blockquote {
+  background: #1e293b; /* slate-800 */
+  border: 1px solid #475569; /* slate-700 */
+  border-left: 0.25rem solid #475569; /* slate-600 */
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
 .longform figcaption {
   font-size: 0.75rem;
   margin-top: 0.25rem;
@@ -95,6 +118,18 @@
   transition: background-size 0.4s ease;
 }
 
+.dark .longform a,
+.dark .has-links a {
+  @apply bg-no-repeat font-semibold no-underline text-red-300;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 90%,
+    #fca5a5 0
+  ); /* red-500 */
+  background-size: 100% 100%;
+  transition: background-size 0.4s ease;
+}
+
 .longform a:active,
 .has-links a:active,
 .longform a:focus,
@@ -107,6 +142,10 @@
 
 .btn-link {
   @apply rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white transition-colors transition-transform shadow-sm hover:bg-red-800 hover:scale-105 focus-visible:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700;
+}
+
+.dark .btn-link {
+  @apply rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white transition-colors transition-transform shadow-sm hover:bg-red-500 hover:scale-105 focus-visible:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500;
 }
 
 /* Bleed Options */
