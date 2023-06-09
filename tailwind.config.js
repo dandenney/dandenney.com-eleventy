@@ -6,6 +6,7 @@ module.exports = {
     "./src/__includes/*.{njk,md}",
     "./src/__includes/**/*.{njk,md}",
   ],
+  darkMode: "class",
   mode: "jit",
   theme: {
     fontFamily: {

@@ -5,15 +5,15 @@ thumb: 'eleventy-netlify-newb.jpg'
 title: "Custom collection list markup in Eleventy"
 ---
 
-<div class="bg-white">
-  <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
+<div class="dark:bg-slate-900">
+  <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 dark:from-slate-400/20 ">
     {% include "header.njk" %}
-    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"></div>
+    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96 dark:bg-slate-900 dark:shadow-slate-600/10 dark:ring-slate-800" aria-hidden="true"></div>
     <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8 lg:py-32">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">I'm Dan Denney, a front-end dev at DataCamp.</h1>
+        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto dark:text-slate-100">I'm Dan Denney, a front-end dev at DataCamp.</h1>
         <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-          <p class="text-lg leading-8 text-gray-600">Ok, ok. I'm technically a Senior Software Engineer II, but front-end dev just rolls off the tongue. This my personal playground for sharing many of the things I enjoy, most of which revolves around web design and development.</p>
+          <p class="text-lg leading-8 text-gray-600 dark:text-slate-100">Ok, ok. I'm technically a Senior Software Engineer II, but front-end dev just rolls off the tongue. This my personal playground for sharing many of the things I enjoy, most of which revolves around web design and development.</p>
           {% include "social.njk" %}
         </div>
         <figure class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-24">
@@ -21,15 +21,15 @@ title: "Custom collection list markup in Eleventy"
         </figure>
       </div>
     </div>
-    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32 dark:from-slate-900"></div>
   </div>
 </div>
 
-<section class="bg-white pt-16 sm:pt-24">
+<section class="pt-16 sm:pt-24">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Blog Posts</h2>
-      <p class="mt-2 text-lg leading-8 text-gray-600">They're mostly around front-end dev and web conferences, with some occasional life things sprinkled in.</p>
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-slate-100">Recent Blog Posts</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600 dark:text-slate-100">They're mostly around front-end dev and web conferences, with some occasional life things sprinkled in.</p>
     </div>
     <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       {% set homePosts = collections.posts | reverse %}
@@ -53,27 +53,28 @@ title: "Custom collection list markup in Eleventy"
   </div>
 </section>
 
-<section class="bg-white py-32">
+<section class="py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
       <div class="w-full lg:max-w-lg lg:flex-auto">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Most Recent Blips</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Shorter than a blog post, longer than a tweet. This is where I share quick reactions or stash things I want to remember.</p>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-slate-100">Most Recent Blips</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-slate-100">Shorter than a blog post, longer than a tweet. This is where I share quick reactions or stash things I want to remember.</p>
         <img src="/img/blip-too.jpg" alt="" class="mt-8 w-full rounded-2xl bg-gray-50 object-cover ">
       </div>
       <div class="w-full lg:max-w-xl lg:flex-auto">
         <h3 class="sr-only">Job openings</h3>
-        <ul class="has-links -my-8 divide-y divide-gray-100">
+        <ul class="has-links -my-8 divide-y divide-gray-100 dark:divide-slate-600">
           {% set homeBlips = collections.blips | reverse %}
-          {% for homeBlip in homeBlips.slice(0, 6) %}
+          {% for homeBlip in homeBlips.slice(0, 5) %}
             <li class="py-8">
               <a class="text-base leading-7" href="{{ homeBlip.url | url }}">
                 {{ homeBlip.data.title }}
               </a>
+              <p class="text-sm dark:text-slate-300">{{ homeBlip.data.summary }}</p>
             </li>
           {% endfor %}    
         </ul>
-        <div class="mt-8 flex border-t border-gray-100 pt-8">
+        <div class="mt-8 flex border-t border-gray-100 pt-8 dark:border-slate-600">
           <a href="/blips" class="btn-link">View All Blips</a>
         </div>
       </div>
