@@ -106,8 +106,8 @@ layout: layouts/post-custom.njk
 
 <div class="bg-white relative z-10">
 
-<header class="longform max-w-2xl mx-auto px-8 md:px-0">
-   <h1 class="full-to-half-bleed max-w-2xl px-8 py-8 text-4xl font-black tracking-tight text-gray-900 sm:text-6xl md:px-0 lg:col-span-2 lg:text-8xl xl:col-auto">
+<header class="longform max-w-2xl mx-auto px-8 lg:px-0">
+   <h1 class="full-to-half-bleed max-w-2xl px-8 py-8 text-4xl font-black tracking-tight text-gray-900 sm:text-6xl lg:px-0 lg:col-span-2 lg:text-8xl xl:col-auto">
       {{ title }}
     </h1>
 </header>
