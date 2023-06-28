@@ -82,6 +82,45 @@ title: "Custom collection list markup in Eleventy"
   </div>
 </section>
 
+<section class="py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Recent finds from around the web</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-slate-100">
+          I'm starting to stash everything in a "library", but I haven't given it proper design attention yet.
+        </p>
+      </div>
+      <ul class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2">
+        {% if libraryLinks.length %}
+          {% for link in libraryLinks.slice(0, 4) %}
+            <li class="has-links">
+              <a class="text-base font-semibold leading-7 text-gray-900" href="{{ link.url }}">
+                <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-red-700">
+
+                  {% if link.tag === 'Watched' %}
+                    <svg class="h-6 w-6 text-white" viewBox="0 0 24 24"><title>video playlist</title><g class="nc-icon-wrapper" fill="currentColor"><path d="M21,3H3V2A1,1,0,0,1,4,1H20a1,1,0,0,1,1,1Z" data-color="color-2"/><path d="M23,5H1A1,1,0,0,0,0,6V22a1,1,0,0,0,1,1H23a1,1,0,0,0,1-1V6A1,1,0,0,0,23,5ZM10,18V10l6,4Z" fill="currentColor"/></g></svg>
+                  {% else %}
+                    <svg class="h-6 w-6 text-white" viewBox="0 0 32 32"><title>blog</title><g class="nc-icon-wrapper" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="currentColor" stroke="currentColor"> <rect x="3" y="1" width="26" height="30" fill="none" stroke="currentColor" stroke-miterlimit="10"/> <rect x="8" y="7" width="16" height="8" fill="none" stroke-miterlimit="10" data-color="color-2"/> <line x1="8" y1="20" x2="24" y2="20" fill="none" stroke-miterlimit="10" data-color="color-2"/> <line x1="8" y1="25" x2="24" y2="25" fill="none" stroke-miterlimit="10" data-color="color-2"/> </g></svg>
+                  {% endif %}
+                </div>
+                {{ link.title }}
+              </a>
+              {%if link.notes %}
+                <p class="mt-1 text-base leading-7 text-gray-600">
+                  {{ link.notes }}
+                </p>
+              {% endif %}
+            </li>
+          {% endfor %}
+        {% else %}
+          <li>No links to show.</li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</section>
+
 
 
 
