@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+---
+
+{% include "header.njk" %}
+
+<article class="generated-image max-w-7xl mx-auto pb-4 lg:pb-0 lg:px-8">
+  <figure class="image">
+    <img class="block max-h-screen mx-auto" src="{{ path }}" alt="{{ prompt }}">
+  </figure>
+  <aside class="meta border-l border-slate-200 dark:border-slate-700 p-4 lg:ml-4">
+    <dl class="lg:sticky lg:top-4">
+      <dt class="font-bold text-slate-400 text-xs uppercase">
+        Prompt
+      </dt>
+      <dd class="dark:text-slate-200">
+        {{ prompt }}
+      </dd>
+      <dt class="font-bold mt-4 text-slate-400 text-xs uppercase">
+        Generator
+      </dt>
+      <dd>
+        {{ generator }}
+      </dd>
+      <dt class="font-bold mt-4 text-slate-400 text-xs uppercase">
+        Date
+      </dt>
+      <dd>
+        {{ date | formatDate('MMM DD YYYY') }}
+      </dd>
+    </dl>
+  </aside>
+  <div class="content longform px-4 py-4 lg:px-0">
+    {{ content | safe }}
+  </div>
+</article>
+
