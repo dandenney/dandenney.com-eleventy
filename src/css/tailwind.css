@@ -169,3 +169,25 @@
     transform: none;
   }
 }
+
+/* Generated Images */
+
+@media screen and (min-width: 1000px) {
+  .generated-image {
+    display: grid;
+    grid-template-columns: 1fr 18.75rem;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .generated-image .image {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .generated-image .meta {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+  .generated-image .content {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+}

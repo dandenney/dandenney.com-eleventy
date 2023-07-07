@@ -36,6 +36,11 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob("./src/tinkerings/*.md");
   });
 
+  // Add generated images collection
+  eleventyConfig.addCollection("generatedImages", (collection) => {
+    return collection.getFilteredByGlob("./src/generated-images/*.md");
+  });
+
   // No clue why this is here
   eleventyConfig.addShortcode("version", function() {
     return String(Date.now());
