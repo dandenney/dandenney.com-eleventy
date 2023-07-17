@@ -65,6 +65,10 @@ layout: layouts/post-custom.njk
     padding: 1rem;
   }
 
+  .dark .details p {
+    background: rgba(15, 23, 42, 0.9);
+  }
+
   .details h3 {
     background: rgba(181, 31, 36, 0.9);
     box-shadow: 5px 5px 10px rgba(202, 210, 211, 0.5);
@@ -89,6 +93,10 @@ layout: layouts/post-custom.njk
     text-align: center;
   }
 
+  .update p:first-of-type {
+    margin-top: 0 !important;
+  }
+
   @media screen and (min-width: 768px) {
     .details h3 {
       font-size: 24px;
@@ -102,9 +110,11 @@ layout: layouts/post-custom.njk
   }
 
   #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+
 </style>
 
-<div class="bg-white relative z-10">
+<div>
 
 <header class="longform max-w-2xl mx-auto px-8 lg:px-0">
    <h1 class="full-to-half-bleed max-w-2xl px-8 py-8 text-4xl font-black tracking-tight text-gray-900 sm:text-6xl lg:px-0 lg:col-span-2 lg:text-8xl xl:col-auto">
@@ -113,6 +123,14 @@ layout: layouts/post-custom.njk
 </header>
 
 <div class="longform max-w-2xl mx-auto pb-16 px-8">
+
+<div class="bg-slate-100 mb-4 p-4 dark:bg-slate-700 update">
+
+On July 13, 2023, there was an arrest in relation to the Gilgo Four. [Rex Heuermann](https://www.cnn.com/2023/07/14/us/gilgo-beach-murders-suspect-arrest/index.html) was arrested and is currently facing charges for three of the murders, with ongoing work in the Maureen Brainard-Barnes investigation. 
+
+The [bail documentation](https://drive.google.com/file/d/1UAyHSO_aEYDE4aE_ajIoxxxRKccALx-u/view) has extensive information about the evidence against him, including a list of searches and articles that were viewed. In what I can only describe as surreal, this article is in that list.
+
+</div
 
 "The Long Island Serial Killer," aka "LISK," is a misnomer. The more that you look at Long Island from the early 90s until the 2010s, the worse it gets. [Joel Rifkin](https://en.wikipedia.org/wiki/Joel_Rifkin) lived in the Hempstead area and killed at least nine, but up to seventeen people from 1989 - 1993. [Robert Shulman](<https://en.wikipedia.org/wiki/Robert_Shulman_(serial_killer)>) killed at least five people from 1991 - 1996 while living in the Hicksville area.
 
@@ -185,8 +203,8 @@ The following is a timeline of events, with their locations, intending to show h
     </li>
     <li class="step" data-step="8">
       <div class="details">
-        <img alt="Jane Doe No. 6 sketch" src="/img/posts/true-crime/mapping-the-long-island-murder-victims/jane-doe-no-6.jpg" width="220" />
-        <h3>Partial remains of Jane Doe No. 6 are found on November 19, 2000</h3>
+        <img alt="Valerie Mack sketch" src="/img/posts/true-crime/mapping-the-long-island-murder-victims/valerie-mack.jpg" width="220" />
+        <h3>Partial remains of Valerie Mack are found on November 19, 2000</h3>
         <p>Her torso was found, wrapped in garbage bags. In addition to her head and hands like the others, her right foot was removed, assumedly to hide a distinguishing mark.</p>
       </div>
     </li>
