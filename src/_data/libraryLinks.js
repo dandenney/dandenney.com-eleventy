@@ -6,7 +6,7 @@ module.exports = async () => {
     const { results } = await Cache(
       "https://api.notion.com/v1/databases/6e2a35a17b5344aeb5db0fe47cc5764a/query",
       {
-        duration: "1d", // 1 day
+        duration: "10s", // 1 day
         type: "json",
         fetchOptions: {
           method: "POST",
@@ -23,11 +23,11 @@ module.exports = async () => {
       const { properties } = result;
       const { Title, URL, Notes, Tags } = properties;
       return {
-        created: result.created_time,
+        created: result?.created_time,
         notes: Notes.rich_text[0]?.text.content,
         tag: Tags.multi_select[0]?.name === "video" ? "Watched" : "Read",
         title: Title.title[0]?.plain_text,
-        url: URL.url,
+        url: URL?.url,
       };
     });
     return trimmedResults;
