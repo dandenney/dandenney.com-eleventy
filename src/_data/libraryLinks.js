@@ -6,7 +6,7 @@ module.exports = async () => {
     const { results } = await Cache(
       "https://api.notion.com/v1/databases/6e2a35a17b5344aeb5db0fe47cc5764a/query",
       {
-        duration: "10s", // 1 day
+        duration: "1d", // 1 day
         type: "json",
         fetchOptions: {
           method: "POST",
