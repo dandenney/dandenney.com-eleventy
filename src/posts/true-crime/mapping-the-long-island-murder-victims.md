@@ -189,9 +189,9 @@ The following is a timeline of events, with their locations, intending to show h
     </li>
     <li class="step" data-step="6">
       <div class="details">
-        <img alt="Jane Doe No. 7" src="/img/posts/true-crime/mapping-the-long-island-murder-victims/jane-doe-no-7-fire-island.jpg" width="220" />
-        <h3>Partial remains of Jane Doe No. 7 are found on April 20, 1996</h3>
-        <p>Along Blue Point Beach, people found her legs wrapped in plastic.</p>
+        <img alt="Karen Vergata" src="/img/posts/true-crime/mapping-the-long-island-murder-victims/karen-vergata.jpg" width="220" />
+        <h3>Partial remains of Karen Vergata are found on April 20, 1996</h3>
+        <p>Along Blue Point Beach, people found her legs wrapped in plastic. (Formerly known as Jane Doe No. 7)</p>
       </div>
     </li>
     <li class="step right" data-step="7">
@@ -290,7 +290,7 @@ The following is a timeline of events, with their locations, intending to show h
     <li class="step" data-step="21">
       <div class="details">
         <h3>Police find two more sets of remains on April 11, 2011</h3>
-        <p>These remains were later matched to Jane Doe No. 7 and Jane Doe No. 3, aka "Peaches".</p>
+        <p>These remains were later matched to Karen Vergata and Jane Doe No. 3, aka "Peaches".</p>
       </div>
     </li>
     <li class="step right" data-step="22">
